@@ -42,8 +42,8 @@ export function About() {
           className="space-y-5 px-0 md:px-10 text-center md:text-left"
         >
           <h4 className="text-2xl font-semibold">
-            {`<`} A little bit <span className="underline decoration-primary-color text-primary-color">about</span> me{" "}
-            {`/>`}
+            {`<`} A little bit{" "}
+            <span className="underline decoration-secondary-color text-primary-color-light pt-2">about</span> me {`/>`}
           </h4>
           <p className="text-sm text-gray-200">
             My name is <span className="font-bold text-white">Julien</span> and I am a{" "}

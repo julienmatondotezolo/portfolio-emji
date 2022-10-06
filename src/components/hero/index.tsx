@@ -8,8 +8,8 @@ import mypic from "../../assets/images/IMG_8258.png";
 import { BackgroundCircles } from "../";
 
 export function Hero() {
-  const [text, count] = useTypewriter({
-    words: ["Hello, my name is Matondo Julien", "But you can call me Emji"],
+  const [text] = useTypewriter({
+    words: ["Hello, my name is Julien", "Let's talk !"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -60,7 +60,7 @@ export function Hero() {
       >
         <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs">Full stack developer</h2>
         <h1>
-          <span className="text-3xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">{`< ${text} />`}</span>
+          <span className="sm:text-xl text-2xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">{`< ${text} />`}</span>
           <Cursor cursorColor="red" />
         </h1>
         <div className="pt-5">
