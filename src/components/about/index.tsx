@@ -29,13 +29,24 @@ export function About() {
             objectFit="cover"
           />
         </motion.figure>
-        <div className="space-y-5 px-0 md:px-10 text-center md:text-left">
+        <motion.div
+          initial={{
+            opacity: 0,
+            scale: 0.5,
+          }}
+          whileInView={{ scale: 1.0, opacity: 1.0 }}
+          viewport={{ once: false }}
+          transition={{
+            duration: 1,
+          }}
+          className="space-y-5 px-0 md:px-10 text-center md:text-left"
+        >
           <h4 className="text-2xl font-semibold">
             {`<`} A little bit <span className="underline decoration-primary-color text-primary-color">about</span> me{" "}
             {`/>`}
           </h4>
           <p className="text-sm text-gray-200">
-            My name is <span className="font-bold text-white">Julien</span> and I&apos;m a{" "}
+            My name is <span className="font-bold text-white">Julien</span> and I am a{" "}
             <span className="font-bold text-white">23 years</span> old{" "}
             <span className="font-bold text-white">full stack developer</span>, who has the right dose of
             <span className="font-bold text-white"> enthusiasm and motivation</span> to bring websites and applications
@@ -53,7 +64,7 @@ export function About() {
             preferably in an <span className="font-bold text-white text-secondary-color">agile environment</span> with
             the main focus on building <span className="font-bold">react applications.</span>
           </p>
-        </div>
+        </motion.div>
       </div>
     </div>
   );

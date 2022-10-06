@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
-export function Experience({}: Props) {
+export function Experience() {
   return <div>Experience</div>;
 }
