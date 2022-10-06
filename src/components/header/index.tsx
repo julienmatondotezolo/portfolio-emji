@@ -19,7 +19,7 @@ export function Header() {
           scale: 1,
         }}
         transition={{
-          delay: 2,
+          delay: 0.5,
           duration: 1.5,
         }}
         className="flex flex-row items-center"
