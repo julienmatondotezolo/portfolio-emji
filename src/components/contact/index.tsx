@@ -1,7 +1,5 @@
 import React from "react";
 
-type Props = {};
-
-export function Contact({}: Props) {
+export function Contact() {
   return <div>Contact</div>;
 }
