@@ -55,8 +55,6 @@ export function ExperienceCard() {
         <p className="uppercase pt-2 text-gray-400">7 februari 2022 - 29 april 2022</p>
       </div>
 
-      {/* <p className="uppercase text-gray-400">7 februari 2022 - 29 april 2022</p> */}
-
       <ul className="list-disc space-y-4 pb-24 ml-5 text-lg">
         <li>
           Question current solutions and contribute to the development of a robust tool that can support the growing
