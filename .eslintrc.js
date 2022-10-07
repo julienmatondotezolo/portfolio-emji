@@ -31,7 +31,7 @@ module.exports = {
     "max-len": [
       "error",
       {
-        code: 120,
+        code: 140,
         ignoreComments: true,
         ignorePattern: '.*className=".{80,}"',
       },
