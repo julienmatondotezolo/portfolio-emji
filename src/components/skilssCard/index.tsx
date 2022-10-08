@@ -7,7 +7,7 @@ import mypic from "../../assets/images/IMG_8258.png";
 export function SkilssCard() {
   return (
     <figure className="group relative flex flex-col items-center object-cover cursor-pointer">
-      <div className="rounded-full bg-[#252525] h-24 w-24 md:w-28 xl:w-32 xl:h-32">
+      <div className="rounded-full bg-[#252525] h-16 w-16 md:w-28 xl:w-32 xl:h-32">
         <Image className="rounded-full" src={mypic} alt="Picture of the author" objectFit="cover" />
       </div>
 
