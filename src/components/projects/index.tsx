@@ -8,15 +8,12 @@ export function Projects() {
   const projectsData = [1, 2, 3, 4, 5];
 
   return (
-    <div className="h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full justify-evenly mx-auto items-center space-y-10 z-0 px-5 md:px-10">
+    <div className="h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
       <h3 className="brand-title text-center pt-24">Projects</h3>
 
       <div className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
         {projectsData.map((project, i) => (
-          <div
-            key={i}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center md:p-44 h-screen"
-          >
+          <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center h-screen">
             <motion.figure
               initial={{
                 opacity: 0,
