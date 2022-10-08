@@ -9,7 +9,7 @@ export function Projects() {
 
   return (
     <div className="h-screen relative flex flex-col overflow-hidden text-left max-w-full justify-evenly mx-auto items-center z-0 px-5 md:px-10">
-      <h3 className="absolute top-24 brand-title">Projects</h3>
+      <h3 className="absolute top-24 brand-title text-center">Projects</h3>
 
       <div className="w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
         {projectsData.map((project, i) => (

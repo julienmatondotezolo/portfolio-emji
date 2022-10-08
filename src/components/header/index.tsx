@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 
@@ -6,7 +7,7 @@ import config from "../../config/config.json";
 
 export function Header() {
   return (
-    <header className="sticky top-0 p-2 flex items-start max-w-7xl mx-auto z-20">
+    <header className="sticky top-0 p-2 flex items-center justify-between max-w-7xl mx-auto z-20">
       <motion.div
         initial={{
           x: -500,
@@ -28,6 +29,11 @@ export function Header() {
         <SocialIcon url={config.URL.SOCIAL.LINKEDIN} fgColor="gray" bgColor="transparent" />
         <SocialIcon url={`mailto:${config.URL.SOCIAL.EMAIL}`} fgColor="gray" bgColor="transparent" />
       </motion.div>
+      <div className="flex items-center">
+        <Link href="#contact">
+          <button className="heroButtonInversed mx-5 my-1">Contact</button>
+        </Link>
+      </div>
     </header>
   );
 }
