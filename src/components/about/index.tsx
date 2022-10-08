@@ -6,7 +6,7 @@ import mypic from "../../assets/images/IMG_8258.png";
 
 export function About() {
   return (
-    <div className="flex flex-col relative text-center h-screen md:text-left max-w-7xl px-10 pt-10 justify-evenly mx-auto items-center">
+    <div className="flex flex-col relative text-center h-screen md:text-left max-w-7xl px-5 md:px-10 pt-10 justify-evenly mx-auto items-center">
       <h3 className="brand-title text-center">About</h3>
       <div className="flex flex-col text-center items-center md:flex-row">
         <motion.figure
@@ -42,8 +42,7 @@ export function About() {
           className="space-y-5 px-0 md:px-10 text-center md:text-left"
         >
           <h4 className="text-2xl font-semibold">
-            {`<`} A little bit{" "}
-            <span className="underline decoration-secondary-color text-primary-color-light pt-2">about</span> me {`/>`}
+            {`<`} A little bit <span className="text-[#d21f1f] pt-2">about me</span> {`/>`}
           </h4>
           <p className="text-sm text-gray-200">
             My name is <span className="font-bold text-white">Julien</span> and I am a{" "}
