@@ -8,6 +8,12 @@
   --secondary-color: #08cf8f;
 }
 
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+}
+
 @layer components {
   .heroButton {
     @apply px-6 py-2 border border-[#242424] font-semibold rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-[#cf081b] hover:text-[#cf081b] hover:tracking-[3px];
