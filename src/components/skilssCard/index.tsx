@@ -17,7 +17,7 @@ export function SkilssCard() {
         </div>
       </div>
 
-      <p className="text-xs">PostgresSQL</p>
+      <p className="text-xs text-gray-400 font-bold">PostgresSQL</p>
     </figure>
   );
 }
