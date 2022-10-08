@@ -28,7 +28,7 @@
   }
 
   .heroButtonInversed {
-    @apply px-6 py-2 border border-primary-color font-semibold rounded-full uppercase text-xs tracking-widest text-primary-color transition-all hover:border-2 hover:text-white;
+    @apply px-6 py-2 border-2 border-primary-color font-semibold rounded-full uppercase text-xs tracking-widest transition-all hover:bg-primary-color hover:scale-110;
   }
 
   .brand-title {
