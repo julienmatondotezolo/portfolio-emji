@@ -15,6 +15,10 @@
 }
 
 @layer components {
+  .customScrollbar {
+    @apply scrollbar-track-[#252525] scrollbar-thumb-primary-color scrollbar-thumb-rounded-full scrollbar-thin;
+  }
+
   .primaryButton {
     @apply bg-primary-color py-3 px-5 rounded-md font-bold text-lg;
   }
