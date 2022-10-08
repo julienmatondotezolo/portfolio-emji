@@ -15,11 +15,19 @@
 }
 
 @layer components {
+  .primaryButton {
+    @apply bg-primary-color py-5 px-10 rounded-md font-bold text-lg;
+  }
+
   .heroButton {
     @apply px-6 py-2 border border-[#242424] font-semibold rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-[#cf081b] hover:text-[#cf081b] hover:tracking-[3px];
   }
 
   .brand-title {
     @apply uppercase tracking-[20px] text-gray-500 text-2xl;
+  }
+
+  .contactInput {
+    @apply outline-none bg-slate-400/10 rounded-sm border-b px-6 py-4 border-[#252525] text-gray-500 placeholder-gray-500 transition-all focus:border-red-600 focus:text-red-600 hover:border-red-600;
   }
 }
