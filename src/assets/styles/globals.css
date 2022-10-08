@@ -16,7 +16,7 @@
 
 @layer components {
   .primaryButton {
-    @apply bg-primary-color py-5 px-10 rounded-md font-bold text-lg;
+    @apply bg-primary-color py-3 px-5 rounded-md font-bold text-lg;
   }
 
   .heroButton {

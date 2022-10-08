@@ -3,8 +3,8 @@ import React from "react";
 
 export function Contact() {
   return (
-    <div className="h-screen relative flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center z-0 px-5 md:px-10 box-border">
-      <h3 className="absolute top-12 brand-title">Contact</h3>
+    <div className="h-screen relative space-y-5 flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center py-10 z-0 px-5 md:px-10 box-border">
+      <h3 className="brand-title">Contact</h3>
 
       <div className="space-y-10 w-full">
         <h4 className="text-2xl text-left md:text-center font-semibold">
@@ -28,10 +28,10 @@ export function Contact() {
           </div>
         </div>
 
-        <form className="flex flex-col space-y-2 w-fit mx-auto">
+        <form className="flex flex-col space-y-2 mx-auto">
           <div className="flex space-x-2">
-            <input placeholder="Name" className="contactInput" type="text" />
-            <input placeholder="Email" className="contactInput" type="text" />
+            <input placeholder="Name" className="contactInput w-1/2" type="text" />
+            <input placeholder="Email" className="contactInput md:w-1/2" type="text" />
           </div>
 
           <input placeholder="Subject" className="contactInput" type="text" />
