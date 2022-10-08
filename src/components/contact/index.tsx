@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
@@ -12,7 +13,9 @@ type Inputs = {
 export function Contact() {
   const { register, handleSubmit } = useForm<Inputs>();
 
-  const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+  const onSubmit: SubmitHandler<Inputs> = (formData) => {
+    window.location.href = `mailto:julien.matondo-tezolo@student.ehb.be?subject=${formData.subject}&body=Hi my name is ${formData.name}. ${formData.message}`;
+  };
 
   return (
     <div className="h-screen relative space-y-5 flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center py-10 z-0 px-5 md:px-10 box-border">
