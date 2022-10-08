@@ -12,7 +12,7 @@ export function Experience() {
       transition={{
         duration: 1,
       }}
-      className="h-screen flex flex-col relative text-left overflow-hidden max-w-full px-10 pt-10 justify-evenly mx-auto items-center"
+      className="h-fit flex flex-col relative text-left overflow-hidden max-w-full px-5 md:px-10 pt-10 justify-evenly mx-auto items-center"
     >
       <h3 className="brand-title">Experience</h3>
 

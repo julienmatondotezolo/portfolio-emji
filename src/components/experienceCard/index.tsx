@@ -5,7 +5,7 @@ import mypic from "../../assets/images/IMG_8258.png";
 
 export function ExperienceCard() {
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[400px] xl:w-[600px] snap-center bg-[#292929] p-10 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
+    <article className="flex flex-col rounded-lg items-center space-y-7 flex-shrink-0 w-[300px] md:w-[400px] xl:w-[600px] snap-center bg-[#292929] py-10 px-5 md:px-10 opacity-60 hover:opacity-100 cursor-pointer transition-opacity duration-200 overflow-hidden">
       <Image
         className="rounded-full"
         src={mypic}
@@ -55,7 +55,7 @@ export function ExperienceCard() {
         <p className="uppercase pt-2 text-gray-400">7 februari 2022 - 29 april 2022</p>
       </div>
 
-      <ul className="list-disc space-y-4 pb-24 ml-5 text-lg">
+      <ul className="list-disc space-y-4 pb-4 ml-5 text-lg">
         <li>
           Question current solutions and contribute to the development of a robust tool that can support the growing
           user base.
