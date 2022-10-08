@@ -1,7 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
 
-import { About, Experience, Header, Hero, Projects, Skills } from "../src/components/";
+import { About, Contact, Experience, Header, Hero, Projects, Skills } from "../src/components/";
 
 const Home: NextPage = () => (
   <div className="bg-[#202020] text-white h-screen snap-y snap-mandatory overflow-scroll z-0">
@@ -25,6 +25,9 @@ const Home: NextPage = () => (
     </section>
     <section id="projects" className="snap-center">
       <Projects />
+    </section>
+    <section id="contact" className="snap-center">
+      <Contact />
     </section>
   </div>
 );
