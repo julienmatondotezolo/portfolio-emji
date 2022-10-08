@@ -60,8 +60,12 @@ export function Hero() {
       >
         <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs">Full stack developer</h2>
         <h1>
-          <span className="sm:text-xl text-2xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">{`< ${text} />`}</span>
-          <Cursor cursorColor="red" />
+          <span className="sm:text-xl text-2xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">
+            {`< `}
+            {text}
+            <Cursor cursorColor="red" />
+            {` />`}
+          </span>
         </h1>
         <div className="pt-5">
           <Link href="#about">
