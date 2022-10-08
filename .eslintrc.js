@@ -47,7 +47,7 @@ module.exports = {
     "newline-after-var": ["error", "always"],
     "react/jsx-equals-spacing": [2, "never"],
     "react/jsx-no-duplicate-props": 1,
-    "react/jsx-max-props-per-line": [1, { maximum: 3 }],
+    "react/jsx-max-props-per-line": [1, { maximum: 5, when: "always" }],
     "react/display-name": [0, { ignoreTranspilerName: true }],
     "react/prop-types": 0,
     "react/forbid-prop-types": 0,

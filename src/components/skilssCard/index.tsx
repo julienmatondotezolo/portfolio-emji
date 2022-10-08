@@ -1,5 +1,4 @@
 /* eslint-disable react/jsx-max-props-per-line */
-import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
