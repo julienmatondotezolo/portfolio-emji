@@ -1,6 +1,7 @@
-import mypic from "https://res.cloudinary.com/hc92io71a/image/upload/v1640074937/fd15b875584645_5c516a392a06e_e4277532cc.jpg";
 import Image from "next/image";
 import React from "react";
+
+import mypic from "../../assets/images/project.jpeg";
 
 export function Projects() {
   return (
@@ -9,13 +10,8 @@ export function Projects() {
 
       <div>
         <div>
-          <Image
-            className="rounded-full"
-            src={mypic}
-            alt="Picture of the author"
-            layout="responsive"
-            objectFit="cover"
-          />
+          <Image src={mypic} alt="Picture of the author" layout="responsive"
+objectFit="cover" />
           <div>
             <h4 className="text-2xl font-semibold">Case study</h4>
             <p>
