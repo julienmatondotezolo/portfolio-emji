@@ -1,7 +1,19 @@
 import { EnvelopeIcon, MapPinIcon, PhoneIcon } from "@heroicons/react/24/solid";
 import React from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+type Inputs = {
+  name: string;
+  email: string;
+  subject: string;
+  message: string;
+};
 
 export function Contact() {
+  const { register, handleSubmit } = useForm<Inputs>();
+
+  const onSubmit: SubmitHandler<Inputs> = (formData) => console.log(formData);
+
   return (
     <div className="h-screen relative space-y-5 flex flex-col text-center max-w-7xl justify-evenly mx-auto items-center py-10 z-0 px-5 md:px-10 box-border">
       <h3 className="brand-title">Contact</h3>
@@ -28,15 +40,15 @@ export function Contact() {
           </div>
         </div>
 
-        <form className="flex flex-col space-y-2 mx-auto">
+        <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col space-y-2 mx-auto">
           <div className="flex space-x-2">
-            <input placeholder="Name" className="contactInput w-1/2" type="text" />
-            <input placeholder="Email" className="contactInput md:w-1/2" type="text" />
+            <input {...register("name")} placeholder="Name" className="contactInput w-1/2" type="text" />
+            <input {...register("email")} placeholder="Email" className="contactInput w-1/2" type="email" />
           </div>
 
-          <input placeholder="Subject" className="contactInput" type="text" />
+          <input {...register("subject")} placeholder="Subject" className="contactInput" type="text" />
 
-          <textarea placeholder="Message" className="contactInput" />
+          <textarea {...register("message")} placeholder="Message" className="contactInput" />
           <button className="primaryButton" type="submit">
             Submit
           </button>
