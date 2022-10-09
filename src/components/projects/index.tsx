@@ -11,7 +11,7 @@ export function Projects() {
     <div className="h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
       <h3 className="brand-title text-center pt-24">Projects</h3>
 
-      <div className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
+      <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
         {projectsData.map((project, i) => (
           <div key={i} className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center h-screen">
             <motion.figure

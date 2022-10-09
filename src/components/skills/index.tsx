@@ -14,9 +14,15 @@ export function Skills() {
     >
       <h3 className="absolute top-24 brand-title">Skills</h3>
 
-      <h3 className="absolute top-36 uppercase tracking-[3px] text-primary-color-500">Hover over on of my skills</h3>
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-primary-color-50 hidden lg:block">
+        Hover over 1 of my skills
+      </h3>
 
-      <div className="absolute top-52 grid grid-cols-4 md:grid-cols-6 gap-5 gap-y-10">
+      <h3 className="absolute top-36 uppercase tracking-[3px] text-primary-color-50 lg:hidden">
+        Click on 1 of my skills
+      </h3>
+
+      <div className="absolute top-52 grid grid-cols-4 md:grid-cols-6 gap-x-2 md:gap-x-5 gap-y-10">
         <SkilssCard />
         <SkilssCard />
         <SkilssCard />
