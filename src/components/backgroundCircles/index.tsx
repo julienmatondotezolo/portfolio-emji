@@ -35,36 +35,46 @@ export function BackgroundCircles() {
       transition={{
         duration: 2,
       }}
-      className="relative flex justify-center items-center w-screen"
+      className="sticky top-0 flex justify-center items-center w-screen"
     >
-      <div
-        className="absolute border border-[#303030] rounded-full h-[200px] w-[200px] mt-52 animate-pulse"
+      <motion.div
+        initial={{
+          opacity: 1,
+        }}
+        animate={{
+          opacity: 0,
+        }}
+        transition={{
+          delay: 4,
+          duration: 2,
+        }}
+        className="absolute border border-[#303030] rounded-full h-[200px] w-[200px] mt-[32rem] animate-ping"
         style={{
           transform: `translate(${0.05 * x}%, ${0.05 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#303030] rounded-full h-[300px] w-[300px] mt-52"
+        className="absolute border border-[#303030] rounded-full h-[300px] w-[300px] mt-[32rem]"
         style={{
-          transform: `translate(${0.04 * x}%, ${0.04 * y}%)`,
+          transform: `translate(${0.015 * x}%, ${0.015 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#272727] rounded-full h-[500px] w-[500px] mt-52"
+        className="absolute border border-[#272727] rounded-full h-[500px] w-[500px] mt-[32rem]"
         style={{
-          transform: `translate(${0.035 * x}%, ${0.035 * y}%)`,
+          transform: `translate(${0.02 * x}%, ${0.022 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#cf081b] opacity-20 rounded-full h-[650px] w-[650px] mt-52 animate-pulse"
+        className="absolute border border-[#cf081b] opacity-20 rounded-full h-[650px] w-[650px] mt-[32rem] animate-pulse"
         style={{
-          transform: `translate(${0.03 * x}%, ${0.03 * y}%)`,
+          transform: `translate(${0.01 * x}%, ${0.01 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#252525] rounded-full h-[800px] w-[800px] mt-52"
+        className="absolute border border-[#252525] rounded-full h-[800px] w-[800px] mt-[32rem]"
         style={{
-          transform: `translate(${0.02 * x}%, ${0.02 * y}%)`,
+          transform: `translate(${0.005 * x}%, ${0.005 * y}%)`,
         }}
       />
     </motion.div>

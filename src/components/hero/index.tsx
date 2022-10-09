@@ -5,7 +5,6 @@ import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
 import mypic from "../../assets/images/IMG_8258.png";
-import { BackgroundCircles } from "../";
 
 export function Hero() {
   const [text] = useTypewriter({
@@ -16,7 +15,6 @@ export function Hero() {
 
   return (
     <div className="h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden">
-      <BackgroundCircles />
       <motion.div
         initial={{
           y: 200,
