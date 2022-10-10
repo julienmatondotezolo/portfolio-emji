@@ -22,8 +22,8 @@ export default {
       },
     },
     {
-      name: "backgroundInformation",
-      title: "BackgroundInformation",
+      name: "about",
+      title: "About",
       type: "string",
     },
     {
