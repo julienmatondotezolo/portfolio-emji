@@ -39,7 +39,7 @@ export function ExperienceCard({ experience }: Props) {
         </div>
 
         <p className="uppercase pt-2 text-gray-400">
-          {experience.dateStarted} - {experience.dateEnded}
+          <span>{experience.dateStarted.toString()}</span> - <span>{experience.dateEnded.toString()}</span>
         </p>
       </div>
 
