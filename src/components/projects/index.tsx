@@ -52,13 +52,29 @@ export function Projects({ projects }: Props) {
               className="space-y-5 px-0 md:px-10 md:w-[48rem] w-10/12 text-center"
             >
               <h4 className="text-2xl font-semibold text-center">{project.title}</h4>
+              <div className="flex justify-center">
+                <div className="flex space-x-2 my-2">
+                  {project.technologies.map((technology) => (
+                    <figure key={technology._id}>
+                      <Image
+                        className="rounded-full"
+                        src={urlFor(technology.image).url()}
+                        alt="Picture of the author"
+                        width="25px"
+                        height="25px"
+                        objectFit="cover"
+                      />
+                    </figure>
+                  ))}
+                </div>
+              </div>
+              <p className="text-md text-center">{project.summary}</p>
               <a target="_blank" href={project.linkToBuild} rel="noreferrer">
                 <button className="heroButtonInversed mx-5 mt-5">Visite project</button>
               </a>
               <p className="text-sm text-primary-color text-center">
                 Project {i + 1} of {projects.length}
               </p>{" "}
-              <p className="text-md text-center">{project.summary}</p>
             </motion.div>
           </div>
         ))}
