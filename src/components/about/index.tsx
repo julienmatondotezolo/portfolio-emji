@@ -62,8 +62,8 @@ export function About({ pageInfo }: Props) {
           <p className="text-sm">
             Concretely, as a full-stack developer I have the{" "}
             <span className="font-bold text-secondary-color">right technical skills</span> and have an{" "}
-            <span className="font-bold text-white">affinity with UI design</span>
-            and a <span className="font-bold text-white">great interest in UX design.</span> Furthermore, I&apos;m a{" "}
+            <span className="font-bold text-white">affinity with UI design</span> and a{" "}
+            <span className="font-bold text-white">great interest in UX design.</span> Furthermore, I&apos;m a{" "}
             <span className="font-bold text-secondary-color">real team player</span> and attaches great importance to
             delivering quality products. Currently, I&apos;m ready for a next challenge as a Full-stack developer,
             preferably in an <span className="font-bold text-white text-secondary-color">agile environment</span> with
