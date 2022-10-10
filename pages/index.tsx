@@ -1,7 +1,17 @@
-import type { NextPage } from "next";
+import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 
 import { About, BackgroundCircles, Contact, Experience, Header, Hero, Projects, Skills } from "../src/components/";
+import { experience, PageInfo, Project, Skill, Social } from "../src/config";
+import { fetchExperience, fetchPageInfo, fetchProject, fetchSkills, fetchSocial } from "../src/utils";
+
+type Props = {
+  pageInfo: PageInfo;
+  experiences: experience[];
+  skills: Skill[];
+  projects: Project[];
+  socials: Social[];
+};
 
 const Home: NextPage = () => (
   <div className="bg-[#202020] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 customScrollbar scroll-smooth">
@@ -34,3 +44,21 @@ const Home: NextPage = () => (
 );
 
 export default Home;
+
+export const getStaticProps: GetStaticProps<Props> = async () => {
+  const pageInfo: PageInfo = await fetchPageInfo();
+  const experiences: experience[] = await fetchExperience();
+  const skills: Skill[] = await fetchSkills();
+  const socials: Social[] = await fetchSocial();
+  const projects: Project[] = await fetchProject();
+
+  return {
+    props: {
+      pageInfo,
+      experiences,
+      skills,
+      socials,
+      projects,
+    },
+  };
+};
