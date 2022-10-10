@@ -29,10 +29,6 @@ export function Header({ socials }: Props) {
         }}
         className="flex flex-row items-center"
       >
-        {/* <SocialIcon url={config.URL.SOCIAL.BEHANCE} fgColor="gray" bgColor="transparent" />
-        <SocialIcon url={config.URL.SOCIAL.LINKEDIN} fgColor="gray" bgColor="transparent" />
-        <SocialIcon url={`mailto:${config.URL.SOCIAL.EMAIL}`} fgColor="gray" bgColor="transparent" /> */}
-
         {socials.map((social) => (
           <SocialIcon key={social._id} url={social.url} fgColor="gray" bgColor="transparent" />
         ))}

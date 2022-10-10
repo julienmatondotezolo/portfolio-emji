@@ -1,9 +1,14 @@
 import { motion } from "framer-motion";
 import React from "react";
 
+import { Skill } from "../../config";
 import { SkilssCard } from "../";
 
-export function Skills() {
+type Props = {
+  skills: Skill[];
+};
+
+export function Skills({ skills }: Props) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -23,21 +28,9 @@ export function Skills() {
       </h3>
 
       <div className="absolute top-52 grid grid-cols-4 md:grid-cols-6 gap-x-2 md:gap-x-5 gap-y-10">
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
-        <SkilssCard />
+        {skills.map((skill) => (
+          <SkilssCard key={skill._id} skill={skill} />
+        ))}
       </div>
     </motion.div>
   );
