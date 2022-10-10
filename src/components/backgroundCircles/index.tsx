@@ -35,7 +35,7 @@ export function BackgroundCircles() {
       transition={{
         duration: 2,
       }}
-      className="sticky top-0 flex justify-center items-center w-screen"
+      className="sticky top-[35%] 2xl:top-[50%] flex justify-center items-center w-screen"
     >
       <motion.div
         initial={{
@@ -48,31 +48,31 @@ export function BackgroundCircles() {
           delay: 4,
           duration: 2,
         }}
-        className="absolute border border-[#303030] rounded-full h-[200px] w-[200px] mt-[32rem] animate-ping"
+        className="absolute border border-[#303030] rounded-full h-[200px] w-[200px] animate-ping"
         style={{
           transform: `translate(${0.05 * x}%, ${0.05 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#303030] rounded-full h-[300px] w-[300px] mt-[32rem]"
+        className="absolute border border-[#303030] rounded-full h-[300px] w-[300px]"
         style={{
           transform: `translate(${0.015 * x}%, ${0.015 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#272727] rounded-full h-[500px] w-[500px] mt-[32rem]"
+        className="absolute border border-[#272727] rounded-full h-[500px] w-[500px]"
         style={{
           transform: `translate(${0.02 * x}%, ${0.022 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#cf081b] opacity-20 rounded-full h-[650px] w-[650px] mt-[32rem] animate-pulse"
+        className="absolute border border-[#cf081b] opacity-20 rounded-full h-[650px] w-[650px] animate-pulse"
         style={{
           transform: `translate(${0.01 * x}%, ${0.01 * y}%)`,
         }}
       />
       <div
-        className="absolute border border-[#252525] rounded-full h-[800px] w-[800px] mt-[32rem]"
+        className="absolute border border-[#252525] rounded-full h-[800px] w-[800px]"
         style={{
           transform: `translate(${0.005 * x}%, ${0.005 * y}%)`,
         }}
