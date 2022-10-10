@@ -1,4 +1,4 @@
-import type { GetStaticProps, NextPage } from "next";
+import type { GetStaticProps } from "next";
 import Head from "next/head";
 
 import { About, BackgroundCircles, Contact, Experience, Header, Hero, Projects, Skills } from "../src/components/";
@@ -13,7 +13,7 @@ type Props = {
   socials: Social[];
 };
 
-const Home: NextPage = () => (
+const Home = ({ pageInfo, experiences, projects, socials, skills }: Props) => (
   <div className="bg-[#202020] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 customScrollbar scroll-smooth">
     <Head>
       <title>Emji&apos;s Portfolio</title>
@@ -60,5 +60,6 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       socials,
       projects,
     },
+    revalidate: 10,
   };
 };
