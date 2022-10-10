@@ -3,9 +3,13 @@ import Link from "next/link";
 import React from "react";
 import { SocialIcon } from "react-social-icons";
 
-import config from "../../config/config.json";
+import { Social } from "../../config/";
 
-export function Header() {
+type Props = {
+  socials: Social[];
+};
+
+export function Header({ socials }: Props) {
   return (
     <header className="sticky top-0 p-2 flex items-center justify-between max-w-7xl mx-auto z-20">
       <motion.div
@@ -25,9 +29,13 @@ export function Header() {
         }}
         className="flex flex-row items-center"
       >
-        <SocialIcon url={config.URL.SOCIAL.BEHANCE} fgColor="gray" bgColor="transparent" />
+        {/* <SocialIcon url={config.URL.SOCIAL.BEHANCE} fgColor="gray" bgColor="transparent" />
         <SocialIcon url={config.URL.SOCIAL.LINKEDIN} fgColor="gray" bgColor="transparent" />
-        <SocialIcon url={`mailto:${config.URL.SOCIAL.EMAIL}`} fgColor="gray" bgColor="transparent" />
+        <SocialIcon url={`mailto:${config.URL.SOCIAL.EMAIL}`} fgColor="gray" bgColor="transparent" /> */}
+
+        {socials.map((social) => (
+          <SocialIcon key={social._id} url={social.url} fgColor="gray" bgColor="transparent" />
+        ))}
       </motion.div>
       <motion.div
         initial={{

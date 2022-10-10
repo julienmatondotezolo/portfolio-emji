@@ -4,11 +4,15 @@ import Link from "next/link";
 import React from "react";
 import { Cursor, useTypewriter } from "react-simple-typewriter";
 
-import mypic from "../../assets/images/IMG_8258.png";
+import { PageInfo, urlFor } from "../../config";
 
-export function Hero() {
+type Props = {
+  pageInfo: PageInfo;
+};
+
+export function Hero({ pageInfo }: Props) {
   const [text] = useTypewriter({
-    words: ["Hello, my name is Julien", "Let's talk !"],
+    words: [`Hello, my name is ${pageInfo.name}`, "Let's talk !"],
     loop: true,
     delaySpeed: 2000,
   });
@@ -34,7 +38,7 @@ export function Hero() {
       >
         <Image
           className="rounded-full"
-          src={mypic}
+          src={urlFor(pageInfo?.heroImage).url()}
           alt="Picture of the author"
           width="220px"
           height="220px"
@@ -56,7 +60,7 @@ export function Hero() {
         }}
         className="z-20"
       >
-        <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs">Full stack developer</h2>
+        <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs"> </h2>
         <h1>
           <span className="sm:text-xl text-2xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">
             {`< `}

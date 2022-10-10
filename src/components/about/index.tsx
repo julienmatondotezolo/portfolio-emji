@@ -2,13 +2,17 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
 
-import mypic from "../../assets/images/IMG_8258.png";
+import { PageInfo, urlFor } from "../../config";
 
-export function About() {
+type Props = {
+  pageInfo: PageInfo;
+};
+
+export function About({ pageInfo }: Props) {
   return (
     <div className="flex flex-col relative text-center h-screen md:text-left max-w-7xl px-5 md:px-10 pt-10 justify-evenly mx-auto items-center">
       <h3 className="brand-title text-center">About</h3>
-      <div className="flex flex-col text-center items-center md:flex-row">
+      <div className="relative flex flex-col text-center items-center md:flex-row content">
         <motion.figure
           initial={{
             opacity: 0,
@@ -22,11 +26,13 @@ export function About() {
           className="w-24 h-24 sm:w-56 sm:h-56 xl:w-[800px] mb-5 xl:h-[300px]"
         >
           <Image
-            className="rounded-full"
-            src={mypic}
+            className="rounded-full w-full h-full"
+            src={urlFor(pageInfo?.heroImage).url()}
             alt="Picture of the author"
-            layout="responsive"
             objectFit="cover"
+            width="500px"
+            height="500px"
+            layout="responsive"
           />
         </motion.figure>
         <motion.div
