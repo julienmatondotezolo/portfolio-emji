@@ -30,7 +30,7 @@ export function Header({ socials }: Props) {
         className="flex flex-row items-center"
       >
         {socials.map((social) => (
-          <SocialIcon key={social._id} url={social.url} fgColor="gray" bgColor="transparent" />
+          <SocialIcon key={social._id} target="_blank" url={social.url} fgColor="gray" bgColor="transparent" />
         ))}
       </motion.div>
       <motion.div
