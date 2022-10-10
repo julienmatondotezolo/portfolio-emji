@@ -1,7 +1,7 @@
 # Portfolio website Emji
 <h3>Create, edit, update or delete your projects.</h3>
 
-<img src="#" alt="drawing" width="300" style="background: #202020; padding: 0 2em"/>
+<img src="https://portfolio-julienmatondotezolo.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwcv9lzq4%2Fproduction%2Fa483ade59beb122d44881dc954c435a4fe702ca2-2862x1506.png&w=3840&q=75" alt="drawing" width="300" style="background: #202020; padding: 0 2em"/>
 </br>
 
 [Portfolio](#) is an ....</br>
