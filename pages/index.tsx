@@ -16,7 +16,7 @@ type Props = {
 const Home = ({ pageInfo, experiences, projects, socials, skills }: Props) => (
   <div className="bg-[#202020] text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden z-0 customScrollbar scroll-smooth">
     <Head>
-      <title>Emji&apos;s Portfolio</title>
+      <title>Julien&apos;s Portfolio</title>
       <meta name="description" content="Portfolio website Julien" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
