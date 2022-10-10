@@ -27,11 +27,11 @@
     },
     {
       "implements": "part:@sanity/form-builder/input/image/asset-sources",
-      "path": "./parts/assetSources.ts"
+      "path": "./parts/assetSources.js"
     },
     {
       "implements": "part:@sanity/form-builder/input/file/asset-sources",
-      "path": "./parts/assetSources.ts"
+      "path": "./parts/assetSources.js"
     }
   ]
 }

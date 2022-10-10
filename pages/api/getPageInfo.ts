@@ -3,7 +3,7 @@ import { groq } from "next-sanity";
 
 import { PageInfo, sanityClient } from "../../src/config";
 
-const query = groq`*[_type == "pageInfo"][0] | order(order asc)`;
+const query = groq`*[_type == "pageInfo"][0]`;
 
 type Data = {
   pageInfo: PageInfo;

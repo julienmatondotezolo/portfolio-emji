@@ -3,7 +3,7 @@ import { groq } from "next-sanity";
 
 import { sanityClient, Skill } from "../../src/config";
 
-const query = groq`*[_type == "skill"] | order asc`;
+const query = groq`*[_type == "skill"] | order(title asc)`;
 
 type Data = {
   skills: Skill[];

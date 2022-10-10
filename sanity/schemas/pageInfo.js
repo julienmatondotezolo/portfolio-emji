@@ -55,11 +55,5 @@ export default {
       type: "array",
       of: [{ type: "reference", to: { type: "social" } }],
     },
-    {
-      name: "order",
-      title: "Order",
-      type: "number",
-      hidden: true,
-    },
   ],
 };

@@ -12,7 +12,7 @@ type Props = {
 
 export function Hero({ pageInfo }: Props) {
   const [text] = useTypewriter({
-    words: [`Hello, my name is ${pageInfo.name}`, "Let's talk !"],
+    words: [`Hello, my name is ${pageInfo?.name}`, "Let's talk !"],
     loop: true,
     delaySpeed: 2000,
   });
