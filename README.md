@@ -4,8 +4,7 @@
 <img src="https://portfolio-julienmatondotezolo.vercel.app/_next/image?url=https%3A%2F%2Fcdn.sanity.io%2Fimages%2Fwcv9lzq4%2Fproduction%2Fa483ade59beb122d44881dc954c435a4fe702ca2-2862x1506.png&w=3840&q=75" alt="drawing" width="300" style="background: #202020; padding: 0 2em"/>
 </br>
 
-[Portfolio](#) is an ....</br>
-This is a portfolio website where I share all my project and experience. Build with tailwind & next.js(typescript) in the frontend. For the backend of the project I used Sanity.
+[Portfolio](#) is a website where I share all my project and experience. Build with tailwind & next.js(typescript) in the frontend. For the backend of the project I used Sanity.
 
 </br>
 
@@ -36,10 +35,6 @@ yarn dev
 
 Open [http://localhost:8123](http://localhost:8123) with your browser to see the result.
 
-#
-## Routes
-[/projects](http://localhost:8123/projects/) Scenario [ GET ]</br>
-[/contact](http://localhost:8123/contact/) Scenario [ GET ]</br>
 #
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
