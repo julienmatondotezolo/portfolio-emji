@@ -5,11 +5,11 @@
 </br>
 
 [Portfolio](#) is an ....</br>
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+This is a portfolio website where I share all my project and experience. Build with tailwind & next.js(typescript) in the frontend. For the backend of the project I used Sanity.
 
 </br>
 
-Click on this [`link`](#) to see a demo:
+Click on this [`https://portfolio-julienmatondotezolo.vercel.app/`](#) to see a demo:
 
 ## [CLICK HERE TO SEE A DEMO](#)
 </tr>
