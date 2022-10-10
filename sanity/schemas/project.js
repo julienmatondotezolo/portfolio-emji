@@ -38,5 +38,11 @@ export default {
       title: "LinkToGithub",
       type: "url",
     },
+    {
+      name: "order",
+      title: "Order",
+      type: "number",
+      hidden: true,
+    },
   ],
 };

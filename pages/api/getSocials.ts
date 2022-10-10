@@ -3,7 +3,7 @@ import { groq } from "next-sanity";
 
 import { sanityClient, Social } from "../../src/config";
 
-const query = groq`*[_type == "social"]`;
+const query = groq`*[_type == "social"] | order(order asc)`;
 
 type Data = {
   socials: Social[];

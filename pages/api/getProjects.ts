@@ -3,7 +3,7 @@ import { groq } from "next-sanity";
 
 import { Project, sanityClient } from "../../src/config";
 
-const query = groq`*[_type == "project"] {
+const query = groq`*[_type == "project"] | order(order asc) {
   ...,
   technologies[]->
 }`;
