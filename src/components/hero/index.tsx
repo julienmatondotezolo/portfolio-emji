@@ -60,7 +60,7 @@ export function Hero({ pageInfo }: Props) {
         }}
         className="z-20"
       >
-        <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs"> </h2>
+        <h2 className="md:text-sm uppercase text-gray-500 pb-2 tracking-[15px] sm:text-xs">{pageInfo.role}</h2>
         <h1>
           <span className="sm:text-xl text-2xl lg:text-6xl font-semibold scroll-px-10 md:text-xl">
             {`< `}
