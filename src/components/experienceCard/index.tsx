@@ -1,7 +1,6 @@
 import Image from "next/image";
 import React from "react";
 
-import mypic from "../../assets/images/IMG_8258.png";
 import { experience, urlFor } from "../../config";
 
 type Props = {
