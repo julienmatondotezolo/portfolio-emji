@@ -1,9 +1,9 @@
-import type { GetStaticProps } from "next";
+// import type { GetStaticProps } from "next";
 import Head from "next/head";
 
 import { About, BackgroundCircles, Contact, Experience, Header, Hero, Projects, Skills } from "../src/components/";
 import { experience, PageInfo, Project, Skill, Social } from "../src/config";
-import { fetchExperience, fetchPageInfo, fetchProject, fetchSkills, fetchSocials } from "../src/utils";
+// import { fetchExperience, fetchPageInfo, fetchProject, fetchSkills, fetchSocials } from "../src/utils";
 
 type Props = {
   pageInfo: PageInfo;
@@ -45,21 +45,21 @@ const Home = ({ pageInfo, experiences, projects, socials, skills }: Props) => (
 
 export default Home;
 
-export const getStaticProps: GetStaticProps<Props> = async () => {
-  const pageInfo: PageInfo = await fetchPageInfo();
-  const experiences: experience[] = await fetchExperience();
-  const skills: Skill[] = await fetchSkills();
-  const socials: Social[] = await fetchSocials();
-  const projects: Project[] = await fetchProject();
+// export const getStaticProps: GetStaticProps<Props> = async () => {
+//   const pageInfo: PageInfo = await fetchPageInfo();
+//   const experiences: experience[] = await fetchExperience();
+//   const skills: Skill[] = await fetchSkills();
+//   const socials: Social[] = await fetchSocials();
+//   const projects: Project[] = await fetchProject();
 
-  return {
-    props: {
-      pageInfo,
-      experiences,
-      skills,
-      socials,
-      projects,
-    },
-    revalidate: 10,
-  };
-};
+//   return {
+//     props: {
+//       pageInfo,
+//       experiences,
+//       skills,
+//       socials,
+//       projects,
+//     },
+//     revalidate: 10,
+//   };
+// };
