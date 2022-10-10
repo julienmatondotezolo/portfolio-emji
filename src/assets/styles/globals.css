@@ -24,7 +24,7 @@
   }
 
   .heroButton {
-    @apply px-6 py-2 border border-[#242424] font-semibold rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-primary-color hover:text-primary-color hover:tracking-[3px];
+    @apply px-6 py-2 border-2 border-[#303030] font-semibold rounded-full uppercase text-xs tracking-widest text-gray-400 transition-all hover:border-primary-color hover:text-primary-color hover:tracking-[3px];
   }
 
   .heroButtonInversed {

@@ -10,7 +10,7 @@ type Props = {
 
 export function Projects({ projects }: Props) {
   return (
-    <div className="h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
+    <div className="md:h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
       <h3 className="brand-title text-center pt-24">Projects</h3>
 
       <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
@@ -72,6 +72,13 @@ export function Projects({ projects }: Props) {
               <a target="_blank" href={project.linkToBuild} rel="noreferrer">
                 <button className="heroButtonInversed mx-5 mt-5">Visite project</button>
               </a>
+              {project.linkToGithub ? (
+                <a target="_blank" href={project.linkToGithub} rel="noreferrer">
+                  <button className="heroButton mx-5 mt-5">Source code</button>
+                </a>
+              ) : (
+                <></>
+              )}
               <p className="text-sm text-primary-color text-center">
                 Project {i + 1} of {projects.length}
               </p>{" "}
