@@ -1,0 +1,16 @@
+{
+  "ROUTE": {
+    "HOME": "/",
+    "PROJECTS": "/project"
+  },
+  "URL": {
+    "SOCIAL": {
+      "BEHANCE": "https://www.behance.net/emji",
+      "LINKEDIN": "https://www.linkedin.com/in/matondo-julien-a9275b188/",
+      "EMAIL": "julien.matondo-tezolo@student.ehb.be"
+    }
+  },
+  "NOTIFICATION": {
+    "DELAY": "5000"
+  }
+}

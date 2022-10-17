@@ -31,7 +31,7 @@ module.exports = {
     "max-len": [
       "error",
       {
-        code: 120,
+        code: 140,
         ignoreComments: true,
         ignorePattern: '.*className=".{80,}"',
       },
@@ -47,7 +47,7 @@ module.exports = {
     "newline-after-var": ["error", "always"],
     "react/jsx-equals-spacing": [2, "never"],
     "react/jsx-no-duplicate-props": 1,
-    "react/jsx-max-props-per-line": [1, { maximum: 3 }],
+    "react/jsx-max-props-per-line": [1, { maximum: 5, when: "always" }],
     "react/display-name": [0, { ignoreTranspilerName: true }],
     "react/prop-types": 0,
     "react/forbid-prop-types": 0,
@@ -68,6 +68,14 @@ module.exports = {
         components: ["Link"],
         specialLink: ["hrefLeft", "hrefRight"],
         aspects: ["invalidHref", "preferButton"],
+      },
+    ],
+    "no-console": ["error", { allow: ["warn", "error"] }],
+    "no-restricted-syntax": [
+      "error",
+      {
+        selector: "CallExpression[callee.object.name='console'][callee.property.name!=/^(log|warn|error|info|trace)$/]",
+        message: "Unexpected property on console object was called",
       },
     ],
   },
