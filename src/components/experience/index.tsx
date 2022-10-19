@@ -9,6 +9,22 @@ type Props = {
 };
 
 export function Experience({ experiences }: Props) {
+  const carouselRef = React.useRef<HTMLInputElement>(null);
+
+  const carouselItem = React.useRef<HTMLInputElement>(null);
+
+  const handleOnPrevClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel.scrollLeft -= carouselItem.current.clientWidth;
+  };
+
+  const handleOnNextClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel.scrollLeft += carouselItem.current.clientWidth;
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
