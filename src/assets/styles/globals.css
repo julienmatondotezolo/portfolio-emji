@@ -15,6 +15,10 @@
 }
 
 @layer components {
+  .carouselButton {
+    @apply inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#909090] group-hover:bg-primary-color group-hover:ring-white group-focus:ring-2 group-focus:ring-white group-focus:bg-primary-color-light group-focus:outline-none;
+  }
+
   .customScrollbar {
     @apply scrollbar-track-[#252525] scrollbar-thumb-primary-color scrollbar-thumb-rounded-full scrollbar-thin;
   }
