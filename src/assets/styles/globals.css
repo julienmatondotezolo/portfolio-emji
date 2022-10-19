@@ -16,7 +16,11 @@
 
 @layer components {
   .carouselButton {
-    @apply inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-[#909090] group-hover:bg-primary-color group-hover:ring-white group-focus:ring-2 group-focus:ring-white group-focus:bg-primary-color-light group-focus:outline-none;
+    @apply inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-transparent ring-primary-color ring-2 group-hover:bg-primary-color group-focus:ring-2 group-focus:ring-white group-focus:bg-transparent group-focus:outline-none;
+  }
+
+  .carouselArrow {
+    @apply w-5 h-5 sm:w-6 sm:h-6 text-primary-color group-hover:text-gray-800 group-focus:text-white;
   }
 
   .customScrollbar {

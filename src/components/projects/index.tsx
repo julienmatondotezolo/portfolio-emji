@@ -25,7 +25,7 @@ export function Projects({ projects }: Props) {
         <span className="carouselButton">
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            className="carouselArrow"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -45,7 +45,7 @@ export function Projects({ projects }: Props) {
         <span className="carouselButton">
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            className="carouselArrow"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -56,7 +56,8 @@ export function Projects({ projects }: Props) {
           <span className="sr-only">Next</span>
         </span>
       </button>
-      <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
+      {/* <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar"> */}
+      <div className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
         {projects.map((project, i) => (
           <div
             key={project._id}
