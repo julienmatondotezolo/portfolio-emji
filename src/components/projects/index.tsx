@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React from "react";
+import React, { useRef } from "react";
 
 import { Project, urlFor } from "../../config";
 
@@ -9,9 +9,20 @@ type Props = {
 };
 
 export function Projects({ projects }: Props) {
-  const handleOnNextClick = () => {};
+  const carouselRef = useRef();
+  const carouselItem = useRef();
 
-  const handleOnPrevClick = () => {};
+  const handleOnPrevClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel.scrollLeft -= carouselItem?.current?.clientWidth;
+  };
+
+  const handleOnNextClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel.scrollLeft += carouselItem?.current?.clientWidth;
+  };
 
   return (
     <div className="md:h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
@@ -56,12 +67,15 @@ export function Projects({ projects }: Props) {
           <span className="sr-only">Next</span>
         </span>
       </button>
-      {/* <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar"> */}
-      <div className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
+      <div
+        ref={carouselRef}
+        className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar scroll-smooth"
+      >
         {projects.map((project, i) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center h-screen"
+            ref={carouselItem}
+            className="flex flex-col basis-[100%] flex-shrink-0 snap-center space-y-5 items-center h-screen"
           >
             <motion.figure
               initial={{
