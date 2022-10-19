@@ -9,19 +9,20 @@ type Props = {
 };
 
 export function Projects({ projects }: Props) {
-  const carouselRef = useRef();
-  const carouselItem = useRef();
+  const carouselRef = React.useRef<HTMLInputElement>(null);
+
+  const carouselItem = React.useRef<HTMLInputElement>(null);
 
   const handleOnPrevClick = () => {
     const carousel = carouselRef?.current;
 
-    carousel.scrollLeft -= carouselItem?.current?.clientWidth;
+    carousel.scrollLeft -= carouselItem.current.clientWidth;
   };
 
   const handleOnNextClick = () => {
     const carousel = carouselRef?.current;
 
-    carousel.scrollLeft += carouselItem?.current?.clientWidth;
+    carousel.scrollLeft += carouselItem.current.clientWidth;
   };
 
   return (
