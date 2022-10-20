@@ -9,9 +9,21 @@ type Props = {
 };
 
 export function Projects({ projects }: Props) {
-  const handleOnNextClick = () => {};
+  const carouselRef = React.useRef<HTMLInputElement>(null);
 
-  const handleOnPrevClick = () => {};
+  const carouselItem = React.useRef<HTMLInputElement>(null);
+
+  const handleOnPrevClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel!.scrollLeft -= carouselItem.current!.clientWidth;
+  };
+
+  const handleOnNextClick = () => {
+    const carousel = carouselRef?.current;
+
+    carousel!.scrollLeft += carouselItem.current!.clientWidth;
+  };
 
   return (
     <div className="md:h-screen box-border relative flex flex-col overflow-hidden text-left max-w-full mx-auto items-center space-y-10 z-0 px-5 md:px-10">
@@ -22,16 +34,16 @@ export function Projects({ projects }: Props) {
         className="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-prev
       >
-        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="carouselButton">
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            className="carouselArrow"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M15 19l-7-7 7-7"></path>
           </svg>
           <span className="sr-only">Previous</span>
         </span>
@@ -42,25 +54,29 @@ export function Projects({ projects }: Props) {
         className="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
         data-carousel-next
       >
-        <span className="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+        <span className="carouselButton">
           <svg
             aria-hidden="true"
-            className="w-5 h-5 text-white sm:w-6 sm:h-6 dark:text-gray-800"
+            className="carouselArrow"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
             xmlns="http://www.w3.org/2000/svg"
           >
-            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="1" d="M9 5l7 7-7 7"></path>
           </svg>
           <span className="sr-only">Next</span>
         </span>
       </button>
-      <div className="relative w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar">
+      <div
+        ref={carouselRef}
+        className="w-full h-fit flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20 customScrollbar scroll-smooth"
+      >
         {projects.map((project, i) => (
           <div
             key={project._id}
-            className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center h-screen"
+            ref={carouselItem}
+            className="flex flex-col basis-[100%] flex-shrink-0 snap-center space-y-5 items-center h-screen"
           >
             <motion.figure
               initial={{

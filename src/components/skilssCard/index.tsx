@@ -11,7 +11,7 @@ type Props = {
 export function SkilssCard({ skill }: Props) {
   return (
     <figure className="group relative flex flex-col space-y-2 items-center object-cover cursor-pointer">
-      <div className="rounded-full bg-[#252525] h-12 w-12 md:w-16 md:h-16 xl:w-24 xl:h-24">
+      <div className="rounded-full bg-[#252525] h-8 w-8 md:w-16 md:h-16 xl:w-24 xl:h-24">
         <Image
           className="rounded-full"
           src={urlFor(skill?.image).url()}
@@ -22,7 +22,7 @@ export function SkilssCard({ skill }: Props) {
         />
       </div>
 
-      <div className="absolute top-[-10px] opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-12 w-12 md:w-16 md:h-16 xl:w-24 xl:h-24 rounded-full z-0">
+      <div className="absolute top-[-10px] opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white h-8 w-8 md:w-16 md:h-16 xl:w-24 xl:h-24 rounded-full z-0">
         <div className="flex items-center justify-center h-full">
           <p className="text-sm md:text-xl font-bold text-primary-color opacity-100">{skill.progress}%</p>
         </div>
