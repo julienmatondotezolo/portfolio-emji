@@ -27,7 +27,7 @@ export function Skills({ skills }: Props) {
         Click on of my skills
       </h3>
 
-      <div className="absolute top-52 grid grid-cols-4 md:grid-cols-8 gap-x-2 md:gap-x-5 gap-y-10">
+      <div className="absolute top-52 grid grid-cols-6 md:grid-cols-8 gap-x-2 md:gap-x-5 gap-y-10">
         {skills.map((skill) => (
           <SkilssCard key={skill._id} skill={skill} />
         ))}
