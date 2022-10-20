@@ -14,13 +14,13 @@ export function Experience({ experiences }: Props) {
   const carouselItem = React.useRef<HTMLInputElement>(null);
 
   const handleOnPrevClick = () => {
-    const carousel = carouselRef?.current;
+    const carousel = carouselRef.current;
 
     carousel.scrollLeft -= carouselItem.current.clientWidth;
   };
 
   const handleOnNextClick = () => {
-    const carousel = carouselRef?.current;
+    const carousel = carouselRef.current;
 
     carousel.scrollLeft += carouselItem.current.clientWidth;
   };
@@ -76,9 +76,12 @@ export function Experience({ experiences }: Props) {
           <span className="sr-only">Next</span>
         </span>
       </button>
-      <div className="w-full flex box-border py-6 space-x-5 overflow-x-scroll snap-x snap-mandatory customScrollbar">
+      <div
+        ref={carouselRef}
+        className="w-full flex box-border py-6 space-x-5 overflow-x-scroll snap-x snap-mandatory customScrollbar scroll-smooth"
+      >
         {experiences.map((experience) => (
-          <ExperienceCard key={experience._id} experience={experience} />
+          <ExperienceCard key={experience._id} ref={carouselItem} experience={experience} />
         ))}
       </div>
     </motion.div>
