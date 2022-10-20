@@ -16,13 +16,13 @@ export function Experience({ experiences }: Props) {
   const handleOnPrevClick = () => {
     const carousel = carouselRef.current;
 
-    carousel.scrollLeft -= carouselItem.current.clientWidth;
+    carousel!.scrollLeft -= carouselItem.current!.clientWidth;
   };
 
   const handleOnNextClick = () => {
     const carousel = carouselRef.current;
 
-    carousel.scrollLeft += carouselItem.current.clientWidth;
+    carousel!.scrollLeft += carouselItem!.current!.clientWidth;
   };
 
   return (

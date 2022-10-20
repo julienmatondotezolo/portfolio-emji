@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import React, { useRef } from "react";
+import React from "react";
 
 import { Project, urlFor } from "../../config";
 
@@ -16,13 +16,13 @@ export function Projects({ projects }: Props) {
   const handleOnPrevClick = () => {
     const carousel = carouselRef?.current;
 
-    carousel.scrollLeft -= carouselItem.current.clientWidth;
+    carousel!.scrollLeft -= carouselItem.current!.clientWidth;
   };
 
   const handleOnNextClick = () => {
     const carousel = carouselRef?.current;
 
-    carousel.scrollLeft += carouselItem.current.clientWidth;
+    carousel!.scrollLeft += carouselItem.current!.clientWidth;
   };
 
   return (
