@@ -29,6 +29,9 @@
     "tailwind-scrollbar": "^3.1.0",
     "tailwindcss-animate": "^1.0.7"
   },
+  "engines": {
+    "node": ">=20.x"
+  },
   "devDependencies": {
     "@types/node": "^22.10.0",
     "@types/react": "^18.3.12",
