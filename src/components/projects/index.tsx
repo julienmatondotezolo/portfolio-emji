@@ -121,15 +121,7 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
               </motion.a>
             )}
 
-            {project.caseStudyUrl && (
-              <motion.button
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-                className="px-4 py-2 bg-transparent border border-gray-600 hover:border-primary-500 text-gray-300 hover:text-white rounded-lg transition-colors"
-              >
-                {t('projects.caseStudy')}
-              </motion.button>
-            )}
+
           </div>
         </div>
       </div>
@@ -158,7 +150,6 @@ export function Projects({ projects: sanityProjects }: Props) {
       features: [0, 1, 2, 3, 4].map(i => t(`projects.adaSystems.features.${i}`)),
       status: t('projects.adaSystems.status'),
       demoUrl: 'https://www.adasystems.app/',
-      caseStudyUrl: '/case-studies',
       icon: <ChefHatIcon className="w-8 h-8" />,
       color: 'from-green-500 to-emerald-600'
     },
@@ -185,7 +176,6 @@ export function Projects({ projects: sanityProjects }: Props) {
       technologies: ['Playwright', 'Selenium', 'TypeScript', 'Docker', 'CI/CD'],
       features: [0, 1, 2, 3, 4].map(i => t(`projects.testAutomationProject.features.${i}`)),
       status: t('projects.testAutomationProject.status'),
-      caseStudyUrl: '/case-studies',
       icon: <UsersIcon className="w-8 h-8" />,
       color: 'from-blue-500 to-cyan-600'
     }

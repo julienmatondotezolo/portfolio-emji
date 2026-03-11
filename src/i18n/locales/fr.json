@@ -240,7 +240,8 @@
     "thankYou": "Merci !",
     "thankYouMessage": "Votre message a été envoyé avec succès. Je répondrai rapidement pour discuter de votre projet.",
     "sendAnother": "Envoyer un Autre Message",
-    "callDirectButton": "Appel Direct : +32 477 95 34 30"
+    "callDirectButton": "Appel Direct : +32 477 95 34 30",
+    "sendError": "Une erreur est survenue. Veuillez réessayer ou nous contacter directement à info@emji.be."
   },
   "services": {
     "badge": "Portfolio Solutions IA",

@@ -240,7 +240,8 @@
     "thankYou": "Dank U!",
     "thankYouMessage": "Uw bericht is succesvol verzonden. Ik reageer snel om uw project te bespreken.",
     "sendAnother": "Nog Een Bericht Sturen",
-    "callDirectButton": "Direct Bellen: +32 477 95 34 30"
+    "callDirectButton": "Direct Bellen: +32 477 95 34 30",
+    "sendError": "Er is iets misgegaan. Probeer het opnieuw of mail ons rechtstreeks op info@emji.be."
   },
   "services": {
     "badge": "AI Oplossingen Portfolio",

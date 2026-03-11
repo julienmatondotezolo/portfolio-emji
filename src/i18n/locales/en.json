@@ -240,7 +240,8 @@
     "thankYou": "Thank You!",
     "thankYouMessage": "Your message has been sent successfully. I'll respond quickly to discuss your project.",
     "sendAnother": "Send Another Message",
-    "callDirectButton": "Call Direct: +32 477 95 34 30"
+    "callDirectButton": "Call Direct: +32 477 95 34 30",
+    "sendError": "Something went wrong. Please try again or email us directly at info@emji.be."
   },
   "services": {
     "badge": "AI Solutions Portfolio",

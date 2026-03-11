@@ -30,9 +30,10 @@ type Props = {
 };
 
 export function Contact({ pageInfo }: Props) {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const {
     register,
@@ -68,36 +69,24 @@ export function Contact({ pageInfo }: Props) {
 
   const onSubmit: SubmitHandler<Inputs> = async (formData) => {
     setIsLoading(true);
+    setError(null);
 
-    const emailSubject = `${formData.projectType} Inquiry - ${formData.company || formData.name}`;
-    const emailBody = `
-Hi Julien,
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ ...formData, locale }),
+      });
 
-I'm interested in discussing a project with you.
+      if (!res.ok) throw new Error('Failed to send');
 
-Project Details:
-• Name: ${formData.name}
-• Company: ${formData.company || 'Not specified'}
-• Email: ${formData.email}
-• Project Type: ${formData.projectType}
-• Budget Range: ${formData.budget || 'Not specified'}
-• Timeline: ${formData.timeline || 'Not specified'}
-
-Message:
-${formData.message}
-
-Looking forward to hearing from you!
-
-Best regards,
-${formData.name}
-    `.trim();
-
-    setTimeout(() => {
-      window.location.href = `mailto:info@emji.be?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
-      setIsLoading(false);
       setIsSubmitted(true);
       reset();
-    }, 1000);
+    } catch {
+      setError(t('contact.sendError'));
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   if (isSubmitted) {
@@ -284,6 +273,10 @@ ${formData.name}
                 />
                 {errors.message && <span className="text-red-400 text-sm">{errors.message.message}</span>}
               </div>
+
+              {error && (
+                <p className="text-red-400 text-sm text-center">{error}</p>
+              )}
 
               <motion.button
                 whileHover={{ scale: 1.02 }}
