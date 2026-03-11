@@ -46,7 +46,9 @@
     "efficiencyGain": "Efficiency Gain",
     "testCoverage": "Test Coverage",
     "bugReduction": "Bug Reduction",
-    "coreExpertise": "Core Expertise"
+    "coreExpertise": "Core Expertise",
+    "actionOverWords": "action over words",
+    "resultsOverProcess": "results over process"
   },
   "projects": {
     "badge": "Success Stories",
@@ -210,10 +212,10 @@
       "5": "Other"
     },
     "budgetRanges": {
-      "0": "Under \u20ac5,000",
-      "1": "\u20ac5,000 - \u20ac15,000",
-      "2": "\u20ac15,000 - \u20ac50,000",
-      "3": "\u20ac50,000+",
+      "0": "Under €5,000",
+      "1": "€5,000 - €15,000",
+      "2": "€15,000 - €50,000",
+      "3": "€50,000+",
       "4": "Not sure yet"
     },
     "timelineOptions": {
@@ -260,32 +262,56 @@
       "adaMenu": {
         "title": "AdaMenu",
         "description": "Smart restaurant menu management with real-time updates",
-        "features": { "0": "Dynamic menus", "1": "Multi-language support", "2": "QR integration" }
+        "features": {
+          "0": "Dynamic menus",
+          "1": "Multi-language support",
+          "2": "QR integration"
+        }
       },
       "adaStock": {
         "title": "AdaStock",
         "description": "AI-powered inventory management for restaurants",
-        "features": { "0": "Smart tracking", "1": "Predictive analytics", "2": "Automated alerts" }
+        "features": {
+          "0": "Smart tracking",
+          "1": "Predictive analytics",
+          "2": "Automated alerts"
+        }
       },
       "adaStaff": {
         "title": "AdaStaff",
         "description": "Intelligent employee scheduling and management",
-        "features": { "0": "Smart scheduling", "1": "Time tracking", "2": "Performance metrics" }
+        "features": {
+          "0": "Smart scheduling",
+          "1": "Time tracking",
+          "2": "Performance metrics"
+        }
       },
       "adaPhone": {
         "title": "AdaPhone",
         "description": "AI receptionist for restaurants and businesses",
-        "features": { "0": "Voice AI", "1": "24/7 availability", "2": "Order management" }
+        "features": {
+          "0": "Voice AI",
+          "1": "24/7 availability",
+          "2": "Order management"
+        }
       },
       "adaPlanning": {
         "title": "AdaPlanning",
         "description": "Advanced staff planning and scheduling system",
-        "features": { "0": "Calendar integration", "1": "Conflict resolution", "2": "Mobile app" }
+        "features": {
+          "0": "Calendar integration",
+          "1": "Conflict resolution",
+          "2": "Mobile app"
+        }
       },
       "customAi": {
         "title": "Custom AI Solutions",
         "description": "Tailored automation for your specific business needs",
-        "features": { "0": "Custom development", "1": "AI integration", "2": "Full support" }
+        "features": {
+          "0": "Custom development",
+          "1": "AI integration",
+          "2": "Full support"
+        }
       }
     }
   },
@@ -324,47 +350,99 @@
       "e2e": {
         "title": "End-to-End Testing",
         "description": "Comprehensive test automation covering entire user journeys",
-        "features": { "0": "Cross-browser testing", "1": "Mobile automation", "2": "API integration" }
+        "features": {
+          "0": "Cross-browser testing",
+          "1": "Mobile automation",
+          "2": "API integration"
+        }
       },
       "api": {
         "title": "API Testing",
         "description": "Robust API testing frameworks for microservices architectures",
-        "features": { "0": "REST/GraphQL testing", "1": "Performance validation", "2": "Contract testing" }
+        "features": {
+          "0": "REST/GraphQL testing",
+          "1": "Performance validation",
+          "2": "Contract testing"
+        }
       },
       "performance": {
         "title": "Performance Testing",
         "description": "Load and stress testing to ensure application scalability",
-        "features": { "0": "Load testing", "1": "Stress testing", "2": "Performance monitoring" }
+        "features": {
+          "0": "Load testing",
+          "1": "Stress testing",
+          "2": "Performance monitoring"
+        }
       },
       "security": {
         "title": "Security Testing",
         "description": "Automated security testing to identify vulnerabilities",
-        "features": { "0": "OWASP compliance", "1": "Penetration testing", "2": "Vulnerability scanning" }
+        "features": {
+          "0": "OWASP compliance",
+          "1": "Penetration testing",
+          "2": "Vulnerability scanning"
+        }
       },
       "cicd": {
         "title": "CI/CD Integration",
         "description": "Seamless integration with development pipelines",
-        "features": { "0": "Pipeline automation", "1": "Parallel execution", "2": "Reporting integration" }
+        "features": {
+          "0": "Pipeline automation",
+          "1": "Parallel execution",
+          "2": "Reporting integration"
+        }
       },
       "aiPowered": {
         "title": "AI-Powered Testing",
         "description": "Next-generation testing with AI and machine learning",
-        "features": { "0": "Smart test generation", "1": "Self-healing tests", "2": "Predictive analytics" }
+        "features": {
+          "0": "Smart test generation",
+          "1": "Self-healing tests",
+          "2": "Predictive analytics"
+        }
       }
     },
     "benefits": {
-      "faster": { "title": "80% Faster", "description": "Test execution time" },
-      "bugDetection": { "title": "95% Bug Detection", "description": "Before production" },
-      "reliability": { "title": "99.9% Reliability", "description": "Test accuracy rate" },
-      "costReduction": { "title": "60% Cost Reduction", "description": "Testing overhead" }
+      "faster": {
+        "title": "80% Faster",
+        "description": "Test execution time"
+      },
+      "bugDetection": {
+        "title": "95% Bug Detection",
+        "description": "Before production"
+      },
+      "reliability": {
+        "title": "99.9% Reliability",
+        "description": "Test accuracy rate"
+      },
+      "costReduction": {
+        "title": "60% Cost Reduction",
+        "description": "Testing overhead"
+      }
     },
     "processTitle": "My",
     "processTitleHighlight": "Testing Process",
     "process": {
-      "0": { "step": "01", "title": "Analysis", "desc": "Requirements analysis and test strategy planning" },
-      "1": { "step": "02", "title": "Framework", "desc": "Custom test automation framework development" },
-      "2": { "step": "03", "title": "Implementation", "desc": "Test script creation and CI/CD integration" },
-      "3": { "step": "04", "title": "Optimization", "desc": "Continuous improvement and maintenance" }
+      "0": {
+        "step": "01",
+        "title": "Analysis",
+        "desc": "Requirements analysis and test strategy planning"
+      },
+      "1": {
+        "step": "02",
+        "title": "Framework",
+        "desc": "Custom test automation framework development"
+      },
+      "2": {
+        "step": "03",
+        "title": "Implementation",
+        "desc": "Test script creation and CI/CD integration"
+      },
+      "3": {
+        "step": "04",
+        "title": "Optimization",
+        "desc": "Continuous improvement and maintenance"
+      }
     },
     "technologiesLabel": "Technologies:",
     "ctaTitle": "Ready to Accelerate Your Testing?",
@@ -388,7 +466,7 @@
     "items": {
       "istqb": {
         "title": "ISTQB Certified Tester Foundation Level (CTFL)",
-        "issuer": "iSQI Group \u2014 International Software Testing Qualifications Board",
+        "issuer": "iSQI Group — International Software Testing Qualifications Board",
         "description": "Internationally recognized certification covering software testing fundamentals, test design techniques, test management, and tool support for testing."
       },
       "mct": {
@@ -416,7 +494,7 @@
         "subtitle": "Complete Restaurant Automation Ecosystem",
         "category": "AI Solutions",
         "description": "Built a comprehensive AI-powered platform for restaurant management, integrating menu management, staff scheduling, inventory tracking, and social media automation into a unified ecosystem.",
-        "challenge": "Restaurants face fragmented tooling for daily operations \u2014 separate systems for menus, staff scheduling, inventory, and marketing that don't communicate with each other. This leads to inefficiency, errors, and wasted time on administrative tasks.",
+        "challenge": "Restaurants face fragmented tooling for daily operations — separate systems for menus, staff scheduling, inventory, and marketing that don't communicate with each other. This leads to inefficiency, errors, and wasted time on administrative tasks.",
         "solution": {
           "0": "Developed AdaMenu for dynamic, real-time menu management with multi-language support",
           "1": "Built AdaPlanning for intelligent staff scheduling with conflict resolution",
@@ -425,10 +503,26 @@
           "4": "Integrated all services into a unified dashboard with centralized authentication"
         },
         "results": {
-          "0": { "metric": "60%", "label": "Time Savings", "description": "Reduction in administrative tasks" },
-          "1": { "metric": "6+", "label": "Integrated Services", "description": "Complete ecosystem implementation" },
-          "2": { "metric": "+150%", "label": "Social Engagement", "description": "Through AI-generated content" },
-          "3": { "metric": "99.9%", "label": "Uptime", "description": "Platform reliability" }
+          "0": {
+            "metric": "60%",
+            "label": "Time Savings",
+            "description": "Reduction in administrative tasks"
+          },
+          "1": {
+            "metric": "6+",
+            "label": "Integrated Services",
+            "description": "Complete ecosystem implementation"
+          },
+          "2": {
+            "metric": "+150%",
+            "label": "Social Engagement",
+            "description": "Through AI-generated content"
+          },
+          "3": {
+            "metric": "99.9%",
+            "label": "Uptime",
+            "description": "Platform reliability"
+          }
         }
       },
       "testing": {
@@ -446,16 +540,32 @@
           "5": "Created performance testing strategies with JMeter"
         },
         "results": {
-          "0": { "metric": "80%", "label": "Faster Testing", "description": "Reduction in test execution time" },
-          "1": { "metric": "95%", "label": "Test Coverage", "description": "Automated test coverage achieved" },
-          "2": { "metric": "90%", "label": "Bug Reduction", "description": "Fewer bugs escaping to production" },
-          "3": { "metric": "75%", "label": "Faster Delivery", "description": "Accelerated release cycles" }
+          "0": {
+            "metric": "80%",
+            "label": "Faster Testing",
+            "description": "Reduction in test execution time"
+          },
+          "1": {
+            "metric": "95%",
+            "label": "Test Coverage",
+            "description": "Automated test coverage achieved"
+          },
+          "2": {
+            "metric": "90%",
+            "label": "Bug Reduction",
+            "description": "Fewer bugs escaping to production"
+          },
+          "3": {
+            "metric": "75%",
+            "label": "Faster Delivery",
+            "description": "Accelerated release cycles"
+          }
         }
       }
     }
   },
   "footer": {
-    "copyright": "\u00a9 2026 Julien Matondo. Delivering excellence in test automation and AI solutions."
+    "copyright": "© 2026 Julien Matondo. Delivering excellence in test automation and AI solutions."
   },
   "meta": {
     "title": "Julien Matondo - Test Automation Engineer & AI Solutions Architect",

@@ -6,6 +6,112 @@ import type { PageInfo } from '../../config';
 import { urlFor } from '../../config';
 import { useTranslation } from '../../i18n';
 
+type TFn = (key: string, params?: Record<string, string>) => string;
+
+function Bio1({ t }: { t: TFn }) {
+  const raw = t('about.bio1', {
+    name: '{{NAME}}', alias: '{{ALIAS}}', M: '{{M}}', J: '{{J}}',
+    emPronounce: '{{EM}}', jiPronounce: '{{JI}}', matondo: '{{MATONDO}}', julien: '{{JULIEN}}',
+  });
+  const parts = raw.split(/\{\{(\w+)\}\}/);
+  return (
+    <p>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return <React.Fragment key={i}>{part}</React.Fragment>;
+        switch (part) {
+          case 'NAME': return <span key={i} className="text-white font-semibold">Julien Matondo</span>;
+          case 'ALIAS': return <span key={i} className="text-primary-400 font-semibold">eMJi</span>;
+          case 'M': return <span key={i} className="text-white font-medium">M</span>;
+          case 'J': return <span key={i} className="text-white font-medium">J</span>;
+          case 'EM': return <span key={i} className="italic text-gray-400">&quot;eM&quot;</span>;
+          case 'JI': return <span key={i} className="italic text-gray-400">&quot;Ji&quot;</span>;
+          case 'MATONDO': return <React.Fragment key={i}><span className="text-primary-400">M</span>atondo</React.Fragment>;
+          case 'JULIEN': return <React.Fragment key={i}><span className="text-primary-400">J</span>ulien</React.Fragment>;
+          default: return part;
+        }
+      })}
+    </p>
+  );
+}
+
+function Bio2({ t }: { t: TFn }) {
+  const raw = t('about.bio2', { role: '{{ROLE}}', years: '{{YEARS}}' });
+  const parts = raw.split(/\{\{(\w+)\}\}/);
+  return (
+    <p>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return <React.Fragment key={i}>{part}</React.Fragment>;
+        switch (part) {
+          case 'ROLE': return <span key={i} className="text-primary-400 font-semibold">Test Automation Engineer</span>;
+          case 'YEARS': return <span key={i} className="text-white font-semibold">4+</span>;
+          default: return part;
+        }
+      })}
+    </p>
+  );
+}
+
+function Bio3({ t }: { t: TFn }) {
+  const raw = t('about.bio3', {
+    fluvius: '{{FLUVIUS}}', inami: '{{INAMI}}', devoteam: '{{DEVOTEAM}}',
+    efficiency: '{{EFF}}', bugReduction: '{{BUG}}',
+  });
+  const parts = raw.split(/\{\{(\w+)\}\}/);
+  return (
+    <p>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return <React.Fragment key={i}>{part}</React.Fragment>;
+        switch (part) {
+          case 'FLUVIUS': return <span key={i} className="text-primary-400 font-semibold">Fluvius</span>;
+          case 'INAMI': return <span key={i} className="text-primary-400 font-semibold">INAMI-RIZIV</span>;
+          case 'DEVOTEAM': return <span key={i} className="text-primary-400 font-semibold">Devoteam</span>;
+          case 'EFF': return <span key={i} className="text-green-400 font-semibold">80%+</span>;
+          case 'BUG': return <span key={i} className="text-green-400 font-semibold">90%</span>;
+          default: return part;
+        }
+      })}
+    </p>
+  );
+}
+
+function Bio4({ t }: { t: TFn }) {
+  const raw = t('about.bio4', {
+    playwright: '{{PW}}', selenium: '{{SE}}', cypress: '{{CY}}', cicd: '{{CI}}',
+  });
+  const parts = raw.split(/\{\{(\w+)\}\}/);
+  return (
+    <p>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return <React.Fragment key={i}>{part}</React.Fragment>;
+        switch (part) {
+          case 'PW': return <span key={i} className="text-white font-semibold">Playwright</span>;
+          case 'SE': return <span key={i} className="text-white font-semibold">Selenium</span>;
+          case 'CY': return <span key={i} className="text-white font-semibold">Cypress</span>;
+          case 'CI': return <span key={i} className="text-white font-semibold">CI/CD pipelines</span>;
+          default: return part;
+        }
+      })}
+    </p>
+  );
+}
+
+function Bio5({ t }: { t: TFn }) {
+  const raw = t('about.bio5', { action: '{{ACTION}}', results: '{{RESULTS}}' });
+  const parts = raw.split(/\{\{(\w+)\}\}/);
+  return (
+    <p>
+      {parts.map((part, i) => {
+        if (i % 2 === 0) return <React.Fragment key={i}>{part}</React.Fragment>;
+        switch (part) {
+          case 'ACTION': return <span key={i} className="text-white font-semibold">{t('about.actionOverWords')}</span>;
+          case 'RESULTS': return <span key={i} className="text-white font-semibold">{t('about.resultsOverProcess')}</span>;
+          default: return part;
+        }
+      })}
+    </p>
+  );
+}
+
 type Props = {
   pageInfo: PageInfo;
 };
@@ -78,49 +184,11 @@ export function About({ pageInfo }: Props) {
             </h3>
 
             <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
-              <p>
-                I&apos;m <span className="text-white font-semibold">Julien Matondo</span> — or as most people know me,{' '}
-                <span className="text-primary-400 font-semibold">eMJi</span>.
-                In French, the letters <span className="text-white font-medium">M</span> and{' '}
-                <span className="text-white font-medium">J</span> are pronounced{' '}
-                <span className="italic text-gray-400">&quot;eM&quot;</span> and{' '}
-                <span className="italic text-gray-400">&quot;Ji&quot;</span> — my initials from{' '}
-                <span className="text-primary-400">M</span>atondo{' '}
-                <span className="text-primary-400">J</span>ulien.
-              </p>
-              <p>
-                {t('about.bio2', {
-                  role: '',
-                  years: '',
-                }).replace(/\s+/g, ' ')}
-                {/* Render with inline formatting */}
-                An ISTQB-certified{' '}
-                <span className="text-primary-400 font-semibold">{t('about.subtitleHighlight').replace('AI Solutions Architect', 'Test Automation Engineer')}</span> with{' '}
-                <span className="text-white font-semibold">4+ years</span> of hands-on experience in enterprise
-                test automation and AI-driven solutions.
-              </p>
-
-              <p>
-                I&apos;ve worked with major organizations like <span className="text-primary-400 font-semibold">Fluvius</span>,{' '}
-                <span className="text-primary-400 font-semibold">INAMI-RIZIV</span>, and{' '}
-                <span className="text-primary-400 font-semibold">Devoteam</span>, delivering test automation frameworks
-                that improved testing efficiency by <span className="text-green-400 font-semibold">80%+</span> and
-                reduced bug escape rates by <span className="text-green-400 font-semibold">90%</span>.
-              </p>
-
-              <p>
-                My expertise spans <span className="text-white font-semibold">Playwright</span>,{' '}
-                <span className="text-white font-semibold">Selenium</span>,{' '}
-                <span className="text-white font-semibold">Cypress</span>, and{' '}
-                <span className="text-white font-semibold">CI/CD pipelines</span>. I also build AI-powered
-                automation solutions using tools like n8n, Claude, and OpenAI.
-              </p>
-
-              <p>
-                I believe in <span className="text-white font-semibold">action over words</span> and{' '}
-                <span className="text-white font-semibold">results over process</span>. Every solution I build
-                is designed to solve real problems and deliver measurable quality improvements.
-              </p>
+              <Bio1 t={t} />
+              <Bio2 t={t} />
+              <Bio3 t={t} />
+              <Bio4 t={t} />
+              <Bio5 t={t} />
             </div>
 
             {/* Key Stats */}
