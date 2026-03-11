@@ -1105,7 +1105,7 @@ export function Hero({ pageInfo }: Props) {
               <div className="relative mx-auto max-w-sm">
                 <div className="absolute inset-0 bg-primary-500/20 rounded-full blur-[80px] scale-75" />
                 <motion.div
-                  className="relative z-10 w-80 h-80 mx-auto rounded-full overflow-hidden border-2 border-primary-500/20 ring-1 ring-primary-500/10 ring-offset-4 ring-offset-dark-900"
+                  className="relative z-10 w-44 h-44 mx-auto rounded-full overflow-hidden border-2 border-primary-500/20 ring-1 ring-primary-500/10 ring-offset-4 ring-offset-dark-900"
                   whileHover={{ scale: 1.03 }}
                   transition={{ duration: 0.3 }}
                 >
@@ -1113,8 +1113,8 @@ export function Hero({ pageInfo }: Props) {
                     className="rounded-full object-cover w-full h-full"
                     src={profileImg}
                     alt="Julien Matondo"
-                    width={400}
-                    height={400}
+                    width={176}
+                    height={176}
                     priority
                     placeholder="blur"
                   />

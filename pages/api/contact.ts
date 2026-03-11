@@ -190,9 +190,9 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const validLocale: Locale = ['en', 'fr', 'nl'].includes(locale) ? locale : 'en';
 
   const autoReplySubject: Record<Locale, string> = {
-    en: 'Thank you for reaching out!',
-    fr: 'Merci de nous avoir contacté !',
-    nl: 'Bedankt voor uw bericht!',
+    en: 'Thanks for contacting me!',
+    fr: 'Merci de m\'avoir contacté !',
+    nl: 'Bedankt dat je contact met me hebt opgenomen!',
   };
 
   try {
