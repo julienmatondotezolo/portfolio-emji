@@ -15,3 +15,4 @@ export * from "./skills";
 export * from "./skilssCard";
 export * from "./testAutomation";
 export * from "./testimonials";
+export * from "./languageSwitcher";

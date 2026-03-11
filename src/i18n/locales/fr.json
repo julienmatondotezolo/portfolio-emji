@@ -1,0 +1,465 @@
+{
+  "hero": {
+    "availableBadge": "Disponible pour des projets",
+    "role": "Ing\u00e9nieur en Automatisation de Tests",
+    "description": "Conception de frameworks d'automatisation de tests de niveau entreprise et de solutions QA aliment\u00e9es par l'IA qui am\u00e9liorent la qualit\u00e9 et acc\u00e9l\u00e8rent les livraisons.",
+    "viewProjects": "Voir les Projets",
+    "contactMe": "Me Contacter",
+    "statYears": "Ann\u00e9es",
+    "statEfficiency": "Efficacit\u00e9",
+    "statCoverage": "Couverture",
+    "terminalTitle": "login.spec.ts",
+    "runScenario": "Lancer le Sc\u00e9nario",
+    "scenarios": {
+      "login": "login.spec.ts",
+      "checkout": "checkout.spec.ts",
+      "dashboard": "dashboard.spec.ts",
+      "contact": "contact.spec.ts"
+    },
+    "runDialog": {
+      "title": "Ex\u00e9cution du Sc\u00e9nario de Test",
+      "navigating": "Navigation vers",
+      "filling": "Remplissage de",
+      "clicking": "Clic sur",
+      "waiting": "Attente de",
+      "asserting": "V\u00e9rification",
+      "passed": "R\u00c9USSI",
+      "running": "En cours...",
+      "complete": "Test Termin\u00e9",
+      "close": "Fermer"
+    }
+  },
+  "header": {
+    "contactMe": "Me Contacter"
+  },
+  "about": {
+    "title": "\u00c0 propos de",
+    "titleHighlight": "Julien",
+    "subtitle": "Ing\u00e9nieur en Automatisation de Tests &",
+    "subtitleHighlight": "Architecte Solutions IA",
+    "bio1": "Je suis {name} \u2014 ou comme la plupart des gens me connaissent, {alias}. En fran\u00e7ais, les lettres {M} et {J} se prononcent {emPronounce} et {jiPronounce} \u2014 mes initiales de {matondo} {julien}.",
+    "bio2": "Un {role} certifi\u00e9 ISTQB avec {years} d'exp\u00e9rience pratique en automatisation de tests d'entreprise et solutions pilot\u00e9es par l'IA.",
+    "bio3": "J'ai travaill\u00e9 avec de grandes organisations comme {fluvius}, {inami} et {devoteam}, livrant des frameworks d'automatisation de tests qui ont am\u00e9lior\u00e9 l'efficacit\u00e9 des tests de {efficiency} et r\u00e9duit le taux de bugs en production de {bugReduction}.",
+    "bio4": "Mon expertise couvre {playwright}, {selenium}, {cypress} et {cicd}. Je construis \u00e9galement des solutions d'automatisation aliment\u00e9es par l'IA en utilisant des outils comme n8n, Claude et OpenAI.",
+    "bio5": "Je crois en {action} et en {results}. Chaque solution que je construis est con\u00e7ue pour r\u00e9soudre de vrais probl\u00e8mes et offrir des am\u00e9liorations de qualit\u00e9 mesurables.",
+    "yearsExperience": "Ann\u00e9es d'Exp\u00e9rience",
+    "efficiencyGain": "Gain d'Efficacit\u00e9",
+    "testCoverage": "Couverture de Tests",
+    "bugReduction": "R\u00e9duction des Bugs",
+    "coreExpertise": "Expertise Principale"
+  },
+  "projects": {
+    "badge": "R\u00e9ussites",
+    "title": "Projets IA",
+    "titleHighlight": "G\u00e9n\u00e9rant des R\u00e9sultats",
+    "description": "Des impl\u00e9mentations IA concr\u00e8tes qui g\u00e9n\u00e8rent des revenus, am\u00e9liorent l'efficacit\u00e9 et transforment les op\u00e9rations commerciales de nos clients.",
+    "efficiencyGain": "Gain d'Efficacit\u00e9",
+    "growthRate": "Taux de Croissance",
+    "hoursSaved": "Heures \u00c9conomis\u00e9es",
+    "aiAvailability": "Disponibilit\u00e9 IA",
+    "technologies": "Technologies",
+    "keyFeatures": "Fonctionnalit\u00e9s Cl\u00e9s",
+    "liveDemo": "D\u00e9mo Live",
+    "code": "Code",
+    "caseStudy": "\u00c9tude de Cas",
+    "ctaTitle": "Int\u00e9ress\u00e9 par une collaboration ?",
+    "ctaDescription": "Discutons de comment je peux vous aider avec vos besoins en automatisation de tests et IA. Du concept au d\u00e9ploiement, je livre des r\u00e9sultats.",
+    "ctaButton": "Me Contacter",
+    "adaSystems": {
+      "title": "ADA Systems Platform",
+      "subtitle": "\u00c9cosyst\u00e8me IA Complet pour Restaurants",
+      "description": "Plateforme IA int\u00e9gr\u00e9e avec 6+ services interconnect\u00e9s pour la gestion de restaurant, am\u00e9liorant significativement l'efficacit\u00e9 op\u00e9rationnelle.",
+      "status": "En Production",
+      "features": {
+        "0": "Gestion de Menu (AdaMenu)",
+        "1": "Planning du Personnel (AdaPlanning)",
+        "2": "Suivi d'Inventaire (AdaStock)",
+        "3": "R\u00e9ceptionniste IA (AdaPhone)",
+        "4": "Automatisation R\u00e9seaux Sociaux (Postagen)"
+      }
+    },
+    "postagen": {
+      "title": "Postagen AI",
+      "subtitle": "Plateforme d'Automatisation R\u00e9seaux Sociaux",
+      "description": "G\u00e9n\u00e9rateur de contenu r\u00e9seaux sociaux aliment\u00e9 par l'IA qui transforme des photos en publications engageantes avec planification automatique.",
+      "status": "Actif",
+      "features": {
+        "0": "Analyse Photo IA",
+        "1": "Contenu Multi-langues",
+        "2": "Formation Voix de Marque",
+        "3": "Planification Automatique",
+        "4": "Analytiques de Performance"
+      }
+    },
+    "testAutomationProject": {
+      "title": "Automatisation de Tests Entreprise",
+      "subtitle": "Solutions d'Ing\u00e9nierie QA",
+      "description": "Frameworks robustes d'automatisation de tests utilisant Playwright et Selenium, r\u00e9duisant le temps de test de 80% et am\u00e9liorant la d\u00e9tection de bugs de 90%.",
+      "status": "Solution Entreprise",
+      "features": {
+        "0": "Automatisation de Tests E2E",
+        "1": "Tests de R\u00e9gression Visuelle",
+        "2": "Tests API",
+        "3": "Int\u00e9gration CI/CD",
+        "4": "Rapports en Temps R\u00e9el"
+      }
+    }
+  },
+  "experience": {
+    "badge": "Parcours Professionnel",
+    "title": "Exp\u00e9rience",
+    "titleHighlight": "Professionnelle",
+    "jobs": {
+      "1": {
+        "jobTitle": "Ing\u00e9nieur de Tests Automatis\u00e9s",
+        "points": {
+          "0": "Tests E2E sur le projet FiDigO pour l'infrastructure de compteurs num\u00e9riques",
+          "1": "D\u00e9veloppement de suites de tests automatis\u00e9s avec Playwright",
+          "2": "Collaboration avec des \u00e9quipes transversales utilisant JIRA et l'int\u00e9gration SAP"
+        }
+      },
+      "2": {
+        "jobTitle": "Ing\u00e9nieur QA",
+        "points": {
+          "0": "Ing\u00e9nieur QA sur le projet EUNOME",
+          "1": "D\u00e9finition et ex\u00e9cution de strat\u00e9gies de test compl\u00e8tes",
+          "2": "Automatisation de tests avec Playwright et Selenium"
+        }
+      },
+      "3": {
+        "jobTitle": "Ing\u00e9nieur en Automatisation de Tests",
+        "points": {
+          "0": "Direction de la migration Selenium vers Playwright sur le projet Cascada 2.0",
+          "1": "Conception et maintenance de frameworks de tests automatis\u00e9s",
+          "2": "Impl\u00e9mentation de l'int\u00e9gration CI/CD pour l'automatisation des tests",
+          "3": "2+ ans d'ing\u00e9nierie continue en automatisation de tests"
+        }
+      },
+      "4": {
+        "jobTitle": "Ing\u00e9nieur en Automatisation de Tests",
+        "points": {
+          "0": "Construction de frameworks d'automatisation de tests avec Selenium WebDriver",
+          "1": "Gestion de tests avec int\u00e9gration XRAY et JIRA",
+          "2": "Impl\u00e9mentation de pipelines CI/CD avec Jenkins",
+          "3": "Application de JUnit pour les tests unitaires et d'int\u00e9gration"
+        }
+      },
+      "5": {
+        "jobTitle": "Analyste QA Junior",
+        "points": {
+          "0": "Assurance qualit\u00e9 pour applications tablettes de restaurant",
+          "1": "Tests manuels et rapports de bugs",
+          "2": "Contribution \u00e0 l'am\u00e9lioration de la qualit\u00e9 du produit"
+        }
+      },
+      "6": {
+        "jobTitle": "D\u00e9veloppeur Full Stack Junior (Stage)",
+        "points": {
+          "0": "Stage de d\u00e9veloppement full-stack",
+          "1": "Travail sur l'\u00e9diteur de templates Liquid",
+          "2": "Acquisition d'exp\u00e9rience en d\u00e9veloppement d'applications web"
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Comp\u00e9tences",
+    "titleHighlight": "Techniques",
+    "description": "Expertise compl\u00e8te en frameworks d'automatisation de tests, pipelines CI/CD et outils IA pour l'assurance qualit\u00e9 en entreprise.",
+    "categories": {
+      "testAutomation": "Automatisation de Tests",
+      "apiPerformance": "Tests API & Performance",
+      "cicd": "CI/CD & DevOps",
+      "testManagement": "Gestion de Tests",
+      "aiTools": "Outils IA & Automatisation",
+      "development": "D\u00e9veloppement"
+    }
+  },
+  "contact": {
+    "badge": "Connectons-nous",
+    "title": "D\u00e9marrez Votre",
+    "titleHighlight": "Projet Aujourd'hui",
+    "description": "Pr\u00eat \u00e0 transformer votre entreprise avec l'automatisation de tests ou des solutions IA ? Discutons de votre projet et cr\u00e9ons une solution qui g\u00e9n\u00e8re de vrais r\u00e9sultats.",
+    "nameLabel": "Nom *",
+    "namePlaceholder": "Votre nom complet",
+    "nameRequired": "Le nom est requis",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "votre.email@entreprise.com",
+    "emailRequired": "L'email est requis",
+    "emailInvalid": "Adresse email invalide",
+    "companyLabel": "Entreprise",
+    "companyPlaceholder": "Nom de votre entreprise",
+    "projectTypeLabel": "Type de Projet *",
+    "projectTypePlaceholder": "S\u00e9lectionnez le type de projet",
+    "projectTypeRequired": "Veuillez s\u00e9lectionner un type de projet",
+    "budgetLabel": "Fourchette Budg\u00e9taire",
+    "budgetPlaceholder": "S\u00e9lectionnez la fourchette budg\u00e9taire",
+    "timelineLabel": "D\u00e9lai",
+    "timelinePlaceholder": "Quand en avez-vous besoin ?",
+    "messageLabel": "Parlez-moi de votre projet",
+    "messagePlaceholder": "D\u00e9crivez vos objectifs, d\u00e9fis actuels et ce que vous souhaitez accomplir...",
+    "messageRequired": "Veuillez d\u00e9crire votre projet",
+    "sending": "Envoi en cours...",
+    "sendMessage": "Envoyer le Message",
+    "projectTypes": {
+      "0": "Automatisation de Tests Entreprise",
+      "1": "Automatisation IA pour Restaurants",
+      "2": "D\u00e9veloppement IA sur Mesure",
+      "3": "Consultation Uniquement",
+      "4": "Impl\u00e9mentation Compl\u00e8te de Plateforme",
+      "5": "Autre"
+    },
+    "budgetRanges": {
+      "0": "Moins de 5 000\u20ac",
+      "1": "5 000\u20ac - 15 000\u20ac",
+      "2": "15 000\u20ac - 50 000\u20ac",
+      "3": "50 000\u20ac+",
+      "4": "Pas encore s\u00fbr"
+    },
+    "timelineOptions": {
+      "0": "D\u00e8s que possible",
+      "1": "Sous 1 mois",
+      "2": "Sous 3 mois",
+      "3": "Sous 6 mois",
+      "4": "Simple exploration"
+    },
+    "directContact": "Pr\u00e9f\u00e9rez un Contact Direct ?",
+    "emailMe": "M'\u00e9crire",
+    "callDirect": "Appel Direct",
+    "responseTime": "Temps de R\u00e9ponse",
+    "within24": "Sous 24 heures",
+    "locatedIn": "Situ\u00e9 \u00e0",
+    "brussels": "Bruxelles, Belgique",
+    "whyWorkWithMe": "Pourquoi Travailler Avec Moi ?",
+    "provenSuccess": "Succ\u00e8s prouv\u00e9 avec des clients entreprise",
+    "yearsExpertise": "4+ ans d'expertise en automatisation",
+    "fastImplementation": "Impl\u00e9mentation rapide",
+    "personalizedSolutions": "Solutions personnalis\u00e9es",
+    "thankYou": "Merci !",
+    "thankYouMessage": "Votre message a \u00e9t\u00e9 envoy\u00e9 avec succ\u00e8s. Je r\u00e9pondrai rapidement pour discuter de votre projet.",
+    "sendAnother": "Envoyer un Autre Message",
+    "callDirectButton": "Appel Direct : +32 477 95 34 30"
+  },
+  "services": {
+    "badge": "Portfolio Solutions IA",
+    "title": "ADA Systems",
+    "titleHighlight": "Plateforme",
+    "description": "\u00c9cosyst\u00e8me IA complet pour restaurants et entreprises. De la gestion de menus \u00e0 la planification du personnel, des solutions int\u00e9gr\u00e9es qui optimisent l'efficacit\u00e9 op\u00e9rationnelle et la croissance.",
+    "visitAda": "Visiter ADA Systems",
+    "revenueGrowth": "Croissance du CA",
+    "clientSuccessRate": "Taux de R\u00e9ussite Client",
+    "aiServices": "Services IA",
+    "integratedPlatform": "Plateforme Int\u00e9gr\u00e9e",
+    "clientRetention": "Fid\u00e9lisation Client",
+    "satisfiedCustomers": "Clients Satisfaits",
+    "getStarted": "Commencer",
+    "ctaTitle": "Pr\u00eat \u00e0 Transformer Votre Entreprise avec l'IA ?",
+    "ctaDescription": "Rejoignez les restaurants et entreprises qui exploitent notre plateforme IA pour une efficacit\u00e9 am\u00e9lior\u00e9e et une croissance accrue. D\u00e9couvrez la diff\u00e9rence ADA Systems.",
+    "scheduleDemo": "Planifier une D\u00e9mo",
+    "items": {
+      "adaMenu": {
+        "title": "AdaMenu",
+        "description": "Gestion intelligente de menus de restaurant avec mises \u00e0 jour en temps r\u00e9el",
+        "features": { "0": "Menus dynamiques", "1": "Support multi-langues", "2": "Int\u00e9gration QR" }
+      },
+      "adaStock": {
+        "title": "AdaStock",
+        "description": "Gestion d'inventaire aliment\u00e9e par l'IA pour restaurants",
+        "features": { "0": "Suivi intelligent", "1": "Analytique pr\u00e9dictive", "2": "Alertes automatis\u00e9es" }
+      },
+      "adaStaff": {
+        "title": "AdaStaff",
+        "description": "Planification et gestion intelligente des employ\u00e9s",
+        "features": { "0": "Planification intelligente", "1": "Suivi du temps", "2": "M\u00e9triques de performance" }
+      },
+      "adaPhone": {
+        "title": "AdaPhone",
+        "description": "R\u00e9ceptionniste IA pour restaurants et entreprises",
+        "features": { "0": "IA vocale", "1": "Disponibilit\u00e9 24/7", "2": "Gestion des commandes" }
+      },
+      "adaPlanning": {
+        "title": "AdaPlanning",
+        "description": "Syst\u00e8me avanc\u00e9 de planification du personnel",
+        "features": { "0": "Int\u00e9gration calendrier", "1": "R\u00e9solution de conflits", "2": "Application mobile" }
+      },
+      "customAi": {
+        "title": "Solutions IA sur Mesure",
+        "description": "Automatisation adapt\u00e9e \u00e0 vos besoins sp\u00e9cifiques",
+        "features": { "0": "D\u00e9veloppement sur mesure", "1": "Int\u00e9gration IA", "2": "Support complet" }
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "T\u00e9moignages de R\u00e9ussite",
+    "title": "Ce que Disent",
+    "titleHighlight": "Mes Clients",
+    "description": "De vrais r\u00e9sultats de vraies entreprises. D\u00e9couvrez comment nos solutions IA ont transform\u00e9 les op\u00e9rations et stimul\u00e9 la croissance des restaurants et entreprises en Belgique.",
+    "featuredSuccess": "R\u00e9ussite Phare",
+    "avgGrowth": "Croissance Moy.",
+    "clientRating": "Note Client",
+    "hoursSavedWeek": "Heures \u00c9conomis\u00e9es/Sem.",
+    "successRate": "Taux de R\u00e9ussite",
+    "ctaTitle": "Pr\u00eat \u00e0 Rejoindre Nos R\u00e9ussites ?",
+    "ctaDescription": "Discutons de comment obtenir des r\u00e9sultats similaires pour votre entreprise. Planifiez une consultation gratuite pour explorer les possibilit\u00e9s.",
+    "scheduleFree": "Consultation Gratuite",
+    "viewMore": "Voir Plus d'\u00c9tudes de Cas",
+    "items": {
+      "losteria": {
+        "quote": "Julien a compl\u00e8tement transform\u00e9 les op\u00e9rations de notre restaurant. La plateforme ADA Systems a augment\u00e9 notre efficacit\u00e9 de 400% et nous fait gagner plus de 30 heures par semaine. Les solutions IA se rentabilisent d\u00e8s le premier mois."
+      },
+      "restaurant": {
+        "quote": "Le framework d'automatisation de tests que Julien a construit a r\u00e9duit notre temps de QA de 80%. Son approche IA pour l'assurance qualit\u00e9 est r\u00e9volutionnaire. Nous pouvons maintenant d\u00e9ployer des mises \u00e0 jour quotidiennement au lieu d'hebdomadairement."
+      },
+      "tech": {
+        "quote": "L'impl\u00e9mentation IA sur mesure de Julien nous a aid\u00e9 \u00e0 automatiser notre support client. Nous g\u00e9rons maintenant 10 fois plus de demandes avec la m\u00eame \u00e9quipe. Son expertise technique et sa compr\u00e9hension des affaires sont exceptionnelles."
+      }
+    }
+  },
+  "testAutomation": {
+    "badge": "Automatisation de Tests Entreprise",
+    "title": "Automatisation",
+    "titleHighlight": "de Tests",
+    "description": "Solutions d'automatisation de tests de niveau entreprise qui r\u00e9duisent le temps de test, am\u00e9liorent la qualit\u00e9 et acc\u00e9l\u00e8rent votre pipeline de livraison logicielle avec des outils et frameworks de pointe.",
+    "services": {
+      "e2e": {
+        "title": "Tests End-to-End",
+        "description": "Automatisation compl\u00e8te couvrant des parcours utilisateurs entiers",
+        "features": { "0": "Tests cross-navigateur", "1": "Automatisation mobile", "2": "Int\u00e9gration API" }
+      },
+      "api": {
+        "title": "Tests API",
+        "description": "Frameworks robustes pour architectures microservices",
+        "features": { "0": "Tests REST/GraphQL", "1": "Validation de performance", "2": "Tests de contrat" }
+      },
+      "performance": {
+        "title": "Tests de Performance",
+        "description": "Tests de charge et de stress pour assurer la scalabilit\u00e9",
+        "features": { "0": "Tests de charge", "1": "Tests de stress", "2": "Monitoring de performance" }
+      },
+      "security": {
+        "title": "Tests de S\u00e9curit\u00e9",
+        "description": "Tests de s\u00e9curit\u00e9 automatis\u00e9s pour identifier les vuln\u00e9rabilit\u00e9s",
+        "features": { "0": "Conformit\u00e9 OWASP", "1": "Tests de p\u00e9n\u00e9tration", "2": "Scan de vuln\u00e9rabilit\u00e9s" }
+      },
+      "cicd": {
+        "title": "Int\u00e9gration CI/CD",
+        "description": "Int\u00e9gration transparente avec les pipelines de d\u00e9veloppement",
+        "features": { "0": "Automatisation de pipeline", "1": "Ex\u00e9cution parall\u00e8le", "2": "Int\u00e9gration de rapports" }
+      },
+      "aiPowered": {
+        "title": "Tests Aliment\u00e9s par l'IA",
+        "description": "Tests de nouvelle g\u00e9n\u00e9ration avec IA et machine learning",
+        "features": { "0": "G\u00e9n\u00e9ration intelligente de tests", "1": "Tests auto-r\u00e9parateurs", "2": "Analytique pr\u00e9dictive" }
+      }
+    },
+    "benefits": {
+      "faster": { "title": "80% Plus Rapide", "description": "Temps d'ex\u00e9cution des tests" },
+      "bugDetection": { "title": "95% D\u00e9tection de Bugs", "description": "Avant la production" },
+      "reliability": { "title": "99,9% Fiabilit\u00e9", "description": "Taux de pr\u00e9cision des tests" },
+      "costReduction": { "title": "60% R\u00e9duction des Co\u00fbts", "description": "Charges de test" }
+    },
+    "processTitle": "Mon",
+    "processTitleHighlight": "Processus de Test",
+    "process": {
+      "0": { "step": "01", "title": "Analyse", "desc": "Analyse des exigences et planification de la strat\u00e9gie de test" },
+      "1": { "step": "02", "title": "Framework", "desc": "D\u00e9veloppement de framework d'automatisation de tests sur mesure" },
+      "2": { "step": "03", "title": "Impl\u00e9mentation", "desc": "Cr\u00e9ation de scripts de test et int\u00e9gration CI/CD" },
+      "3": { "step": "04", "title": "Optimisation", "desc": "Am\u00e9lioration continue et maintenance" }
+    },
+    "technologiesLabel": "Technologies :",
+    "ctaTitle": "Pr\u00eat \u00e0 Acc\u00e9l\u00e9rer Vos Tests ?",
+    "ctaDescription": "Discutons de comment l'automatisation de tests d'entreprise peut r\u00e9duire vos charges de test de 60% tout en am\u00e9liorant la qualit\u00e9 et la vitesse de livraison.",
+    "ctaButton": "Me Contacter"
+  },
+  "certificates": {
+    "badge": "Certifications Professionnelles",
+    "title": "Certifications &",
+    "titleHighlight": "Formation",
+    "description": "Professionnel des tests certifi\u00e9 ISTQB avec un dipl\u00f4me en Multim\u00e9dia & Technologies Cr\u00e9atives, combinant des fondations th\u00e9oriques solides avec une exp\u00e9rience pratique en entreprise.",
+    "certifiedTester": "Testeur Certifi\u00e9",
+    "foundationLevel": "Niveau Fondation",
+    "yearsExperience": "Ann\u00e9es d'Exp\u00e9rience",
+    "enterpriseQA": "QA Entreprise",
+    "multimediaCreativeTech": "Multim\u00e9dia & Tech. Cr\u00e9atives",
+    "erasmus": "Erasmushogeschool Brussel",
+    "credentialId": "Identifiant de Certification",
+    "verified": "V\u00e9rifi\u00e9",
+    "pending": "En attente",
+    "items": {
+      "istqb": {
+        "title": "ISTQB Testeur Certifi\u00e9 Niveau Fondation (CTFL)",
+        "issuer": "iSQI Group \u2014 International Software Testing Qualifications Board",
+        "description": "Certification internationalement reconnue couvrant les fondamentaux des tests logiciels, les techniques de conception de tests, la gestion des tests et le support d'outils de test."
+      },
+      "mct": {
+        "title": "Multim\u00e9dia & Technologies Cr\u00e9atives",
+        "issuer": "Erasmushogeschool Brussel",
+        "description": "Dipl\u00f4me de bachelier en Multim\u00e9dia & Technologies Cr\u00e9atives avec un accent sur le d\u00e9veloppement full-stack, les m\u00e9dias interactifs et les technologies web modernes."
+      }
+    }
+  },
+  "caseStudies": {
+    "backToPortfolio": "Retour au Portfolio",
+    "pageTitle": "\u00c9tudes de Cas",
+    "heroTitle": "Histoires de",
+    "heroTitleHighlight": "R\u00e9ussite",
+    "heroDescription": "Des impl\u00e9mentations concr\u00e8tes d\u00e9montrant des r\u00e9sultats mesurables gr\u00e2ce \u00e0 l'automatisation de tests et aux solutions aliment\u00e9es par l'IA.",
+    "theChallenge": "Le D\u00e9fi",
+    "theSolution": "La Solution",
+    "technologies": "Technologies",
+    "ctaTitle": "Pr\u00eat \u00e0 Cr\u00e9er Votre Histoire de R\u00e9ussite ?",
+    "ctaDescription": "Discutons de comment l'automatisation de tests et les solutions IA peuvent transformer votre entreprise.",
+    "ctaButton": "D\u00e9marrez Votre Projet",
+    "items": {
+      "ada": {
+        "title": "Plateforme ADA Systems",
+        "subtitle": "\u00c9cosyst\u00e8me Complet d'Automatisation pour Restaurants",
+        "category": "Solutions IA",
+        "description": "Construction d'une plateforme compl\u00e8te aliment\u00e9e par l'IA pour la gestion de restaurant, int\u00e9grant la gestion de menus, la planification du personnel, le suivi d'inventaire et l'automatisation des r\u00e9seaux sociaux dans un \u00e9cosyst\u00e8me unifi\u00e9.",
+        "challenge": "Les restaurants font face \u00e0 des outils fragment\u00e9s pour les op\u00e9rations quotidiennes \u2014 des syst\u00e8mes s\u00e9par\u00e9s pour les menus, la planification du personnel, l'inventaire et le marketing qui ne communiquent pas entre eux. Cela entra\u00eene des inefficacit\u00e9s, des erreurs et une perte de temps sur des t\u00e2ches administratives.",
+        "solution": {
+          "0": "D\u00e9veloppement d'AdaMenu pour la gestion dynamique de menus en temps r\u00e9el avec support multi-langues",
+          "1": "Construction d'AdaPlanning pour la planification intelligente du personnel avec r\u00e9solution de conflits",
+          "2": "Cr\u00e9ation d'AdaStock pour le suivi d'inventaire aliment\u00e9 par l'IA avec analytique pr\u00e9dictive",
+          "3": "Impl\u00e9mentation de Postagen pour la g\u00e9n\u00e9ration automatique de contenu r\u00e9seaux sociaux avec GPT-4 Vision",
+          "4": "Int\u00e9gration de tous les services dans un tableau de bord unifi\u00e9 avec authentification centralis\u00e9e"
+        },
+        "results": {
+          "0": { "metric": "60%", "label": "Gain de Temps", "description": "R\u00e9duction des t\u00e2ches administratives" },
+          "1": { "metric": "6+", "label": "Services Int\u00e9gr\u00e9s", "description": "Impl\u00e9mentation compl\u00e8te de l'\u00e9cosyst\u00e8me" },
+          "2": { "metric": "+150%", "label": "Engagement Social", "description": "Gr\u00e2ce au contenu g\u00e9n\u00e9r\u00e9 par l'IA" },
+          "3": { "metric": "99,9%", "label": "Disponibilit\u00e9", "description": "Fiabilit\u00e9 de la plateforme" }
+        }
+      },
+      "testing": {
+        "title": "Automatisation de Tests Entreprise",
+        "subtitle": "Transformation QA pour Services Gouvernementaux & Financiers",
+        "category": "Automatisation de Tests",
+        "description": "Direction d'initiatives d'automatisation de tests pour de grandes organisations gouvernementales et entreprises belges, migrant les tests manuels h\u00e9rit\u00e9s vers des frameworks automatis\u00e9s modernes et des pipelines CI/CD.",
+        "challenge": "Les grandes organisations s'appuyaient fortement sur des processus de tests manuels qui \u00e9taient lents, sujets aux erreurs et ne pouvaient pas \u00e9voluer avec la v\u00e9locit\u00e9 croissante de d\u00e9veloppement. Les frameworks Selenium h\u00e9rit\u00e9s n\u00e9cessitaient une modernisation, et les processus de gestion de tests manquaient d'int\u00e9gration avec les workflows de d\u00e9veloppement.",
+        "solution": {
+          "0": "Direction de la migration Selenium vers Playwright pour une fiabilit\u00e9 et vitesse am\u00e9lior\u00e9es",
+          "1": "Conception de frameworks E2E complets avec le mod\u00e8le Page Object",
+          "2": "Impl\u00e9mentation de l'int\u00e9gration CI/CD avec Jenkins et GitHub Actions",
+          "3": "Mise en place de la gestion de tests avec XRAY et JIRA pour une tra\u00e7abilit\u00e9 compl\u00e8te",
+          "4": "\u00c9tablissement de pratiques BDD avec Cucumber/Gherkin pour la collaboration avec les parties prenantes",
+          "5": "Cr\u00e9ation de strat\u00e9gies de tests de performance avec JMeter"
+        },
+        "results": {
+          "0": { "metric": "80%", "label": "Tests Plus Rapides", "description": "R\u00e9duction du temps d'ex\u00e9cution des tests" },
+          "1": { "metric": "95%", "label": "Couverture de Tests", "description": "Couverture automatis\u00e9e atteinte" },
+          "2": { "metric": "90%", "label": "R\u00e9duction des Bugs", "description": "Moins de bugs en production" },
+          "3": { "metric": "75%", "label": "Livraison Plus Rapide", "description": "Cycles de release acc\u00e9l\u00e9r\u00e9s" }
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Julien Matondo. Livrer l'excellence en automatisation de tests et solutions IA."
+  },
+  "meta": {
+    "title": "Julien Matondo - Ing\u00e9nieur en Automatisation de Tests & Architecte Solutions IA",
+    "description": "Ing\u00e9nieur expert en automatisation de tests et architecte solutions IA sp\u00e9cialis\u00e9 dans l'automatisation de tests d'entreprise, l'automatisation pour restaurants et les impl\u00e9mentations IA personnalis\u00e9es.",
+    "keywords": "Automatisation de Tests, IA, Automatisation, Technologie Restaurant, Tests Entreprise, D\u00e9veloppement Full Stack, Selenium, Cypress, Playwright"
+  }
+}

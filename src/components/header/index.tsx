@@ -5,12 +5,15 @@ import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 
 import { Social } from '../../config/';
+import { useTranslation } from '../../i18n';
+import { LanguageSwitcher } from '../languageSwitcher';
 
 type Props = {
   socials: Social[];
 };
 
 export function Header({ socials }: Props) {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -55,7 +58,7 @@ export function Header({ socials }: Props) {
             </button>
           </motion.div>
 
-          {/* Social Icons + Contact Button */}
+          {/* Social Icons + Language Switcher + Contact Button */}
           <motion.div
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
@@ -72,13 +75,14 @@ export function Header({ socials }: Props) {
                 style={{ height: 36, width: 36 }}
               />
             ))}
+            <LanguageSwitcher />
             <Link href="#contact">
               <motion.button
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
                 className="ml-2 px-6 py-2 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-primary-500/25"
               >
-                Contact Me
+                {t('header.contactMe')}
               </motion.button>
             </Link>
           </motion.div>

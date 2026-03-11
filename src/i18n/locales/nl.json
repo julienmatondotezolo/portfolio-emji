@@ -1,0 +1,465 @@
+{
+  "hero": {
+    "availableBadge": "Beschikbaar voor projecten",
+    "role": "Test Automatisering Ingenieur",
+    "description": "Ontwikkeling van enterprise-grade test automatisering frameworks en AI-aangedreven QA-oplossingen die kwaliteit verbeteren en levering versnellen.",
+    "viewProjects": "Bekijk Projecten",
+    "contactMe": "Contacteer Mij",
+    "statYears": "Jaren",
+    "statEfficiency": "Effici\u00ebntie",
+    "statCoverage": "Dekking",
+    "terminalTitle": "login.spec.ts",
+    "runScenario": "Scenario Uitvoeren",
+    "scenarios": {
+      "login": "login.spec.ts",
+      "checkout": "checkout.spec.ts",
+      "dashboard": "dashboard.spec.ts",
+      "contact": "contact.spec.ts"
+    },
+    "runDialog": {
+      "title": "Testscenario Uitvoeren",
+      "navigating": "Navigeren naar",
+      "filling": "Invullen van",
+      "clicking": "Klikken op",
+      "waiting": "Wachten op",
+      "asserting": "Controleren",
+      "passed": "GESLAAGD",
+      "running": "Bezig...",
+      "complete": "Test Voltooid",
+      "close": "Sluiten"
+    }
+  },
+  "header": {
+    "contactMe": "Contacteer Mij"
+  },
+  "about": {
+    "title": "Over",
+    "titleHighlight": "Julien",
+    "subtitle": "Test Automatisering Ingenieur &",
+    "subtitleHighlight": "AI Oplossingen Architect",
+    "bio1": "Ik ben {name} \u2014 of zoals de meeste mensen mij kennen, {alias}. In het Frans worden de letters {M} en {J} uitgesproken als {emPronounce} en {jiPronounce} \u2014 mijn initialen van {matondo} {julien}.",
+    "bio2": "Een ISTQB-gecertificeerde {role} met {years} praktijkervaring in enterprise test automatisering en AI-gedreven oplossingen.",
+    "bio3": "Ik heb samengewerkt met grote organisaties zoals {fluvius}, {inami} en {devoteam}, en leverde test automatisering frameworks die de testeffici\u00ebntie met {efficiency} verbeterden en het bugpercentage in productie met {bugReduction} verlaagden.",
+    "bio4": "Mijn expertise omvat {playwright}, {selenium}, {cypress} en {cicd}. Ik bouw ook AI-aangedreven automatiseringsoplossingen met tools zoals n8n, Claude en OpenAI.",
+    "bio5": "Ik geloof in {action} en {results}. Elke oplossing die ik bouw is ontworpen om echte problemen op te lossen en meetbare kwaliteitsverbeteringen te leveren.",
+    "yearsExperience": "Jaren Ervaring",
+    "efficiencyGain": "Effici\u00ebntiewinst",
+    "testCoverage": "Testdekking",
+    "bugReduction": "Bugreductie",
+    "coreExpertise": "Kernexpertise"
+  },
+  "projects": {
+    "badge": "Succesverhalen",
+    "title": "AI Projecten",
+    "titleHighlight": "Die Resultaten Opleveren",
+    "description": "Echte AI-implementaties die inkomsten genereren, effici\u00ebntie verbeteren en bedrijfsoperaties transformeren voor onze klanten.",
+    "efficiencyGain": "Effici\u00ebntiewinst",
+    "growthRate": "Groeipercentage",
+    "hoursSaved": "Uren Bespaard",
+    "aiAvailability": "AI Beschikbaarheid",
+    "technologies": "Technologie\u00ebn",
+    "keyFeatures": "Belangrijkste Functies",
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "caseStudy": "Casestudy",
+    "ctaTitle": "Ge\u00efnteresseerd in samenwerking?",
+    "ctaDescription": "Laten we bespreken hoe ik u kan helpen met uw test automatisering en AI-behoeften. Van concept tot implementatie, ik lever resultaten.",
+    "ctaButton": "Contacteer Mij",
+    "adaSystems": {
+      "title": "ADA Systems Platform",
+      "subtitle": "Compleet AI Restaurant Ecosysteem",
+      "description": "Ge\u00efntegreerd AI-platform met 6+ verbonden diensten voor restaurantbeheer, met aanzienlijke verbetering van operationele effici\u00ebntie.",
+      "status": "Live in Productie",
+      "features": {
+        "0": "Menubeheer (AdaMenu)",
+        "1": "Personeelsplanning (AdaPlanning)",
+        "2": "Voorraadbeheer (AdaStock)",
+        "3": "AI Receptionist (AdaPhone)",
+        "4": "Social Media Automatisering (Postagen)"
+      }
+    },
+    "postagen": {
+      "title": "Postagen AI",
+      "subtitle": "Social Media Automatisering Platform",
+      "description": "AI-aangedreven social media contentgenerator die foto's transformeert in boeiende berichten met automatische planning.",
+      "status": "Actief",
+      "features": {
+        "0": "AI Foto-analyse",
+        "1": "Meertalige Content",
+        "2": "Merkstemmingstraining",
+        "3": "Automatische Planning",
+        "4": "Prestatie-analyse"
+      }
+    },
+    "testAutomationProject": {
+      "title": "Enterprise Test Automatisering",
+      "subtitle": "QA Engineering Oplossingen",
+      "description": "Robuuste test automatisering frameworks met Playwright en Selenium, die testtijd met 80% verminderen en bugdetectie met 90% verbeteren.",
+      "status": "Enterprise Oplossing",
+      "features": {
+        "0": "E2E Test Automatisering",
+        "1": "Visuele Regressietests",
+        "2": "API Tests",
+        "3": "CI/CD Integratie",
+        "4": "Realtime Rapportage"
+      }
+    }
+  },
+  "experience": {
+    "badge": "Professioneel Traject",
+    "title": "Werk",
+    "titleHighlight": "Ervaring",
+    "jobs": {
+      "1": {
+        "jobTitle": "Automatisering Test Ingenieur",
+        "points": {
+          "0": "E2E-testen op het FiDigO-project voor digitale meterinfrastructuur",
+          "1": "Ontwikkeling van geautomatiseerde testsuites met Playwright",
+          "2": "Samenwerking met cross-functionele teams met JIRA en SAP-integratie"
+        }
+      },
+      "2": {
+        "jobTitle": "QA Ingenieur",
+        "points": {
+          "0": "QA Ingenieur op het EUNOME-project",
+          "1": "Defini\u00ebring en uitvoering van uitgebreide teststrategien",
+          "2": "Geautomatiseerde tests met Playwright en Selenium"
+        }
+      },
+      "3": {
+        "jobTitle": "Test Automatisering Ingenieur",
+        "points": {
+          "0": "Leiding van Selenium naar Playwright-migratie op het Cascada 2.0 project",
+          "1": "Ontwerp en onderhoud van geautomatiseerde testframeworks",
+          "2": "Implementatie van CI/CD-pipeline-integratie voor testautomatisering",
+          "3": "2+ jaar continue test automatisering engineering"
+        }
+      },
+      "4": {
+        "jobTitle": "Test Automatisering Ingenieur",
+        "points": {
+          "0": "Bouw van test automatisering frameworks met Selenium WebDriver",
+          "1": "Testbeheer met XRAY en JIRA-integratie",
+          "2": "Implementatie van CI/CD-pipelines met Jenkins",
+          "3": "Toepassing van JUnit voor unit- en integratietests"
+        }
+      },
+      "5": {
+        "jobTitle": "Junior QA Analist",
+        "points": {
+          "0": "Kwaliteitsborging voor restaurant tablet-applicaties",
+          "1": "Handmatig testen en bugrapportage",
+          "2": "Bijdrage aan productverbetering"
+        }
+      },
+      "6": {
+        "jobTitle": "Junior Full Stack Ontwikkelaar (Stage)",
+        "points": {
+          "0": "Full-stack ontwikkelingsstage",
+          "1": "Werk aan de Liquid template-editor",
+          "2": "Ervaring opgedaan in webapplicatie-ontwikkeling"
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Technische",
+    "titleHighlight": "Vaardigheden",
+    "description": "Uitgebreide expertise in test automatisering frameworks, CI/CD-pipelines en AI-aangedreven tools voor enterprise kwaliteitsborging.",
+    "categories": {
+      "testAutomation": "Test Automatisering",
+      "apiPerformance": "API & Prestatietests",
+      "cicd": "CI/CD & DevOps",
+      "testManagement": "Testbeheer",
+      "aiTools": "AI & Automatiseringstools",
+      "development": "Ontwikkeling"
+    }
+  },
+  "contact": {
+    "badge": "Laten We Verbinden",
+    "title": "Start Uw",
+    "titleHighlight": "Project Vandaag",
+    "description": "Klaar om uw bedrijf te transformeren met test automatisering of AI-oplossingen? Laten we uw project bespreken en een oplossing cre\u00ebren die echte resultaten oplevert.",
+    "nameLabel": "Naam *",
+    "namePlaceholder": "Uw volledige naam",
+    "nameRequired": "Naam is vereist",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "uw.email@bedrijf.com",
+    "emailRequired": "Email is vereist",
+    "emailInvalid": "Ongeldig emailadres",
+    "companyLabel": "Bedrijf",
+    "companyPlaceholder": "Uw bedrijfsnaam",
+    "projectTypeLabel": "Projecttype *",
+    "projectTypePlaceholder": "Selecteer projecttype",
+    "projectTypeRequired": "Selecteer een projecttype",
+    "budgetLabel": "Budgetbereik",
+    "budgetPlaceholder": "Selecteer budgetbereik",
+    "timelineLabel": "Tijdlijn",
+    "timelinePlaceholder": "Wanneer heeft u dit nodig?",
+    "messageLabel": "Vertel me over uw project",
+    "messagePlaceholder": "Beschrijf uw doelen, huidige uitdagingen en wat u wilt bereiken...",
+    "messageRequired": "Beschrijf alstublieft uw project",
+    "sending": "Verzenden...",
+    "sendMessage": "Bericht Versturen",
+    "projectTypes": {
+      "0": "Enterprise Test Automatisering",
+      "1": "Restaurant AI Automatisering",
+      "2": "Aangepaste AI Ontwikkeling",
+      "3": "Alleen Consultatie",
+      "4": "Volledige Platform Implementatie",
+      "5": "Overige"
+    },
+    "budgetRanges": {
+      "0": "Onder \u20ac5.000",
+      "1": "\u20ac5.000 - \u20ac15.000",
+      "2": "\u20ac15.000 - \u20ac50.000",
+      "3": "\u20ac50.000+",
+      "4": "Nog niet zeker"
+    },
+    "timelineOptions": {
+      "0": "Zo snel mogelijk",
+      "1": "Binnen 1 maand",
+      "2": "Binnen 3 maanden",
+      "3": "Binnen 6 maanden",
+      "4": "Gewoon verkennen"
+    },
+    "directContact": "Liever Direct Contact?",
+    "emailMe": "Mail Mij",
+    "callDirect": "Direct Bellen",
+    "responseTime": "Reactietijd",
+    "within24": "Binnen 24 uur",
+    "locatedIn": "Gevestigd in",
+    "brussels": "Brussel, Belgi\u00eb",
+    "whyWorkWithMe": "Waarom Met Mij Werken?",
+    "provenSuccess": "Bewezen succes met enterprise klanten",
+    "yearsExpertise": "4+ jaar automatisering expertise",
+    "fastImplementation": "Snelle implementatie",
+    "personalizedSolutions": "Gepersonaliseerde oplossingen",
+    "thankYou": "Dank U!",
+    "thankYouMessage": "Uw bericht is succesvol verzonden. Ik reageer snel om uw project te bespreken.",
+    "sendAnother": "Nog Een Bericht Sturen",
+    "callDirectButton": "Direct Bellen: +32 477 95 34 30"
+  },
+  "services": {
+    "badge": "AI Oplossingen Portfolio",
+    "title": "ADA Systems",
+    "titleHighlight": "Platform",
+    "description": "Compleet AI-ecosysteem voor restaurants en bedrijven. Van menubeheer tot personeelsplanning, ge\u00efntegreerde oplossingen die operationele effici\u00ebntie en bedrijfsgroei stimuleren.",
+    "visitAda": "Bezoek ADA Systems",
+    "revenueGrowth": "Omzetgroei",
+    "clientSuccessRate": "Klant Succespercentage",
+    "aiServices": "AI Diensten",
+    "integratedPlatform": "Ge\u00efntegreerd Platform",
+    "clientRetention": "Klantbehoud",
+    "satisfiedCustomers": "Tevreden Klanten",
+    "getStarted": "Aan de Slag",
+    "ctaTitle": "Klaar om Uw Bedrijf te Transformeren met AI?",
+    "ctaDescription": "Sluit u aan bij succesvolle restaurants en bedrijven die ons AI-platform benutten voor verbeterde effici\u00ebntie en bedrijfsgroei. Ervaar het ADA Systems verschil.",
+    "scheduleDemo": "Demo Plannen",
+    "items": {
+      "adaMenu": {
+        "title": "AdaMenu",
+        "description": "Slim restaurantmenubeheer met realtime updates",
+        "features": { "0": "Dynamische menu's", "1": "Meertalige ondersteuning", "2": "QR-integratie" }
+      },
+      "adaStock": {
+        "title": "AdaStock",
+        "description": "AI-aangedreven voorraadbeheer voor restaurants",
+        "features": { "0": "Slim bijhouden", "1": "Voorspellende analyse", "2": "Geautomatiseerde meldingen" }
+      },
+      "adaStaff": {
+        "title": "AdaStaff",
+        "description": "Intelligente personeelsplanning en -beheer",
+        "features": { "0": "Slimme planning", "1": "Tijdregistratie", "2": "Prestatiemetrieken" }
+      },
+      "adaPhone": {
+        "title": "AdaPhone",
+        "description": "AI-receptionist voor restaurants en bedrijven",
+        "features": { "0": "Stem-AI", "1": "24/7 beschikbaarheid", "2": "Bestelbeheer" }
+      },
+      "adaPlanning": {
+        "title": "AdaPlanning",
+        "description": "Geavanceerd personeelsplanningssysteem",
+        "features": { "0": "Kalenderintegratie", "1": "Conflictoplossing", "2": "Mobiele app" }
+      },
+      "customAi": {
+        "title": "Aangepaste AI Oplossingen",
+        "description": "Op maat gemaakte automatisering voor uw specifieke bedrijfsbehoeften",
+        "features": { "0": "Maatwerk ontwikkeling", "1": "AI-integratie", "2": "Volledige ondersteuning" }
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Klant Succesverhalen",
+    "title": "Wat Klanten",
+    "titleHighlight": "Over Mij Zeggen",
+    "description": "Echte resultaten van echte bedrijven. Ontdek hoe onze AI-oplossingen operaties hebben getransformeerd en groei hebben gestimuleerd voor restaurants en bedrijven in Belgi\u00eb.",
+    "featuredSuccess": "Uitgelicht Succes",
+    "avgGrowth": "Gem. Groei",
+    "clientRating": "Klantbeoordeling",
+    "hoursSavedWeek": "Uren Bespaard/Week",
+    "successRate": "Succespercentage",
+    "ctaTitle": "Klaar om Deel te Worden van Onze Succesverhalen?",
+    "ctaDescription": "Laten we bespreken hoe we vergelijkbare resultaten voor uw bedrijf kunnen bereiken. Plan een gratis consultatie om de mogelijkheden te verkennen.",
+    "scheduleFree": "Gratis Consultatie Plannen",
+    "viewMore": "Meer Casestudies Bekijken",
+    "items": {
+      "losteria": {
+        "quote": "Julien heeft onze restaurantoperaties volledig getransformeerd. Het ADA Systems platform verhoogde onze effici\u00ebntie met 400% en bespaarde ons meer dan 30 uur per week. De AI-oplossingen verdienen zichzelf terug binnen de eerste maand."
+      },
+      "restaurant": {
+        "quote": "Het test automatisering framework dat Julien bouwde verminderde onze QA-tijd met 80%. Zijn AI-gedreven aanpak van kwaliteitsborging is revolutionair. We kunnen nu dagelijks updates uitrollen in plaats van wekelijks."
+      },
+      "tech": {
+        "quote": "Juliens aangepaste AI-implementatie hielp ons om onze klantenondersteuning te automatiseren. We verwerken nu 10x meer verzoeken met hetzelfde team. Zijn technische expertise en zakelijk inzicht zijn uitzonderlijk."
+      }
+    }
+  },
+  "testAutomation": {
+    "badge": "Enterprise Test Automatisering",
+    "title": "Test Automatisering",
+    "titleHighlight": "Excellentie",
+    "description": "Enterprise-grade test automatisering oplossingen die testtijd verminderen, kwaliteit verbeteren en uw softwareleveringspipeline versnellen met geavanceerde tools en frameworks.",
+    "services": {
+      "e2e": {
+        "title": "End-to-End Tests",
+        "description": "Uitgebreide test automatisering die volledige gebruikersreizen dekt",
+        "features": { "0": "Cross-browser testen", "1": "Mobiele automatisering", "2": "API-integratie" }
+      },
+      "api": {
+        "title": "API Tests",
+        "description": "Robuuste API-testframeworks voor microservices architecturen",
+        "features": { "0": "REST/GraphQL testen", "1": "Prestatievalidatie", "2": "Contracttesten" }
+      },
+      "performance": {
+        "title": "Prestatietests",
+        "description": "Belasting- en stresstests om schaalbaarheid te garanderen",
+        "features": { "0": "Belastingstests", "1": "Stresstests", "2": "Prestatiemonitoring" }
+      },
+      "security": {
+        "title": "Beveiligingstests",
+        "description": "Geautomatiseerde beveiligingstests om kwetsbaarheden te identificeren",
+        "features": { "0": "OWASP-naleving", "1": "Penetratietests", "2": "Kwetsbaarheidsscan" }
+      },
+      "cicd": {
+        "title": "CI/CD Integratie",
+        "description": "Naadloze integratie met ontwikkelingspipelines",
+        "features": { "0": "Pipeline-automatisering", "1": "Parallelle uitvoering", "2": "Rapportage-integratie" }
+      },
+      "aiPowered": {
+        "title": "AI-Aangedreven Tests",
+        "description": "Volgende generatie testen met AI en machine learning",
+        "features": { "0": "Slimme testgeneratie", "1": "Zelfherstellende tests", "2": "Voorspellende analyse" }
+      }
+    },
+    "benefits": {
+      "faster": { "title": "80% Sneller", "description": "Testuitvoeringstijd" },
+      "bugDetection": { "title": "95% Bugdetectie", "description": "Voor productie" },
+      "reliability": { "title": "99,9% Betrouwbaarheid", "description": "Testnauwkeurigheid" },
+      "costReduction": { "title": "60% Kostenbesparing", "description": "Testoverhead" }
+    },
+    "processTitle": "Mijn",
+    "processTitleHighlight": "Testproces",
+    "process": {
+      "0": { "step": "01", "title": "Analyse", "desc": "Eisenanalyse en teststrategie planning" },
+      "1": { "step": "02", "title": "Framework", "desc": "Aangepaste test automatisering framework ontwikkeling" },
+      "2": { "step": "03", "title": "Implementatie", "desc": "Testscript creatie en CI/CD-integratie" },
+      "3": { "step": "04", "title": "Optimalisatie", "desc": "Continue verbetering en onderhoud" }
+    },
+    "technologiesLabel": "Technologie\u00ebn:",
+    "ctaTitle": "Klaar om Uw Tests te Versnellen?",
+    "ctaDescription": "Laten we bespreken hoe enterprise test automatisering uw testoverhead met 60% kan verminderen en tegelijkertijd kwaliteit en leveringssnelheid kan verbeteren.",
+    "ctaButton": "Contacteer Mij"
+  },
+  "certificates": {
+    "badge": "Professionele Certificeringen",
+    "title": "Certificeringen &",
+    "titleHighlight": "Opleiding",
+    "description": "ISTQB-gecertificeerde testprofessional met een diploma in Multimedia & Creatieve Technologie, die sterke theoretische fundamenten combineert met praktische enterprise-ervaring.",
+    "certifiedTester": "Gecertificeerde Tester",
+    "foundationLevel": "Foundation Level",
+    "yearsExperience": "Jaren Ervaring",
+    "enterpriseQA": "Enterprise QA",
+    "multimediaCreativeTech": "Multimedia & Creatieve Tech.",
+    "erasmus": "Erasmushogeschool Brussel",
+    "credentialId": "Certificaat-ID",
+    "verified": "Geverifieerd",
+    "pending": "In afwachting",
+    "items": {
+      "istqb": {
+        "title": "ISTQB Gecertificeerde Tester Foundation Level (CTFL)",
+        "issuer": "iSQI Group \u2014 International Software Testing Qualifications Board",
+        "description": "Internationaal erkende certificering die de fundamenten van softwaretesten, testontwerptechnieken, testbeheer en toolondersteuning voor testen omvat."
+      },
+      "mct": {
+        "title": "Multimedia & Creatieve Technologie",
+        "issuer": "Erasmushogeschool Brussel",
+        "description": "Bachelordiploma in Multimedia & Creatieve Technologie met focus op full-stack ontwikkeling, interactieve media en moderne webtechnologie\u00ebn."
+      }
+    }
+  },
+  "caseStudies": {
+    "backToPortfolio": "Terug naar Portfolio",
+    "pageTitle": "Casestudies",
+    "heroTitle": "Succes",
+    "heroTitleHighlight": "Verhalen",
+    "heroDescription": "Echte implementaties die meetbare resultaten aantonen door test automatisering en AI-aangedreven oplossingen.",
+    "theChallenge": "De Uitdaging",
+    "theSolution": "De Oplossing",
+    "technologies": "Technologie\u00ebn",
+    "ctaTitle": "Klaar om Uw Succesverhaal te Cre\u00ebren?",
+    "ctaDescription": "Laten we bespreken hoe test automatisering en AI-oplossingen uw bedrijf kunnen transformeren.",
+    "ctaButton": "Start Uw Project",
+    "items": {
+      "ada": {
+        "title": "ADA Systems Platform",
+        "subtitle": "Compleet Restaurant Automatisering Ecosysteem",
+        "category": "AI Oplossingen",
+        "description": "Bouw van een uitgebreid AI-aangedreven platform voor restaurantbeheer, met integratie van menubeheer, personeelsplanning, voorraadbeheer en social media automatisering in een ge\u00efntegreerd ecosysteem.",
+        "challenge": "Restaurants kampen met gefragmenteerd gereedschap voor dagelijkse operaties \u2014 aparte systemen voor menu's, personeelsplanning, voorraad en marketing die niet met elkaar communiceren. Dit leidt tot ineffici\u00ebntie, fouten en verspilde tijd aan administratieve taken.",
+        "solution": {
+          "0": "Ontwikkeling van AdaMenu voor dynamisch, realtime menubeheer met meertalige ondersteuning",
+          "1": "Bouw van AdaPlanning voor intelligente personeelsplanning met conflictoplossing",
+          "2": "Cre\u00ebtie van AdaStock voor AI-aangedreven voorraadbeheer met voorspellende analyse",
+          "3": "Implementatie van Postagen voor automatische social media contentgeneratie met GPT-4 Vision",
+          "4": "Integratie van alle diensten in een ge\u00efntegreerd dashboard met gecentraliseerde authenticatie"
+        },
+        "results": {
+          "0": { "metric": "60%", "label": "Tijdsbesparing", "description": "Vermindering administratieve taken" },
+          "1": { "metric": "6+", "label": "Ge\u00efntegreerde Diensten", "description": "Complete ecosysteem implementatie" },
+          "2": { "metric": "+150%", "label": "Social Engagement", "description": "Door AI-gegenereerde content" },
+          "3": { "metric": "99,9%", "label": "Uptime", "description": "Platform betrouwbaarheid" }
+        }
+      },
+      "testing": {
+        "title": "Enterprise Test Automatisering",
+        "subtitle": "QA Transformatie voor Overheid & Financi\u00eble Diensten",
+        "category": "Test Automatisering",
+        "description": "Leiding van test automatisering initiatieven voor grote Belgische overheids- en enterprise organisaties, migratie van legacy handmatig testen naar moderne geautomatiseerde frameworks en CI/CD-pipelines.",
+        "challenge": "Grote organisaties waren sterk afhankelijk van handmatige testprocessen die traag, foutgevoelig en niet schaalbaar waren met de toenemende ontwikkelsnelheid. Legacy Selenium frameworks hadden modernisering nodig en testbeheerprocessen misten goede integratie met ontwikkelworkflows.",
+        "solution": {
+          "0": "Leiding van Selenium naar Playwright migratie voor verbeterde betrouwbaarheid en snelheid",
+          "1": "Ontwerp van uitgebreide E2E test automatisering frameworks met Page Object Model",
+          "2": "Implementatie van CI/CD-integratie met Jenkins en GitHub Actions",
+          "3": "Opzetten van testbeheer met XRAY en JIRA voor volledige traceerbaarheid",
+          "4": "Vaststelling van BDD-praktijken met Cucumber/Gherkin voor samenwerking met belanghebbenden",
+          "5": "Cre\u00ebtie van prestatietest strategie\u00ebn met JMeter"
+        },
+        "results": {
+          "0": { "metric": "80%", "label": "Sneller Testen", "description": "Vermindering van testuitvoeringstijd" },
+          "1": { "metric": "95%", "label": "Testdekking", "description": "Geautomatiseerde testdekking bereikt" },
+          "2": { "metric": "90%", "label": "Bugreductie", "description": "Minder bugs in productie" },
+          "3": { "metric": "75%", "label": "Snellere Levering", "description": "Versnelde releasecycli" }
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Julien Matondo. Excellentie leveren in test automatisering en AI-oplossingen."
+  },
+  "meta": {
+    "title": "Julien Matondo - Test Automatisering Ingenieur & AI Oplossingen Architect",
+    "description": "Expert Test Automatisering Ingenieur en AI Oplossingen Architect gespecialiseerd in enterprise test automatisering, restaurant automatisering en aangepaste AI-implementaties.",
+    "keywords": "Test Automatisering, AI, Automatisering, Restaurant Technologie, Enterprise Testing, Full Stack Ontwikkeling, Selenium, Cypress, Playwright"
+  }
+}

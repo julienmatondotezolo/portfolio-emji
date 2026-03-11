@@ -14,12 +14,13 @@ import {
   TestAutomation,
 } from "../src/components/";
 import { experience, PageInfo, Project, Skill, Social } from "../src/config";
-import { 
-  fetchExperience, 
-  fetchPageInfo, 
-  fetchProject, 
-  fetchSkills, 
-  fetchSocials 
+import { useTranslation } from "../src/i18n";
+import {
+  fetchExperience,
+  fetchPageInfo,
+  fetchProject,
+  fetchSkills,
+  fetchSocials
 } from "../src/utils";
 
 type Props = {
@@ -30,81 +31,85 @@ type Props = {
   socials: Social[];
 };
 
-const Home = ({ pageInfo, experiences, projects, socials, skills }: Props) => (
-  <div className="bg-dark-900 text-white overflow-x-hidden">
-    <Head>
-      <title>Julien Matondo - Test Automation Engineer & AI Solutions Architect</title>
-      <meta 
-        name="description" 
-        content="Expert Test Automation Engineer and AI Solutions Architect specializing in enterprise test automation, restaurant automation, and custom AI implementations. Delivering measurable results with cutting-edge technology." 
-      />
-      <meta name="keywords" content="Test Automation, AI, Automation, Restaurant Technology, Enterprise Testing, Full Stack Development, Selenium, Cypress, Playwright" />
-      <meta property="og:title" content="Julien Matondo - Test Automation Engineer & AI Solutions Architect" />
-      <meta property="og:description" content="Expert in test automation and AI-powered solutions for enterprises and restaurants." />
-      <meta property="og:type" content="website" />
-      <meta name="twitter:card" content="summary_large_image" />
-      <link rel="icon" href="/favicon.ico" />
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-      <link 
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap" 
-        rel="stylesheet" 
-      />
-    </Head>
+const Home = ({ pageInfo, experiences, projects, socials, skills }: Props) => {
+  const { t } = useTranslation();
 
-    <Header socials={socials} />
-    <BackgroundCircles />
-    
-    {/* Hero Section */}
-    <section id="hero" className="relative">
-      <Hero pageInfo={pageInfo} />
-    </section>
+  return (
+    <div className="bg-dark-900 text-white overflow-x-hidden">
+      <Head>
+        <title>{t('meta.title')}</title>
+        <meta
+          name="description"
+          content={t('meta.description')}
+        />
+        <meta name="keywords" content={t('meta.keywords')} />
+        <meta property="og:title" content={t('meta.title')} />
+        <meta property="og:description" content={t('meta.description')} />
+        <meta property="og:type" content="website" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <link rel="icon" href="/favicon.ico" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sora:wght@100;200;300;400;500;600;700;800&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
+      </Head>
 
-    {/* Test Automation Section - TOP PRIORITY */}
-    <section id="test-automation" className="relative">
-      <TestAutomation />
-    </section>
+      <Header socials={socials} />
+      <BackgroundCircles />
 
-    {/* Projects Section */}
-    <section id="projects" className="relative">
-      <Projects projects={projects} />
-    </section>
+      {/* Hero Section */}
+      <section id="hero" className="relative">
+        <Hero pageInfo={pageInfo} />
+      </section>
 
-    {/* About Section */}
-    <section id="about" className="relative py-20">
-      <About pageInfo={pageInfo} />
-    </section>
+      {/* Test Automation Section - TOP PRIORITY */}
+      <section id="test-automation" className="relative">
+        <TestAutomation />
+      </section>
 
-    {/* Experience Section */}
-    <section id="experience" className="relative">
-      <Experience experiences={experiences} />
-    </section>
+      {/* Projects Section */}
+      <section id="projects" className="relative">
+        <Projects projects={projects} />
+      </section>
 
-    {/* Skills Section */}
-    <section id="skills" className="relative">
-      <Skills skills={skills} />
-    </section>
+      {/* About Section */}
+      <section id="about" className="relative py-20">
+        <About pageInfo={pageInfo} />
+      </section>
 
-    {/* Certificates Section */}
-    <section id="certificates" className="relative">
-      <Certificates />
-    </section>
+      {/* Experience Section */}
+      <section id="experience" className="relative">
+        <Experience experiences={experiences} />
+      </section>
 
-    {/* Contact Section */}
-    <section id="contact" className="relative py-20">
-      <Contact pageInfo={pageInfo} />
-    </section>
+      {/* Skills Section */}
+      <section id="skills" className="relative">
+        <Skills skills={skills} />
+      </section>
 
-    {/* Footer */}
-    <footer className="bg-dark-800 border-t border-dark-700 py-8">
-      <div className="container mx-auto px-6 text-center">
-        <p className="text-gray-400">
-          © 2026 Julien Matondo. Delivering excellence in test automation and AI solutions.
-        </p>
-      </div>
-    </footer>
-  </div>
-);
+      {/* Certificates Section */}
+      <section id="certificates" className="relative">
+        <Certificates />
+      </section>
+
+      {/* Contact Section */}
+      <section id="contact" className="relative py-20">
+        <Contact pageInfo={pageInfo} />
+      </section>
+
+      {/* Footer */}
+      <footer className="bg-dark-800 border-t border-dark-700 py-8">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-gray-400">
+            {t('footer.copyright')}
+          </p>
+        </div>
+      </footer>
+    </div>
+  );
+};
 
 export default Home;
 
@@ -128,13 +133,12 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     };
   } catch (error) {
     console.error("Error fetching data:", error);
-    
-    // Fallback data if Sanity fails
+
     const pageInfo: PageInfo = {
       _id: "1",
       _type: "pageInfo",
       name: "Julien Matondo",
-      role: "Test Automation Engineer & AI Solutions Architect", 
+      role: "Test Automation Engineer & AI Solutions Architect",
       email: "info@emji.be",
       phoneNumber: "+32 477 95 34 30",
       address: "Brussels, Belgium",
@@ -142,7 +146,7 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
       profilePic: null,
       heroImage: null,
     };
-    
+
     return {
       props: {
         pageInfo,

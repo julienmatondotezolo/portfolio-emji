@@ -1,0 +1,465 @@
+{
+  "hero": {
+    "availableBadge": "Available for projects",
+    "role": "Test Automation Engineer",
+    "description": "Building enterprise-grade test automation frameworks and AI-powered QA solutions that improve quality and accelerate delivery.",
+    "viewProjects": "View Projects",
+    "contactMe": "Contact Me",
+    "statYears": "Years",
+    "statEfficiency": "Efficiency",
+    "statCoverage": "Coverage",
+    "terminalTitle": "login.spec.ts",
+    "runScenario": "Run Scenario",
+    "scenarios": {
+      "login": "login.spec.ts",
+      "checkout": "checkout.spec.ts",
+      "dashboard": "dashboard.spec.ts",
+      "contact": "contact.spec.ts"
+    },
+    "runDialog": {
+      "title": "Running Test Scenario",
+      "navigating": "Navigating to",
+      "filling": "Filling in",
+      "clicking": "Clicking",
+      "waiting": "Waiting for",
+      "asserting": "Asserting",
+      "passed": "PASSED",
+      "running": "Running...",
+      "complete": "Test Complete",
+      "close": "Close"
+    }
+  },
+  "header": {
+    "contactMe": "Contact Me"
+  },
+  "about": {
+    "title": "About",
+    "titleHighlight": "Julien",
+    "subtitle": "Test Automation Engineer &",
+    "subtitleHighlight": "AI Solutions Architect",
+    "bio1": "I'm {name} — or as most people know me, {alias}. In French, the letters {M} and {J} are pronounced {emPronounce} and {jiPronounce} — my initials from {matondo} {julien}.",
+    "bio2": "An ISTQB-certified {role} with {years} of hands-on experience in enterprise test automation and AI-driven solutions.",
+    "bio3": "I've worked with major organizations like {fluvius}, {inami}, and {devoteam}, delivering test automation frameworks that improved testing efficiency by {efficiency} and reduced bug escape rates by {bugReduction}.",
+    "bio4": "My expertise spans {playwright}, {selenium}, {cypress}, and {cicd}. I also build AI-powered automation solutions using tools like n8n, Claude, and OpenAI.",
+    "bio5": "I believe in {action} and {results}. Every solution I build is designed to solve real problems and deliver measurable quality improvements.",
+    "yearsExperience": "Years Experience",
+    "efficiencyGain": "Efficiency Gain",
+    "testCoverage": "Test Coverage",
+    "bugReduction": "Bug Reduction",
+    "coreExpertise": "Core Expertise"
+  },
+  "projects": {
+    "badge": "Success Stories",
+    "title": "AI Projects",
+    "titleHighlight": "Driving Results",
+    "description": "Real-world AI implementations that generate revenue, improve efficiency, and transform business operations for our clients.",
+    "efficiencyGain": "Efficiency Gain",
+    "growthRate": "Growth Rate",
+    "hoursSaved": "Hours Saved",
+    "aiAvailability": "AI Availability",
+    "technologies": "Technologies",
+    "keyFeatures": "Key Features",
+    "liveDemo": "Live Demo",
+    "code": "Code",
+    "caseStudy": "Case Study",
+    "ctaTitle": "Interested in working together?",
+    "ctaDescription": "Let's discuss how I can help with your test automation and AI needs. From concept to deployment, I deliver results.",
+    "ctaButton": "Contact Me",
+    "adaSystems": {
+      "title": "ADA Systems Platform",
+      "subtitle": "Complete AI Restaurant Ecosystem",
+      "description": "Integrated AI platform with 6+ interconnected services for restaurant management, driving significant operational efficiency improvements.",
+      "status": "Live in Production",
+      "features": {
+        "0": "Menu Management (AdaMenu)",
+        "1": "Staff Scheduling (AdaPlanning)",
+        "2": "Inventory Tracking (AdaStock)",
+        "3": "AI Receptionist (AdaPhone)",
+        "4": "Social Media Automation (Postagen)"
+      }
+    },
+    "postagen": {
+      "title": "Postagen AI",
+      "subtitle": "Social Media Automation Platform",
+      "description": "AI-powered social media content generator that transforms photos into engaging posts with automatic scheduling.",
+      "status": "Active",
+      "features": {
+        "0": "AI Photo Analysis",
+        "1": "Multi-language Content",
+        "2": "Brand Voice Training",
+        "3": "Auto-scheduling",
+        "4": "Performance Analytics"
+      }
+    },
+    "testAutomationProject": {
+      "title": "Enterprise Test Automation",
+      "subtitle": "QA Engineering Solutions",
+      "description": "Robust test automation frameworks using Playwright and Selenium, reducing testing time by 80% and improving bug detection by 90%.",
+      "status": "Enterprise Solution",
+      "features": {
+        "0": "E2E Test Automation",
+        "1": "Visual Regression Testing",
+        "2": "API Testing",
+        "3": "CI/CD Integration",
+        "4": "Real-time Reporting"
+      }
+    }
+  },
+  "experience": {
+    "badge": "Professional Journey",
+    "title": "Work",
+    "titleHighlight": "Experience",
+    "jobs": {
+      "1": {
+        "jobTitle": "Automation Test Engineer",
+        "points": {
+          "0": "E2E testing on the FiDigO project for digital meter infrastructure",
+          "1": "Developed automated test suites using Playwright",
+          "2": "Collaborated with cross-functional teams using JIRA and SAP integration"
+        }
+      },
+      "2": {
+        "jobTitle": "QA Engineer",
+        "points": {
+          "0": "QA Engineer on the EUNOME project",
+          "1": "Defined and executed comprehensive test strategies",
+          "2": "Automated tests using Playwright and Selenium"
+        }
+      },
+      "3": {
+        "jobTitle": "Test Automation Engineer",
+        "points": {
+          "0": "Led Selenium to Playwright migration on Cascada 2.0 project",
+          "1": "Designed and maintained automated test frameworks",
+          "2": "Implemented CI/CD pipeline integration for test automation",
+          "3": "2+ years of continuous test automation engineering"
+        }
+      },
+      "4": {
+        "jobTitle": "Test Automation Engineer",
+        "points": {
+          "0": "Built test automation frameworks using Selenium WebDriver",
+          "1": "Test management with XRAY and JIRA integration",
+          "2": "Implemented CI/CD pipelines with Jenkins",
+          "3": "Applied JUnit for unit and integration testing"
+        }
+      },
+      "5": {
+        "jobTitle": "Junior QA Analyst",
+        "points": {
+          "0": "Quality assurance for restaurant tablet applications",
+          "1": "Manual testing and bug reporting",
+          "2": "Contributed to product quality improvement"
+        }
+      },
+      "6": {
+        "jobTitle": "Junior Full Stack Developer (Internship)",
+        "points": {
+          "0": "Full-stack development internship",
+          "1": "Worked on the Liquid template editor",
+          "2": "Gained experience in web application development"
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Technical",
+    "titleHighlight": "Skills",
+    "description": "Comprehensive expertise across test automation frameworks, CI/CD pipelines, and AI-powered tools for enterprise quality assurance.",
+    "categories": {
+      "testAutomation": "Test Automation",
+      "apiPerformance": "API & Performance Testing",
+      "cicd": "CI/CD & DevOps",
+      "testManagement": "Test Management",
+      "aiTools": "AI & Automation Tools",
+      "development": "Development"
+    }
+  },
+  "contact": {
+    "badge": "Let's Connect",
+    "title": "Start Your",
+    "titleHighlight": "Project Today",
+    "description": "Ready to transform your business with test automation or AI solutions? Let's discuss your project and create a solution that drives real results.",
+    "nameLabel": "Name *",
+    "namePlaceholder": "Your full name",
+    "nameRequired": "Name is required",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "your.email@company.com",
+    "emailRequired": "Email is required",
+    "emailInvalid": "Invalid email address",
+    "companyLabel": "Company",
+    "companyPlaceholder": "Your company name",
+    "projectTypeLabel": "Project Type *",
+    "projectTypePlaceholder": "Select project type",
+    "projectTypeRequired": "Please select a project type",
+    "budgetLabel": "Budget Range",
+    "budgetPlaceholder": "Select budget range",
+    "timelineLabel": "Timeline",
+    "timelinePlaceholder": "When do you need this?",
+    "messageLabel": "Tell me about your project",
+    "messagePlaceholder": "Describe your goals, current challenges, and what you'd like to achieve...",
+    "messageRequired": "Please describe your project",
+    "sending": "Sending...",
+    "sendMessage": "Send Message",
+    "projectTypes": {
+      "0": "Enterprise Test Automation",
+      "1": "Restaurant AI Automation",
+      "2": "Custom AI Development",
+      "3": "Consultation Only",
+      "4": "Full Platform Implementation",
+      "5": "Other"
+    },
+    "budgetRanges": {
+      "0": "Under \u20ac5,000",
+      "1": "\u20ac5,000 - \u20ac15,000",
+      "2": "\u20ac15,000 - \u20ac50,000",
+      "3": "\u20ac50,000+",
+      "4": "Not sure yet"
+    },
+    "timelineOptions": {
+      "0": "ASAP",
+      "1": "Within 1 month",
+      "2": "Within 3 months",
+      "3": "Within 6 months",
+      "4": "Just exploring"
+    },
+    "directContact": "Prefer to Connect Directly?",
+    "emailMe": "Email Me",
+    "callDirect": "Call Direct",
+    "responseTime": "Response Time",
+    "within24": "Within 24 hours",
+    "locatedIn": "Located in",
+    "brussels": "Brussels, Belgium",
+    "whyWorkWithMe": "Why Work With Me?",
+    "provenSuccess": "Proven success with enterprise clients",
+    "yearsExpertise": "4+ years automation expertise",
+    "fastImplementation": "Fast implementation",
+    "personalizedSolutions": "Personalized solutions",
+    "thankYou": "Thank You!",
+    "thankYouMessage": "Your message has been sent successfully. I'll respond quickly to discuss your project.",
+    "sendAnother": "Send Another Message",
+    "callDirectButton": "Call Direct: +32 477 95 34 30"
+  },
+  "services": {
+    "badge": "AI Solutions Portfolio",
+    "title": "ADA Systems",
+    "titleHighlight": "Platform",
+    "description": "Complete AI ecosystem for restaurants and enterprises. From menu management to staff scheduling, integrated solutions driving operational efficiency and business growth.",
+    "visitAda": "Visit ADA Systems",
+    "revenueGrowth": "Revenue Growth",
+    "clientSuccessRate": "Client Success Rate",
+    "aiServices": "AI Services",
+    "integratedPlatform": "Integrated Platform",
+    "clientRetention": "Client Retention",
+    "satisfiedCustomers": "Satisfied Customers",
+    "getStarted": "Get Started",
+    "ctaTitle": "Ready to Transform Your Business with AI?",
+    "ctaDescription": "Join successful restaurants and enterprises leveraging our AI platform for improved efficiency and business growth. Experience the ADA Systems difference.",
+    "scheduleDemo": "Schedule a Demo",
+    "items": {
+      "adaMenu": {
+        "title": "AdaMenu",
+        "description": "Smart restaurant menu management with real-time updates",
+        "features": { "0": "Dynamic menus", "1": "Multi-language support", "2": "QR integration" }
+      },
+      "adaStock": {
+        "title": "AdaStock",
+        "description": "AI-powered inventory management for restaurants",
+        "features": { "0": "Smart tracking", "1": "Predictive analytics", "2": "Automated alerts" }
+      },
+      "adaStaff": {
+        "title": "AdaStaff",
+        "description": "Intelligent employee scheduling and management",
+        "features": { "0": "Smart scheduling", "1": "Time tracking", "2": "Performance metrics" }
+      },
+      "adaPhone": {
+        "title": "AdaPhone",
+        "description": "AI receptionist for restaurants and businesses",
+        "features": { "0": "Voice AI", "1": "24/7 availability", "2": "Order management" }
+      },
+      "adaPlanning": {
+        "title": "AdaPlanning",
+        "description": "Advanced staff planning and scheduling system",
+        "features": { "0": "Calendar integration", "1": "Conflict resolution", "2": "Mobile app" }
+      },
+      "customAi": {
+        "title": "Custom AI Solutions",
+        "description": "Tailored automation for your specific business needs",
+        "features": { "0": "Custom development", "1": "AI integration", "2": "Full support" }
+      }
+    }
+  },
+  "testimonials": {
+    "badge": "Client Success Stories",
+    "title": "What Clients",
+    "titleHighlight": "Say About Me",
+    "description": "Real results from real businesses. See how our AI solutions have transformed operations and driven growth for restaurants and enterprises across Belgium.",
+    "featuredSuccess": "Featured Success",
+    "avgGrowth": "Avg Growth",
+    "clientRating": "Client Rating",
+    "hoursSavedWeek": "Hours Saved/Week",
+    "successRate": "Success Rate",
+    "ctaTitle": "Ready to Join Our Success Stories?",
+    "ctaDescription": "Let's discuss how we can achieve similar results for your business. Schedule a free consultation to explore the possibilities.",
+    "scheduleFree": "Schedule Free Consultation",
+    "viewMore": "View More Case Studies",
+    "items": {
+      "losteria": {
+        "quote": "Julien transformed our restaurant operations completely. The ADA Systems platform increased our efficiency by 400% and saved us 30+ hours per week. The AI solutions pay for themselves within the first month."
+      },
+      "restaurant": {
+        "quote": "The test automation framework Julien built reduced our QA time by 80%. His AI-driven approach to quality assurance is revolutionary. We can now deploy updates daily instead of weekly."
+      },
+      "tech": {
+        "quote": "Julien's custom AI implementation helped us automate our customer support. We now handle 10x more inquiries with the same team size. His technical expertise and business understanding are exceptional."
+      }
+    }
+  },
+  "testAutomation": {
+    "badge": "Enterprise Test Automation",
+    "title": "Test Automation",
+    "titleHighlight": "Excellence",
+    "description": "Enterprise-grade test automation solutions that reduce testing time, improve quality, and accelerate your software delivery pipeline with cutting-edge tools and frameworks.",
+    "services": {
+      "e2e": {
+        "title": "End-to-End Testing",
+        "description": "Comprehensive test automation covering entire user journeys",
+        "features": { "0": "Cross-browser testing", "1": "Mobile automation", "2": "API integration" }
+      },
+      "api": {
+        "title": "API Testing",
+        "description": "Robust API testing frameworks for microservices architectures",
+        "features": { "0": "REST/GraphQL testing", "1": "Performance validation", "2": "Contract testing" }
+      },
+      "performance": {
+        "title": "Performance Testing",
+        "description": "Load and stress testing to ensure application scalability",
+        "features": { "0": "Load testing", "1": "Stress testing", "2": "Performance monitoring" }
+      },
+      "security": {
+        "title": "Security Testing",
+        "description": "Automated security testing to identify vulnerabilities",
+        "features": { "0": "OWASP compliance", "1": "Penetration testing", "2": "Vulnerability scanning" }
+      },
+      "cicd": {
+        "title": "CI/CD Integration",
+        "description": "Seamless integration with development pipelines",
+        "features": { "0": "Pipeline automation", "1": "Parallel execution", "2": "Reporting integration" }
+      },
+      "aiPowered": {
+        "title": "AI-Powered Testing",
+        "description": "Next-generation testing with AI and machine learning",
+        "features": { "0": "Smart test generation", "1": "Self-healing tests", "2": "Predictive analytics" }
+      }
+    },
+    "benefits": {
+      "faster": { "title": "80% Faster", "description": "Test execution time" },
+      "bugDetection": { "title": "95% Bug Detection", "description": "Before production" },
+      "reliability": { "title": "99.9% Reliability", "description": "Test accuracy rate" },
+      "costReduction": { "title": "60% Cost Reduction", "description": "Testing overhead" }
+    },
+    "processTitle": "My",
+    "processTitleHighlight": "Testing Process",
+    "process": {
+      "0": { "step": "01", "title": "Analysis", "desc": "Requirements analysis and test strategy planning" },
+      "1": { "step": "02", "title": "Framework", "desc": "Custom test automation framework development" },
+      "2": { "step": "03", "title": "Implementation", "desc": "Test script creation and CI/CD integration" },
+      "3": { "step": "04", "title": "Optimization", "desc": "Continuous improvement and maintenance" }
+    },
+    "technologiesLabel": "Technologies:",
+    "ctaTitle": "Ready to Accelerate Your Testing?",
+    "ctaDescription": "Let's discuss how enterprise test automation can reduce your testing overhead by 60% while improving quality and delivery speed.",
+    "ctaButton": "Contact Me"
+  },
+  "certificates": {
+    "badge": "Professional Certifications",
+    "title": "Certifications &",
+    "titleHighlight": "Education",
+    "description": "ISTQB-certified test professional with a degree in Multimedia & Creative Technology, combining strong theoretical foundations with hands-on enterprise experience.",
+    "certifiedTester": "Certified Tester",
+    "foundationLevel": "Foundation Level",
+    "yearsExperience": "Years Experience",
+    "enterpriseQA": "Enterprise QA",
+    "multimediaCreativeTech": "Multimedia & Creative Tech",
+    "erasmus": "Erasmushogeschool Brussel",
+    "credentialId": "Credential ID",
+    "verified": "Verified",
+    "pending": "Pending",
+    "items": {
+      "istqb": {
+        "title": "ISTQB Certified Tester Foundation Level (CTFL)",
+        "issuer": "iSQI Group \u2014 International Software Testing Qualifications Board",
+        "description": "Internationally recognized certification covering software testing fundamentals, test design techniques, test management, and tool support for testing."
+      },
+      "mct": {
+        "title": "Multimedia & Creative Technology",
+        "issuer": "Erasmushogeschool Brussel",
+        "description": "Bachelor degree in Multimedia & Creative Technology with focus on full-stack development, interactive media, and modern web technologies."
+      }
+    }
+  },
+  "caseStudies": {
+    "backToPortfolio": "Back to Portfolio",
+    "pageTitle": "Case Studies",
+    "heroTitle": "Success",
+    "heroTitleHighlight": "Stories",
+    "heroDescription": "Real-world implementations showcasing measurable results through test automation and AI-powered solutions.",
+    "theChallenge": "The Challenge",
+    "theSolution": "The Solution",
+    "technologies": "Technologies",
+    "ctaTitle": "Ready to Create Your Success Story?",
+    "ctaDescription": "Let's discuss how test automation and AI solutions can transform your business.",
+    "ctaButton": "Start Your Project",
+    "items": {
+      "ada": {
+        "title": "ADA Systems Platform",
+        "subtitle": "Complete Restaurant Automation Ecosystem",
+        "category": "AI Solutions",
+        "description": "Built a comprehensive AI-powered platform for restaurant management, integrating menu management, staff scheduling, inventory tracking, and social media automation into a unified ecosystem.",
+        "challenge": "Restaurants face fragmented tooling for daily operations \u2014 separate systems for menus, staff scheduling, inventory, and marketing that don't communicate with each other. This leads to inefficiency, errors, and wasted time on administrative tasks.",
+        "solution": {
+          "0": "Developed AdaMenu for dynamic, real-time menu management with multi-language support",
+          "1": "Built AdaPlanning for intelligent staff scheduling with conflict resolution",
+          "2": "Created AdaStock for AI-powered inventory tracking with predictive analytics",
+          "3": "Implemented Postagen for automated social media content generation using GPT-4 Vision",
+          "4": "Integrated all services into a unified dashboard with centralized authentication"
+        },
+        "results": {
+          "0": { "metric": "60%", "label": "Time Savings", "description": "Reduction in administrative tasks" },
+          "1": { "metric": "6+", "label": "Integrated Services", "description": "Complete ecosystem implementation" },
+          "2": { "metric": "+150%", "label": "Social Engagement", "description": "Through AI-generated content" },
+          "3": { "metric": "99.9%", "label": "Uptime", "description": "Platform reliability" }
+        }
+      },
+      "testing": {
+        "title": "Enterprise Test Automation",
+        "subtitle": "Government & Financial Services QA Transformation",
+        "category": "Test Automation",
+        "description": "Led test automation initiatives for major Belgian government and enterprise organizations, migrating legacy manual testing to modern automated frameworks and CI/CD pipelines.",
+        "challenge": "Large organizations relied heavily on manual testing processes that were slow, error-prone, and couldn't scale with increasing development velocity. Legacy Selenium frameworks needed modernization, and test management processes lacked proper integration with development workflows.",
+        "solution": {
+          "0": "Led Selenium to Playwright migration for improved reliability and speed",
+          "1": "Designed comprehensive E2E test automation frameworks with Page Object Model",
+          "2": "Implemented CI/CD integration with Jenkins and GitHub Actions",
+          "3": "Set up test management with XRAY and JIRA for full traceability",
+          "4": "Established BDD practices with Cucumber/Gherkin for stakeholder collaboration",
+          "5": "Created performance testing strategies with JMeter"
+        },
+        "results": {
+          "0": { "metric": "80%", "label": "Faster Testing", "description": "Reduction in test execution time" },
+          "1": { "metric": "95%", "label": "Test Coverage", "description": "Automated test coverage achieved" },
+          "2": { "metric": "90%", "label": "Bug Reduction", "description": "Fewer bugs escaping to production" },
+          "3": { "metric": "75%", "label": "Faster Delivery", "description": "Accelerated release cycles" }
+        }
+      }
+    }
+  },
+  "footer": {
+    "copyright": "\u00a9 2026 Julien Matondo. Delivering excellence in test automation and AI solutions."
+  },
+  "meta": {
+    "title": "Julien Matondo - Test Automation Engineer & AI Solutions Architect",
+    "description": "Expert Test Automation Engineer and AI Solutions Architect specializing in enterprise test automation, restaurant automation, and custom AI implementations. Delivering measurable results with cutting-edge technology.",
+    "keywords": "Test Automation, AI, Automation, Restaurant Technology, Enterprise Testing, Full Stack Development, Selenium, Cypress, Playwright"
+  }
+}
