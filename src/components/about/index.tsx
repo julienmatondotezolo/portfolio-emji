@@ -80,7 +80,17 @@ export function About({ pageInfo }: Props) {
 
             <div className="space-y-4 text-lg text-gray-300 leading-relaxed">
               <p>
-                I'm <span className="text-white font-semibold">Julien Matondo</span>, an ISTQB-certified{' '}
+                I'm <span className="text-white font-semibold">Julien Matondo</span> — or as most people know me,{' '}
+                <span className="text-primary-400 font-semibold">eMJi</span>.
+                In French, the letters <span className="text-white font-medium">M</span> and{' '}
+                <span className="text-white font-medium">J</span> are pronounced{' '}
+                <span className="italic text-gray-400">&quot;eM&quot;</span> and{' '}
+                <span className="italic text-gray-400">&quot;Ji&quot;</span> — my initials from{' '}
+                <span className="text-primary-400">M</span>atondo{' '}
+                <span className="text-primary-400">J</span>ulien.
+              </p>
+              <p>
+                An ISTQB-certified{' '}
                 <span className="text-primary-400 font-semibold">Test Automation Engineer</span> with{' '}
                 <span className="text-white font-semibold">4+ years</span> of hands-on experience in enterprise
                 test automation and AI-driven solutions.
