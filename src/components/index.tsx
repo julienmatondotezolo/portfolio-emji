@@ -1,5 +1,6 @@
 export * from "./about";
 export * from "./backgroundCircles";
+export * from "./certificates";
 export * from "./contact";
 export * from "./cta";
 export * from "./experience";
@@ -12,4 +13,5 @@ export * from "./projects";
 export * from "./services";
 export * from "./skills";
 export * from "./skilssCard";
+export * from "./testAutomation";
 export * from "./testimonials";

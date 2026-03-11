@@ -121,12 +121,15 @@ export function Services() {
           </h2>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Complete AI ecosystem for restaurants and enterprises. From menu management to staff scheduling, 
-            our integrated solutions drive efficiency and revenue growth.
+            Complete AI ecosystem for restaurants and enterprises. From menu management to staff scheduling,
+            integrated solutions driving operational efficiency and business growth.{' '}
+            <a href="https://www.adasystems.app/" target="_blank" rel="noopener noreferrer" className="text-primary-400 hover:text-primary-300 underline">
+              Visit ADA Systems
+            </a>
           </p>
         </motion.div>
 
-        {/* Revenue Highlight */}
+        {/* Success Metrics */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -136,9 +139,9 @@ export function Services() {
         >
           <div className="text-center p-6 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl border border-green-500/30">
             <TrendingUpIcon className="w-12 h-12 text-green-400 mx-auto mb-4" />
-            <div className="text-3xl font-bold text-white mb-2">€250+</div>
-            <div className="text-green-400 font-medium">Monthly Revenue</div>
-            <div className="text-gray-400 text-sm">L'Osteria Deerlijk</div>
+            <div className="text-3xl font-bold text-white mb-2">400%</div>
+            <div className="text-green-400 font-medium">Revenue Growth</div>
+            <div className="text-gray-400 text-sm">Client Success Rate</div>
           </div>
           
           <div className="text-center p-6 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl border border-blue-500/30">
@@ -150,9 +153,9 @@ export function Services() {
           
           <div className="text-center p-6 bg-gradient-to-br from-purple-500/20 to-purple-600/20 rounded-2xl border border-purple-500/30">
             <ShoppingCartIcon className="w-12 h-12 text-purple-400 mx-auto mb-4" />
-            <div className="text-3xl font-bold text-white mb-2">400%</div>
-            <div className="text-purple-400 font-medium">Revenue Growth</div>
-            <div className="text-gray-400 text-sm">Client Success</div>
+            <div className="text-3xl font-bold text-white mb-2">100%</div>
+            <div className="text-purple-400 font-medium">Client Retention</div>
+            <div className="text-gray-400 text-sm">Satisfied Customers</div>
           </div>
         </motion.div>
 
@@ -230,11 +233,11 @@ export function Services() {
         >
           <div className="bg-gradient-to-r from-primary-500/10 to-primary-600/10 rounded-2xl p-8 border border-primary-500/20">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Ready to Scale Your Business with AI?
+              Ready to Transform Your Business with AI?
             </h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Join L'Osteria Deerlijk and other successful businesses leveraging our AI platform 
-              for 400% revenue growth and operational efficiency.
+              Join successful restaurants and enterprises leveraging our AI platform 
+              for improved efficiency and business growth. Experience the ADA Systems difference.
             </p>
             <motion.button
               whileHover={{ scale: 1.05 }}

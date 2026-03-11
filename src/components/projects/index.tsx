@@ -25,26 +25,25 @@ const featuredProjects = [
     id: 'ada-systems',
     title: 'ADA Systems Platform',
     subtitle: 'Complete AI Restaurant Ecosystem',
-    description: 'Integrated AI platform serving L\'Osteria Deerlijk with 6+ interconnected services driving 400% revenue growth.',
-    image: '/images/ada-systems.jpg', // We'll need to add this
+    description: 'Integrated AI platform with 6+ interconnected services for restaurant management, driving significant operational efficiency improvements.',
+    image: '/images/ada-systems.jpg',
     metrics: {
-      revenue: '€250+/month',
       growth: '400%',
       services: '6+',
+      efficiency: '+60%',
       uptime: '99.9%'
     },
-    technologies: ['Next.js 16', 'TypeScript', 'Supabase', 'AI/ML', 'Microservices'],
+    technologies: ['Next.js', 'TypeScript', 'Supabase', 'AI/ML', 'Microservices'],
     features: [
       'Menu Management (AdaMenu)',
-      'Staff Scheduling (AdaPlanning)', 
+      'Staff Scheduling (AdaPlanning)',
       'Inventory Tracking (AdaStock)',
       'AI Receptionist (AdaPhone)',
       'Social Media Automation (Postagen)'
     ],
     status: 'Live in Production',
-    client: 'L\'Osteria Deerlijk',
-    demoUrl: 'https://ada.mindgen.app',
-    caseStudyUrl: '#',
+    demoUrl: 'https://www.adasystems.app/',
+    caseStudyUrl: '/case-studies',
     icon: <ChefHatIcon className="w-8 h-8" />,
     color: 'from-green-500 to-emerald-600'
   },
@@ -52,13 +51,13 @@ const featuredProjects = [
     id: 'postagen',
     title: 'Postagen AI',
     subtitle: 'Social Media Automation Platform',
-    description: 'AI-powered social media content generator that transforms restaurant photos into engaging posts with automatic scheduling.',
+    description: 'AI-powered social media content generator that transforms photos into engaging posts with automatic scheduling.',
     image: '/images/postagen.jpg',
     metrics: {
-      revenue: '€200/month',
       engagement: '+150%',
       posts: '1000+',
-      saves: '30hrs/week'
+      saves: '30hrs/week',
+      languages: '4+'
     },
     technologies: ['Next.js', 'GPT-4 Vision', 'TypeScript', 'Vercel', 'Computer Vision'],
     features: [
@@ -68,8 +67,7 @@ const featuredProjects = [
       'Auto-scheduling',
       'Performance Analytics'
     ],
-    status: 'Active Revenue',
-    client: 'L\'Osteria Deerlijk',
+    status: 'Active',
     demoUrl: 'https://postagen-mobile.vercel.app',
     githubUrl: 'https://github.com/julienmatondotezolo/postagen-mobile',
     icon: <SmartphoneIcon className="w-8 h-8" />,
@@ -78,8 +76,8 @@ const featuredProjects = [
   {
     id: 'test-automation',
     title: 'Enterprise Test Automation',
-    subtitle: 'AI-Driven QA Solutions',
-    description: 'Intelligent test automation framework that reduces testing time by 80% using ML-powered test case generation and execution.',
+    subtitle: 'QA Engineering Solutions',
+    description: 'Robust test automation frameworks using Playwright and Selenium, reducing testing time by 80% and improving bug detection by 90%.',
     image: '/images/test-automation.jpg',
     metrics: {
       efficiency: '80%↑',
@@ -87,17 +85,16 @@ const featuredProjects = [
       bugs: '90%↓',
       time: '75% faster'
     },
-    technologies: ['Playwright', 'TypeScript', 'AI/ML', 'Docker', 'CI/CD'],
+    technologies: ['Playwright', 'Selenium', 'TypeScript', 'Docker', 'CI/CD'],
     features: [
-      'Smart Test Generation',
+      'E2E Test Automation',
       'Visual Regression Testing',
-      'Auto-healing Tests',
-      'Performance Monitoring',
+      'API Testing',
+      'CI/CD Integration',
       'Real-time Reporting'
     ],
     status: 'Enterprise Solution',
-    client: 'Multiple Clients',
-    caseStudyUrl: '#',
+    caseStudyUrl: '/case-studies',
     icon: <UsersIcon className="w-8 h-8" />,
     color: 'from-blue-500 to-cyan-600'
   }
@@ -183,13 +180,8 @@ const ProjectCard = ({ project, index }: { project: any, index: number }) => {
           </ul>
         </div>
 
-        {/* Client & Actions */}
-        <div className="flex items-center justify-between pt-6 border-t border-dark-600">
-          <div>
-            <div className="text-gray-400 text-sm">Client</div>
-            <div className="text-white font-medium">{project.client}</div>
-          </div>
-          
+        {/* Actions */}
+        <div className="flex items-center justify-end pt-6 border-t border-dark-600">
           <div className="flex gap-3">
             {project.demoUrl && (
               <motion.a
@@ -293,8 +285,8 @@ export function Projects({ projects: sanityProjects }: Props) {
         >
           <div className="text-center p-6 bg-gradient-to-br from-green-500/20 to-green-600/20 rounded-2xl border border-green-500/30">
             <DollarSignIcon className="w-10 h-10 text-green-400 mx-auto mb-3" />
-            <div className="text-2xl font-bold text-white mb-2">€450+</div>
-            <div className="text-green-400 text-sm font-medium">Monthly Revenue</div>
+            <div className="text-2xl font-bold text-white mb-2">80%+</div>
+            <div className="text-green-400 text-sm font-medium">Efficiency Gain</div>
           </div>
           
           <div className="text-center p-6 bg-gradient-to-br from-blue-500/20 to-blue-600/20 rounded-2xl border border-blue-500/30">
@@ -333,19 +325,21 @@ export function Projects({ projects: sanityProjects }: Props) {
         >
           <div className="bg-gradient-to-r from-primary-500/10 to-primary-600/10 rounded-2xl p-8 border border-primary-500/20">
             <h3 className="text-3xl font-bold text-white mb-4">
-              Ready to Build Your AI Solution?
+              Interested in working together?
             </h3>
             <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-              Let's discuss how we can implement similar AI solutions for your business. 
-              From concept to deployment, we deliver results.
+              Let's discuss how I can help with your test automation and AI needs.
+              From concept to deployment, I deliver results.
             </p>
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-xl transition-colors shadow-lg hover:shadow-primary-500/25"
-            >
-              Start Your Project
-            </motion.button>
+            <a href="#contact">
+              <motion.button
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+                className="px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-xl transition-colors shadow-lg hover:shadow-primary-500/25"
+              >
+                Contact Me
+              </motion.button>
+            </a>
           </div>
         </motion.div>
       </div>

@@ -3,7 +3,7 @@ import {
   CalendarIcon, 
   CheckIcon,
   ClockIcon,
-  MailIcon, 
+  EnvelopeIcon, 
   MapPinIcon, 
   MessageCircleIcon,
   PhoneIcon,
@@ -14,6 +14,7 @@ import React, { useState } from 'react';
 import { SubmitHandler, useForm } from 'react-hook-form';
 
 import { PageInfo } from '../../config';
+import { CTA } from '../cta';
 
 type Inputs = {
   name: string;
@@ -30,8 +31,8 @@ type Props = {
 };
 
 const projectTypes = [
-  'Enterprise Test Automation',
   'Restaurant AI Automation',
+  'Test Automation Setup',
   'Custom AI Development',
   'Consultation Only',
   'Full Platform Implementation',
@@ -69,19 +70,19 @@ export function Contact({ pageInfo }: Props) {
     setIsLoading(true);
     
     // Create detailed email
-    const emailSubject = `${formData.projectType} Inquiry - ${formData.company || formData.name}`;
+    const emailSubject = `AI Project Inquiry: ${formData.projectType} - ${formData.company}`;
     const emailBody = `
-Hi Julien,
+Hi Emji,
 
-I'm interested in discussing a project with you.
+I'm interested in discussing an AI automation project with you.
 
 Project Details:
 • Name: ${formData.name}
-• Company: ${formData.company || 'Not specified'}
+• Company: ${formData.company}
 • Email: ${formData.email}
 • Project Type: ${formData.projectType}
-• Budget Range: ${formData.budget || 'Not specified'}
-• Timeline: ${formData.timeline || 'Not specified'}
+• Budget Range: ${formData.budget}
+• Timeline: ${formData.timeline}
 
 Message:
 ${formData.message}
@@ -94,7 +95,7 @@ ${formData.name}
 
     // Simulate API call delay
     setTimeout(() => {
-      window.location.href = `mailto:info@emji.be?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
+      window.location.href = `mailto:hello@emjidevimanus.com?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(emailBody)}`;
       setIsLoading(false);
       setIsSubmitted(true);
       reset();
@@ -120,7 +121,7 @@ ${formData.name}
             </h2>
             
             <p className="text-xl text-gray-300 mb-8">
-              Your message has been sent successfully. I'll respond quickly to discuss your project.
+              Your message has been sent successfully. I'll respond within 24 hours to discuss your AI project.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -132,10 +133,12 @@ ${formData.name}
               </button>
               
               <a
-                href={`tel:+32477953430`}
+                href="https://calendly.com/emji-devimanus"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="px-6 py-3 bg-transparent border border-gray-600 hover:border-primary-500 text-white rounded-xl transition-colors"
               >
-                Call Direct: +32 477 95 34 30
+                Schedule Video Call
               </a>
             </div>
           </motion.div>
@@ -173,13 +176,13 @@ ${formData.name}
             Start Your
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-              Project Today
+              AI Journey
             </span>
           </h2>
           
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Ready to transform your business with test automation or AI solutions? Let's discuss your project 
-            and create a solution that drives real results.
+            Ready to transform your business with AI? Let's discuss your project and create 
+            a solution that drives real results. I respond within 24 hours.
           </p>
         </motion.div>
 
@@ -211,7 +214,7 @@ ${formData.name}
                 <div>
                   <label className="block text-white font-medium mb-2">Email *</label>
                   <div className="relative">
-                    <MailIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
+                    <EnvelopeIcon className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-gray-400" />
                     <input
                       {...register("email", { 
                         required: "Email is required",
@@ -290,7 +293,7 @@ ${formData.name}
                 <textarea
                   {...register("message", { required: "Please describe your project" })}
                   className="w-full px-4 py-3 bg-dark-800 border border-dark-600 rounded-xl text-white placeholder-gray-400 focus:border-primary-500 focus:ring-2 focus:ring-primary-500/20 transition-all min-h-[120px] resize-vertical"
-                  placeholder="Describe your goals, current challenges, and what you'd like to achieve..."
+                  placeholder="Describe your goals, current challenges, and what you'd like to achieve with AI automation..."
                 />
                 {errors.message && <span className="text-red-400 text-sm">{errors.message.message}</span>}
               </div>
@@ -322,20 +325,20 @@ ${formData.name}
               
               <div className="space-y-4">
                 <a
-                  href="mailto:info@emji.be"
+                  href={`mailto:${pageInfo.email || 'hello@emjidevimanus.com'}`}
                   className="flex items-center gap-4 p-4 bg-dark-700 rounded-xl hover:bg-dark-600 transition-colors group"
                 >
                   <div className="w-12 h-12 bg-primary-500/20 rounded-xl flex items-center justify-center group-hover:bg-primary-500/30 transition-colors">
-                    <MailIcon className="w-6 h-6 text-primary-400" />
+                    <EnvelopeIcon className="w-6 h-6 text-primary-400" />
                   </div>
                   <div>
                     <div className="text-white font-medium">Email Me</div>
-                    <div className="text-gray-400 text-sm">info@emji.be</div>
+                    <div className="text-gray-400 text-sm">{pageInfo.email || 'hello@emjidevimanus.com'}</div>
                   </div>
                 </a>
 
                 <a
-                  href="tel:+32477953430"
+                  href={`tel:${pageInfo.phoneNumber || '+32123456789'}`}
                   className="flex items-center gap-4 p-4 bg-dark-700 rounded-xl hover:bg-dark-600 transition-colors group"
                 >
                   <div className="w-12 h-12 bg-green-500/20 rounded-xl flex items-center justify-center group-hover:bg-green-500/30 transition-colors">
@@ -343,7 +346,22 @@ ${formData.name}
                   </div>
                   <div>
                     <div className="text-white font-medium">Call Direct</div>
-                    <div className="text-gray-400 text-sm">+32 477 95 34 30</div>
+                    <div className="text-gray-400 text-sm">{pageInfo.phoneNumber || '+32 123 456 789'}</div>
+                  </div>
+                </a>
+
+                <a
+                  href="https://calendly.com/emji-devimanus"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-dark-700 rounded-xl hover:bg-dark-600 transition-colors group"
+                >
+                  <div className="w-12 h-12 bg-blue-500/20 rounded-xl flex items-center justify-center group-hover:bg-blue-500/30 transition-colors">
+                    <CalendarIcon className="w-6 h-6 text-blue-400" />
+                  </div>
+                  <div>
+                    <div className="text-white font-medium">Schedule Video Call</div>
+                    <div className="text-gray-400 text-sm">Free 30-min consultation</div>
                   </div>
                 </a>
               </div>
@@ -360,7 +378,7 @@ ${formData.name}
               <div className="text-center p-6 bg-dark-800 rounded-xl border border-dark-700">
                 <MapPinIcon className="w-8 h-8 text-green-400 mx-auto mb-3" />
                 <div className="text-white font-medium mb-1">Located in</div>
-                <div className="text-gray-400 text-sm">Brussels, Belgium</div>
+                <div className="text-gray-400 text-sm">{pageInfo.address || 'Belgium'}</div>
               </div>
             </div>
 
@@ -370,7 +388,7 @@ ${formData.name}
               <ul className="space-y-3">
                 <li className="flex items-center gap-3 text-gray-300">
                   <SparklesIcon className="w-5 h-5 text-primary-400" />
-                  Proven success with enterprise clients
+                  Proven 400% growth results
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
                   <CheckIcon className="w-5 h-5 text-green-400" />
@@ -378,7 +396,7 @@ ${formData.name}
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
                   <ClockIcon className="w-5 h-5 text-blue-400" />
-                  Fast implementation
+                  Fast implementation (24hrs)
                 </li>
                 <li className="flex items-center gap-3 text-gray-300">
                   <UserIcon className="w-5 h-5 text-purple-400" />
@@ -387,6 +405,16 @@ ${formData.name}
               </ul>
             </div>
           </motion.div>
+        </div>
+
+        {/* Final CTA */}
+        <div className="mt-20">
+          <CTA 
+            variant="contact" 
+            title="Ready to Get Started?"
+            subtitle="Multiple ways to connect"
+            description="Choose the best way to discuss your AI automation needs. We'll respond within 24 hours."
+          />
         </div>
       </div>
     </section>

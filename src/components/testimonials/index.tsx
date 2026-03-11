@@ -10,7 +10,7 @@ const testimonials = [
     company: "L'Osteria Deerlijk",
     location: 'Deerlijk, Belgium',
     avatar: '/images/angelo-testimonial.jpg', // Add real photo
-    quote: "Emji transformed our restaurant operations completely. The ADA Systems platform increased our efficiency by 400% and saved us 30+ hours per week. The AI solutions pay for themselves within the first month.",
+    quote: "Julien transformed our restaurant operations completely. The ADA Systems platform increased our efficiency by 400% and saved us 30+ hours per week. The AI solutions pay for themselves within the first month.",
     metrics: {
       revenue: '€250+/month',
       growth: '400%',
@@ -28,7 +28,7 @@ const testimonials = [
     company: 'Belgian Restaurant Group',
     location: 'Brussels, Belgium',
     avatar: '/images/sarah-testimonial.jpg',
-    quote: "The test automation framework Emji built reduced our QA time by 80%. His AI-driven approach to quality assurance is revolutionary. We can now deploy updates daily instead of weekly.",
+    quote: "The test automation framework Julien built reduced our QA time by 80%. His AI-driven approach to quality assurance is revolutionary. We can now deploy updates daily instead of weekly.",
     metrics: {
       efficiency: '80%',
       deployment: '7x faster',
@@ -46,7 +46,7 @@ const testimonials = [
     company: 'InnovaTech Solutions',
     location: 'Antwerp, Belgium',
     avatar: '/images/marc-testimonial.jpg',
-    quote: "Emji's custom AI implementation helped us automate our customer support. We now handle 10x more inquiries with the same team size. His technical expertise and business understanding are exceptional.",
+    quote: "Julien's custom AI implementation helped us automate our customer support. We now handle 10x more inquiries with the same team size. His technical expertise and business understanding are exceptional.",
     metrics: {
       inquiries: '10x more',
       response: '24/7',
@@ -163,7 +163,7 @@ export function Testimonials() {
             What Clients
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-              Say About Us
+              Say About Me
             </span>
           </h2>
           

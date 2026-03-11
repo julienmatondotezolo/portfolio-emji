@@ -1,227 +1,307 @@
 import { motion } from 'framer-motion';
-import { ArrowRightIcon, SparklesIcon } from 'lucide-react';
+import { ArrowRightIcon, TerminalIcon } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
+import profileImg from '../../assets/images/IMG_8258.png';
 import type { PageInfo } from '../../config';
-import { urlFor } from '../../config';
 
 type Props = {
   pageInfo: PageInfo;
 };
 
 const techStack = [
+  'Playwright',
+  'Selenium',
+  'CI/CD',
   'AI Solutions',
-  'Test Automation',
-  'Full-Stack Development',
-  'Restaurant Tech',
-  'Process Automation',
+  'TypeScript',
 ];
+
+const stats = [
+  { value: '4+', label: 'Years' },
+  { value: '80%+', label: 'Efficiency' },
+  { value: '95%', label: 'Coverage' },
+];
+
+function TerminalBlock() {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ delay: 1.2, duration: 0.7 }}
+      className="hidden lg:block mt-8 rounded-xl border border-dark-600/80 bg-dark-900/80 backdrop-blur-sm overflow-hidden shadow-2xl shadow-primary-500/5"
+    >
+      <div className="flex items-center gap-2 px-4 py-2.5 bg-dark-800/80 border-b border-dark-600/60">
+        <div className="flex gap-1.5">
+          <div className="w-2.5 h-2.5 rounded-full bg-red-500/70" />
+          <div className="w-2.5 h-2.5 rounded-full bg-yellow-500/70" />
+          <div className="w-2.5 h-2.5 rounded-full bg-green-500/70" />
+        </div>
+        <div className="flex items-center gap-1.5 ml-2 text-[11px] text-gray-500 font-mono">
+          <TerminalIcon className="w-3 h-3" />
+          login.spec.ts
+        </div>
+      </div>
+      <div className="p-4 font-mono text-[13px] leading-[1.7] select-none">
+        <div>
+          <span className="text-purple-400">test</span>
+          <span className="text-gray-500">(</span>
+          <span className="text-emerald-400">&apos;user login flow&apos;</span>
+          <span className="text-gray-500">,</span>
+          <span className="text-gray-300"> async </span>
+          <span className="text-gray-500">({'{'}</span>
+          <span className="text-orange-300"> page </span>
+          <span className="text-gray-500">{'}'}) =&gt; {'{'}</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-blue-400">await </span>
+          <span className="text-gray-300">page.</span>
+          <span className="text-yellow-300">goto</span>
+          <span className="text-gray-500">(</span>
+          <span className="text-emerald-400">&apos;/login&apos;</span>
+          <span className="text-gray-500">);</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-blue-400">await </span>
+          <span className="text-gray-300">page.</span>
+          <span className="text-yellow-300">fill</span>
+          <span className="text-gray-500">(</span>
+          <span className="text-emerald-400">&apos;#email&apos;</span>
+          <span className="text-gray-500">,</span>
+          <span className="text-orange-300"> &apos;user@test.com&apos;</span>
+          <span className="text-gray-500">);</span>
+        </div>
+        <div className="ml-4">
+          <span className="text-blue-400">await </span>
+          <span className="text-yellow-300">expect</span>
+          <span className="text-gray-500">(</span>
+          <span className="text-gray-300">page</span>
+          <span className="text-gray-500">).</span>
+          <span className="text-yellow-300">toHaveURL</span>
+          <span className="text-gray-500">(</span>
+          <span className="text-emerald-400">&apos;/dashboard&apos;</span>
+          <span className="text-gray-500">);</span>
+        </div>
+        <div>
+          <span className="text-gray-500">{'}'});</span>
+        </div>
+      </div>
+    </motion.div>
+  );
+}
 
 export function Hero({ pageInfo }: Props) {
   return (
-    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-br from-dark-900 via-dark-800 to-dark-900">
-      {/* Animated background */}
-      <div className="absolute inset-0 bg-grid-pattern bg-[size:50px_50px] opacity-10" />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary-500/10 to-transparent" />
-      
-      {/* Floating elements */}
-      <motion.div
-        className="absolute top-20 left-20 w-16 h-16 bg-primary-500/20 rounded-full blur-xl"
-        animate={{
-          y: [0, -20, 0],
-          scale: [1, 1.2, 1],
-        }}
-        transition={{
-          duration: 4,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
-      <motion.div
-        className="absolute bottom-20 right-20 w-24 h-24 bg-primary-400/10 rounded-full blur-2xl"
-        animate={{
-          y: [0, 20, 0],
-          scale: [1, 0.8, 1],
-        }}
-        transition={{
-          duration: 5,
-          repeat: Infinity,
-          ease: 'easeInOut',
-        }}
-      />
+    <div className="min-h-screen flex items-center justify-center relative overflow-hidden bg-dark-900">
+      {/* Subtle grid */}
+      <div className="absolute inset-0 bg-grid-pattern bg-[size:60px_60px] opacity-[0.04]" />
 
-      <div className="container mx-auto px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Left Column - Text Content */}
+      {/* Ambient glow */}
+      <div className="absolute top-0 left-1/4 w-[300px] lg:w-[500px] h-[300px] lg:h-[500px] bg-primary-500/[0.07] rounded-full blur-[120px]" />
+      <div className="absolute bottom-0 right-1/4 w-[250px] lg:w-[400px] h-[250px] lg:h-[400px] bg-primary-600/[0.05] rounded-full blur-[100px]" />
+
+      <div className="container mx-auto px-5 sm:px-6 lg:px-8 relative z-10 py-20 lg:py-0">
+        {/* Mobile: photo on top, centered | Desktop: 2-col grid */}
+        <div className="flex flex-col lg:grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+
+          {/* Mobile-only: Photo at top */}
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="space-y-8"
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6 }}
+            className="lg:hidden relative"
           >
-            {/* Badge */}
+            <div className="relative mx-auto w-40 h-40 sm:w-48 sm:h-48">
+              <div className="absolute inset-0 bg-primary-500/20 rounded-full blur-[50px] scale-90" />
+              <div className="relative z-10 w-full h-full rounded-full overflow-hidden border-2 border-primary-500/20">
+                <Image
+                  className="rounded-full object-cover w-full h-full"
+                  src={profileImg}
+                  alt="Julien Matondo"
+                  width={200}
+                  height={200}
+                  priority
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Left Column — Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="space-y-5 sm:space-y-6 lg:space-y-8 text-center lg:text-left"
+          >
+            {/* Availability badge */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.2, duration: 0.6 }}
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-500/10 border border-primary-500/20 text-primary-400 text-sm font-medium"
+              transition={{ delay: 0.3, duration: 0.5 }}
+              className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-green-500/10 border border-green-500/20 text-green-400 text-xs font-medium tracking-wide uppercase"
             >
-              <SparklesIcon className="w-4 h-4" />
-              Available for AI Automation Projects
+              <span className="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse" />
+              Available for projects
             </motion.div>
 
-            {/* Main Heading */}
+            {/* Name + role */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.6 }}
-              className="space-y-4"
             >
-              <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-                AI Solutions
+              <h1 className="text-4xl sm:text-5xl lg:text-[5.5rem] font-bold leading-[1] tracking-tight">
+                <span className="text-white">Julien</span>
                 <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-primary-600">
-                  Architect
+                  Matondo
                 </span>
               </h1>
-              <p className="text-xl lg:text-2xl text-gray-400 font-light">
-                {pageInfo?.name || 'Emji Devimanus'}
+              <motion.div
+                initial={{ opacity: 0, width: 0 }}
+                animate={{ opacity: 1, width: '3rem' }}
+                transition={{ delay: 0.8, duration: 0.5 }}
+                className="h-0.5 bg-primary-500 mt-4 lg:mt-5 mb-3 lg:mb-4 rounded-full mx-auto lg:mx-0"
+              />
+              <p className="text-base sm:text-lg lg:text-xl text-gray-400 font-light">
+                Test Automation Engineer
               </p>
             </motion.div>
 
             {/* Description */}
             <motion.p
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-              className="text-lg text-gray-300 max-w-2xl leading-relaxed"
+              transition={{ delay: 0.6, duration: 0.5 }}
+              className="text-sm sm:text-base text-gray-400 max-w-lg leading-relaxed mx-auto lg:mx-0"
             >
-              Specializing in AI-powered automation solutions for restaurants and enterprises. 
-              Building intelligent systems that streamline operations and drive €1M+ revenue growth.
+              Building enterprise-grade test automation frameworks and AI-powered
+              QA solutions that improve quality and accelerate delivery.
             </motion.p>
 
-            {/* Tech Stack Pills */}
+            {/* Stats */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.8, duration: 0.6 }}
-              className="flex flex-wrap gap-3"
+              transition={{ delay: 0.7, duration: 0.5 }}
+              className="flex justify-center lg:justify-start gap-8 sm:gap-10"
             >
-              {techStack.map((tech, index) => (
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: 0.8 + i * 0.1, duration: 0.4 }}
+                >
+                  <div className="text-2xl sm:text-3xl font-bold text-white">
+                    {stat.value}
+                  </div>
+                  <div className="text-[10px] sm:text-xs text-gray-500 mt-0.5 uppercase tracking-wider">
+                    {stat.label}
+                  </div>
+                </motion.div>
+              ))}
+            </motion.div>
+
+            {/* Tech pills */}
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.9, duration: 0.5 }}
+              className="flex flex-wrap justify-center lg:justify-start gap-2"
+            >
+              {techStack.map((tech, i) => (
                 <motion.span
                   key={tech}
-                  initial={{ opacity: 0, scale: 0.8 }}
+                  initial={{ opacity: 0, scale: 0.9 }}
                   animate={{ opacity: 1, scale: 1 }}
-                  transition={{ delay: 0.8 + index * 0.1, duration: 0.4 }}
-                  className="px-4 py-2 bg-dark-700 border border-dark-600 rounded-full text-sm text-gray-300 hover:border-primary-500 transition-colors"
+                  transition={{ delay: 1 + i * 0.05, duration: 0.3 }}
+                  className="px-3 py-1.5 bg-dark-800 border border-dark-700 rounded-lg text-xs text-gray-400 font-medium hover:border-primary-500/50 hover:text-gray-300 transition-colors"
                 >
                   {tech}
                 </motion.span>
               ))}
             </motion.div>
 
-            {/* CTA Buttons */}
+            {/* CTAs */}
             <motion.div
-              initial={{ opacity: 0, y: 20 }}
+              initial={{ opacity: 0, y: 15 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.6 }}
-              className="flex flex-col sm:flex-row gap-4"
+              transition={{ delay: 1.1, duration: 0.5 }}
+              className="flex flex-col sm:flex-row justify-center lg:justify-start gap-3 pt-1 lg:pt-2"
             >
               <Link href="#projects">
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="group inline-flex items-center gap-2 px-8 py-4 bg-primary-500 hover:bg-primary-600 text-white font-medium rounded-xl transition-all duration-300 shadow-lg hover:shadow-primary-500/25"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="group w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 sm:py-3.5 bg-primary-500 hover:bg-primary-600 text-white text-sm font-medium rounded-xl transition-all duration-200 shadow-lg shadow-primary-500/20"
                 >
-                  View AI Projects
-                  <ArrowRightIcon className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                  View Projects
+                  <ArrowRightIcon className="w-4 h-4 group-hover:translate-x-0.5 transition-transform" />
                 </motion.button>
               </Link>
-              
               <Link href="#contact">
                 <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className="inline-flex items-center gap-2 px-8 py-4 bg-transparent border border-gray-600 hover:border-primary-500 text-white font-medium rounded-xl transition-all duration-300 hover:bg-primary-500/10"
+                  whileHover={{ scale: 1.03 }}
+                  whileTap={{ scale: 0.97 }}
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-7 py-3 sm:py-3.5 bg-transparent border border-dark-600 hover:border-primary-500/50 text-gray-300 text-sm font-medium rounded-xl transition-all duration-200 hover:bg-primary-500/5"
                 >
-                  Let's Collaborate
+                  Contact Me
                 </motion.button>
               </Link>
             </motion.div>
           </motion.div>
 
-          {/* Right Column - Profile Image */}
+          {/* Right Column — Desktop photo + Terminal */}
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.3, duration: 0.8 }}
-            className="relative"
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.7 }}
+            className="relative hidden lg:block"
           >
-            <div className="relative mx-auto max-w-lg">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-primary-500 to-primary-600 rounded-full blur-3xl opacity-20 animate-pulse-slow" />
-              
-              {/* Profile image container */}
+            <div className="relative mx-auto max-w-sm">
+              {/* Glow behind photo */}
+              <div className="absolute inset-0 bg-primary-500/20 rounded-full blur-[80px] scale-75" />
+
+              {/* Profile photo */}
               <motion.div
-                className="relative z-10 rounded-full overflow-hidden border-4 border-primary-500/30 bg-gradient-to-br from-primary-500/20 to-primary-600/20 p-2"
-                whileHover={{ scale: 1.05 }}
+                className="relative z-10 w-80 h-80 mx-auto rounded-full overflow-hidden border-2 border-primary-500/20 ring-1 ring-primary-500/10 ring-offset-4 ring-offset-dark-900"
+                whileHover={{ scale: 1.03 }}
                 transition={{ duration: 0.3 }}
               >
-                {pageInfo?.heroImage ? (
-                  <Image
-                    className="rounded-full object-cover"
-                    src={urlFor(pageInfo.heroImage).url()}
-                    alt={pageInfo?.name || 'Profile picture'}
-                    width={400}
-                    height={400}
-                    priority
-                  />
-                ) : (
-                  <div className="w-96 h-96 rounded-full bg-gradient-to-br from-primary-500 to-primary-600 flex items-center justify-center">
-                    <span className="text-6xl font-bold text-white">
-                      {pageInfo?.name?.charAt(0) || 'E'}
-                    </span>
-                  </div>
-                )}
-              </motion.div>
-
-              {/* Floating badges */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1.2, duration: 0.5 }}
-                className="absolute -top-4 -right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg"
-              >
-                Available
-              </motion.div>
-              
-              <motion.div
-                initial={{ opacity: 0, scale: 0 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ delay: 1.4, duration: 0.5 }}
-                className="absolute -bottom-4 -left-4 bg-primary-500 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg"
-              >
-                €1M Goal 2026
+                <Image
+                  className="rounded-full object-cover w-full h-full"
+                  src={profileImg}
+                  alt="Julien Matondo"
+                  width={400}
+                  height={400}
+                  priority
+                  placeholder="blur"
+                />
               </motion.div>
             </div>
+
+            {/* Terminal */}
+            <TerminalBlock />
           </motion.div>
         </div>
 
-        {/* Scroll indicator */}
+        {/* Scroll indicator — hidden on small mobile */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5, duration: 0.6 }}
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.8, duration: 0.5 }}
+          className="hidden sm:block absolute bottom-8 left-1/2 -translate-x-1/2"
         >
           <motion.div
-            animate={{ y: [0, 10, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-            className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center"
+            animate={{ y: [0, 8, 0] }}
+            transition={{ duration: 2.5, repeat: Infinity, ease: 'easeInOut' }}
+            className="w-5 h-8 border border-gray-600 rounded-full flex justify-center"
           >
-            <div className="w-1 h-3 bg-gray-400 rounded-full mt-2" />
+            <div className="w-0.5 h-2 bg-gray-500 rounded-full mt-1.5" />
           </motion.div>
         </motion.div>
       </div>
